@@ -1,0 +1,8 @@
+.vagrant
+/ui/node_modules
+/ui/build
+
+wp/*
+!wp/wp-content/themes/derulski/*
+
+npm-debug\.log

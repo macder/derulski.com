@@ -1,0 +1,13 @@
+<div class="c-primary-nav">
+  <nav class="c-primary-nav__menu" role="navigation">
+    <ul class="c-primary-nav__menu-list">
+      {% for item in items %}
+        <li class="c-primary-nav__menu-item">
+          <a class="c-primary-nav__menu-link" href="{{item.url}}">
+            {{item.title}}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>

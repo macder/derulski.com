@@ -2,6 +2,8 @@
 /ui/node_modules
 /ui/build
 
+/vendor
+
 wp/*
 !wp/wp-content/themes/derulski/*
 

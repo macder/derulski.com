@@ -1,0 +1,31 @@
+{% block html_head_container %}
+{% include 'meta/html-head.twig' %}
+  {% block head %}
+  {% endblock %}
+  </head>
+{% endblock %}
+
+  <body data-template="base.twig">
+    <a href="#main-content" class="u-hidden-visually">skip to main content</a>
+    {% block header %}
+
+    {% endblock %}
+
+    <section id="content" role="main">
+      <a id="main-content" aria-hidden="true"></a>
+      {% block hero %}
+      {% endblock %}
+
+      {% block content %}
+        Sorry, no content
+      {% endblock %}
+    </section>
+
+    {% block footer %}
+
+    {% endblock %}
+    {{ function('wp_footer') }}
+    {# <script defer src="/build/bundle.js"></script> #}
+
+  </body>
+</html>

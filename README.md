@@ -2,4 +2,4 @@
 
 WordPress + Twig + Pattern-Lab
 
-Custom atomic design theme
+Atomic design workflow for custom WP theming

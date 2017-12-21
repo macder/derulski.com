@@ -1,0 +1,9 @@
+{
+  "require": {
+    "php": ">=5.4",
+    "johnpbloch/wordpress": "4.9.1"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp"
+  }
+}

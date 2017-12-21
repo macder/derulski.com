@@ -3,6 +3,7 @@
 /ui/build
 
 /vendor
+/sql
 
 wp/*
 !wp/wp-content/themes/derulski/*

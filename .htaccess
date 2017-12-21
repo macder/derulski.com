@@ -1,0 +1,25 @@
+AddOutputFilterByType DEFLATE text/plain
+AddOutputFilterByType DEFLATE text/html
+AddOutputFilterByType DEFLATE text/xml
+AddOutputFilterByType DEFLATE text/css
+AddOutputFilterByType DEFLATE application/xml
+AddOutputFilterByType DEFLATE application/xhtml+xml
+AddOutputFilterByType DEFLATE application/rss+xml
+AddOutputFilterByType DEFLATE application/javascript
+AddOutputFilterByType DEFLATE application/json
+AddOutputFilterByType DEFLATE application/x-javascript
+
+<IfModule mod_rewrite.c>
+Options +FollowSymLinks
+RewriteEngine On
+RewriteRule ^build/(.*)$ /ui/build/$1 [QSA,L]
+RewriteRule ^build/images/(.*)$ /ui/build/images/$1 [QSA,L]
+
+RewriteCond %{HTTP_HOST} ^(www.)?derulski.local$
+RewriteCond %{REQUEST_URI} !^/wp/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /wp/$1
+RewriteCond %{HTTP_HOST} ^(www.)?derulski.local$
+RewriteRule ^(/)?$ wp/index.php [L]
+</IfModule>

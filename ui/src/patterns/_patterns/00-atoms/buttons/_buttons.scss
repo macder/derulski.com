@@ -1,0 +1,16 @@
+.c-btn {
+  display: block;
+  margin: 0;
+  padding: $inuit-global-spacing-unit-small;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.c-btn--primary {
+  background-color: color(light-background);
+  border-width: 1px;
+  border-style: solid;
+  border-color: color(primary-border);
+  border-radius: $global-radius;
+}

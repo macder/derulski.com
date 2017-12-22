@@ -7,3 +7,13 @@
 // Standardise some UI treatments.
 $global-radius: 3px !default;
 $global-transition: all 300ms ease-in-out !default;
+
+$mq-breakpoints: (
+  sm: 640px,
+  md: 960px,
+  lg: 1200px,
+);
+
+$inuit-wrapper-width: 1200px;
+
+$global-font: 'Ubuntu', sans-serif;

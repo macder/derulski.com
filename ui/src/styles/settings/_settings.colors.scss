@@ -1,0 +1,9 @@
+/* Rule should only apply to applications like `color: black` */
+/* stylelint-disable color-named */
+$colors: (
+  black: #000,
+);
+
+$functional-colors: (
+  primary-text: color(black),
+);

@@ -78,7 +78,9 @@
 @import "settings/settings.config";
 @import "node_modules/inuitcss/settings/settings.core";
 @import "settings/settings.global";
-
+// The color function needs to be available to define colors
+@import 'tools/tools.color';
+@import 'settings/settings.colors';
 
 
 

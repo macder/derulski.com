@@ -1,9 +1,23 @@
 /* Rule should only apply to applications like `color: black` */
 /* stylelint-disable color-named */
 $colors: (
-  black: #000,
+  black: #000000,
+  concrete: #F2F2F2,
+  crimson: #ED1C24,
+  mercury: #E6E6E6,
+  mine-shaft: #333333,
+  silver: #CCCCCC,
+  white: #FFFFFF,
+
 );
 
 $functional-colors: (
   primary-text: color(black),
+  primary-link: color(crimson),
+  primary-background: color(white),
+  light-background: color(concrete),
+  dim-background: color(mercury),
+  dark-background: color(mine-shaft),
+  darkest-background: color(black),
+  primary-border: color(black),
 );

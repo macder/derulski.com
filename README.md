@@ -2,8 +2,6 @@
 
 WordPress + Twig + Pattern-Lab
 
-Atomic design workflow for custom WP theming
-
-42
+Personal site using Atomic Design workflow in WP
 
 Launching early 2018

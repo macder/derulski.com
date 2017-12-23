@@ -1,0 +1,15 @@
+<div class="o-block">
+
+  <div class="o-block__img">
+    {% if icon %}
+      <i class="fa {{ icon }}" aria-hidden="true"></i>
+    {% else %}
+      <img src="{{ image.src }}" alt="{{ image.alt }}" title="{{ image.title }}">
+    {% endif %}
+  </div>
+
+  <div class="o-block__body">
+    <p>{{ body }}</p>
+  </div>
+
+</div>

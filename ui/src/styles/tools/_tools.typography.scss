@@ -1,0 +1,33 @@
+/* ==========================================================================
+   #TYPOGRAPHY
+   ========================================================================== */
+
+/**
+ *
+ * Tools that generate standardized typography values
+ *
+ */
+
+@mixin text-xlg {
+  @include inuit-font-size($global-font-size-xlg);
+}
+
+ @mixin text-lg {
+  @include inuit-font-size($global-font-size-lg);
+}
+
+ @mixin text-md {
+  @include inuit-font-size($global-font-size-md);
+}
+
+@mixin text-sm {
+  @include inuit-font-size($global-font-size-sm);
+}
+
+@mixin text-case($case) {
+  text-transform: $case;
+}
+
+@mixin text-justify($position) {
+  text-align: $position;
+}

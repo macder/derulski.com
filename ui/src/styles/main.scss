@@ -90,6 +90,7 @@
 @import "node_modules/inuitcss/tools/tools.clearfix";
 @import "node_modules/inuitcss/tools/tools.hidden";
 @import "node_modules/sass-mq/mq";
+@import "tools/tools.typography";
 
 
 
@@ -157,3 +158,5 @@ $inuit-offsets: true;
 @import "node_modules/inuitcss/utilities/utilities.responsive-spacings";
 @import "node_modules/inuitcss/utilities/utilities.print";
 @import "node_modules/inuitcss/utilities/utilities.hide";
+@import "utilities/utilities.typography";
+

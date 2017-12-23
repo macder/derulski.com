@@ -1,0 +1,23 @@
+/* ==========================================================================
+   #TYPOGRAPHY
+   ========================================================================== */
+
+/**
+ * Utility classes for standardized typography and typesetting.
+ */
+
+.u-text-xlg {
+  @include text-xlg;
+}
+
+.u-text-lg {
+  @include text-lg;
+}
+
+.u-text-md {
+  @include text-md;
+}
+
+.u-text-sm {
+  @include text-sm;
+}

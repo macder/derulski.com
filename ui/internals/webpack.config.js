@@ -29,7 +29,6 @@ module.exports = [{
         test: /\.js$/,
         include: [
           path.resolve(process.cwd(), 'src'),
-          path.resolve(process.cwd(), 'node_modules/ajax-promise-es6')
         ],
         query: {
           plugins: ['transform-class-properties'],

@@ -14,3 +14,11 @@
   border-color: color(primary-border);
   border-radius: $global-radius;
 }
+
+.c-btn--large {
+  padding: $inuit-global-spacing-unit;
+}
+
+.c-btn--small {
+  padding: $inuit-global-spacing-unit-tiny;
+}

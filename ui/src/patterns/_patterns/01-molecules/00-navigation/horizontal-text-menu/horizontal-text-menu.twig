@@ -1,0 +1,9 @@
+<ul class="c-horizontal-text-menu o-list-bare">
+  {% for item in items %}
+    <li class="c-horizontal-text-menu__item u-mb-tiny">
+      <a class="c-horizontal-text-menu__item-link" href="{{ item.get_link }}">
+        {{ item.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

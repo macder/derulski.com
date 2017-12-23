@@ -4,6 +4,7 @@ $colors: (
   black: #000000,
   concrete: #F2F2F2,
   crimson: #ED1C24,
+  dusty-gray: #999999,
   mercury: #E6E6E6,
   mine-shaft: #333333,
   silver: #CCCCCC,
@@ -18,5 +19,5 @@ $functional-colors: (
   dim-background: color(mercury),
   dark-background: color(mine-shaft),
   darkest-background: color(black),
-  primary-border: color(black),
+  primary-border: color(dusty-gray),
 );

@@ -6,6 +6,10 @@
  * Utility classes for standardized typography and typesetting.
  */
 
+.u-text-default {
+  @include text-default;
+}
+
 .u-text-xlg {
   @include text-xlg;
 }
@@ -20,4 +24,28 @@
 
 .u-text-sm {
   @include text-sm;
+}
+
+.u-text-center {
+  @include text-justify(center);
+}
+
+.u-text-left {
+  @include text-justify(left);
+}
+
+.u-text-right {
+  @include text-justify(right);
+}
+
+.u-text-uppercase {
+  @include text-case(uppercase);
+}
+
+.u-text-lowercase {
+  @include text-case(lowercase);
+}
+
+.u-text-capitalize {
+  @include text-case(capitalize);
 }

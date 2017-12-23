@@ -20,6 +20,10 @@
   @include inuit-font-size($global-font-size-md);
 }
 
+@mixin text-default {
+  @include inuit-font-size($inuit-global-font-size);
+}
+
 @mixin text-sm {
   @include inuit-font-size($global-font-size-sm);
 }

@@ -1,0 +1,9 @@
+<ul class="c-inline-text-menu o-list-inline" role="navigation">
+  {% for item in items %}
+    <li class="c-inline-text-menu__item o-list-inline__item u-mr">
+      <a class="c-inline-text-menu__item-link" href="{{ item.get_link }}">
+        {{ item.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>

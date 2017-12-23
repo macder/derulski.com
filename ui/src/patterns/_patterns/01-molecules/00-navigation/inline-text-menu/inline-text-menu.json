@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "get_link": "#",
+      "title": "Lorem"
+    },
+    {
+      "get_link": "#",
+      "title": "Ipsum"
+    },
+    {
+      "get_link": "#",
+      "title": "Dolor"
+    },
+    {
+      "get_link": "#",
+      "title": "Amet"
+    },
+    {
+      "get_link": "#",
+      "title": "Maecenas"
+    }
+  ]
+}

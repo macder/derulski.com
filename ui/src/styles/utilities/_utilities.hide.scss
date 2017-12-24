@@ -1,0 +1,45 @@
+/* ==========================================================================
+   #HIDE
+   ========================================================================== */
+
+/**
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.u-hidden-visually {
+  @include inuit-hidden-visually();
+}
+
+
+/**
+ * Hide visually and from screen readers.
+ */
+
+.u-hidden {
+  display: none !important;
+}
+
+.u-hidden-until-sm {
+  @include hidden-until('sm');
+}
+
+.u-hidden-until-md {
+  @include hidden-until('md');
+}
+
+.u-hidden-until-lg {
+  @include hidden-until('lg');
+}
+
+.u-hidden-from-sm {
+  @include hidden-from('sm');
+}
+
+.u-hidden-from-md {
+  @include hidden-from('md');
+}
+
+.u-hidden-from-lg {
+  @include hidden-from('lg');
+}

@@ -125,14 +125,14 @@
 @import "node_modules/inuitcss/objects/objects.wrapper";
 @import "node_modules/inuitcss/objects/objects.layout";
 @import "node_modules/inuitcss/objects/objects.media";
-@import "node_modules/inuitcss/objects/objects.flag";
+// @import "node_modules/inuitcss/objects/objects.flag";
 @import "node_modules/inuitcss/objects/objects.list-bare";
 @import "node_modules/inuitcss/objects/objects.list-inline";
 @import "node_modules/inuitcss/objects/objects.box";
 @import "node_modules/inuitcss/objects/objects.block";
-@import "node_modules/inuitcss/objects/objects.ratio";
-@import "node_modules/inuitcss/objects/objects.crop";
-@import "node_modules/inuitcss/objects/objects.table";
+// @import "node_modules/inuitcss/objects/objects.ratio";
+// @import "node_modules/inuitcss/objects/objects.crop";
+// @import "node_modules/inuitcss/objects/objects.table";
 @import "node_modules/inuitcss/objects/objects.pack";
 
 
@@ -158,7 +158,7 @@ $inuit-offsets: true;
 @import "node_modules/inuitcss/utilities/utilities.headings";
 @import "node_modules/inuitcss/utilities/utilities.spacings";
 @import "node_modules/inuitcss/utilities/utilities.responsive-spacings";
-@import "node_modules/inuitcss/utilities/utilities.print";
+// @import "node_modules/inuitcss/utilities/utilities.print";
 @import "node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.typography";
 

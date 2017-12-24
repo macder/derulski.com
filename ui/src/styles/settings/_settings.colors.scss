@@ -2,6 +2,7 @@
 /* stylelint-disable color-named */
 $colors: (
   black: #000000,
+  cod-grey: #1A1A1A,
   concrete: #F2F2F2,
   crimson: #ED1C24,
   dusty-gray: #999999,
@@ -18,6 +19,7 @@ $functional-colors: (
   light-background: color(concrete),
   dim-background: color(mercury),
   dark-background: color(mine-shaft),
+  darker-background: color(cod-grey),
   darkest-background: color(black),
   primary-border: color(dusty-gray),
 );

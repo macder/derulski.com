@@ -1,4 +1,4 @@
-/*import Header from '../patterns/_patterns/02-organisms/00-global/00-header/header';
+import Header from '../patterns/_patterns/02-organisms/00-global/00-header/header';
 
 const components = [{
   name: 'header',
@@ -10,4 +10,4 @@ components.forEach((c) => {
     const element = el;
     element.component = new c.Component(el);
   });
-});*/
+});

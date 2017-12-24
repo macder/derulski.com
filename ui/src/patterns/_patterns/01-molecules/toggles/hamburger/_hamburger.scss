@@ -1,0 +1,15 @@
+.c-hamburger {
+  // padding: 0 !important;
+  &:focus {
+    outline: 0;
+  }
+}
+
+.hamburger-inner {
+  &,
+  &::before,
+  &::after {
+    height: 2px !important;
+    background-color: color(primary-background) !important;
+  }
+}

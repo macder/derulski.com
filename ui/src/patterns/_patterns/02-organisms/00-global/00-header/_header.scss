@@ -5,8 +5,22 @@
   height:
     $inuit-global-spacing-unit-huge -
     $inuit-global-spacing-unit;
+}
 
+.c-header--active {
+  .c-header__primary-nav {
+    display: block;
+  }
 
+  .c-inline-text-menu__item {
+    display: block;
+    margin-bottom: $inuit-global-spacing-unit;
+    text-align: center;
+  }
+
+  .c-inline-text-menu__item-link {
+    @include inuit-font-size($global-font-size-md);
+  }
 }
 
 .c-header__primary-nav {
@@ -20,10 +34,13 @@
 
   .c-inline-text-menu__item-link {
     color: color(secondary-text);
-    @include inuit-font-size(18px); // magic number - only instance of this font size
     &:hover {
       color: color(primary-link);
       transition: .2s ease-in-out;
+    }
+    @include mq(md) {
+      // magic number - only instance of this font size
+      @include inuit-font-size(18px);
     }
   }
 }

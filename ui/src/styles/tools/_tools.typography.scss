@@ -12,11 +12,11 @@
   @include inuit-font-size($global-font-size-xlg);
 }
 
- @mixin text-lg {
+@mixin text-lg {
   @include inuit-font-size($global-font-size-lg);
 }
 
- @mixin text-md {
+@mixin text-md {
   @include inuit-font-size($global-font-size-md);
 }
 

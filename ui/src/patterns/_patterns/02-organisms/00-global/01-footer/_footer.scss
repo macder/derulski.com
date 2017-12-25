@@ -9,6 +9,13 @@
 }
 
 .c-footer__icon-nav {
+  @include mq(md) {
+    float: right;
+    .c-icon-menu {
+      float: right;
+    }
+  }
+
   .c-icon-menu__item-link {
     @include link-secondary();
   }

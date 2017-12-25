@@ -1,10 +1,30 @@
 .c-header {
   display: table;
-  padding-left: $inuit-global-spacing-unit;
   width: 100%;
   height:
     $inuit-global-spacing-unit-huge -
     $inuit-global-spacing-unit;
+}
+
+.c-header__hamburger {
+  @include vt-align(middle);
+}
+
+.c-header__primary-nav {
+  @include vt-align(middle);
+
+  .c-inline-text-menu__item {
+    margin-left: $inuit-global-spacing-unit-small;
+    margin-right: $inuit-global-spacing-unit-small;
+  }
+
+  .c-inline-text-menu__item-link {
+    @include link-secondary();
+    @include mq(md) {
+      // magic number - only instance of this font size ¯\_(*)_/¯
+      @include inuit-font-size(18px);
+    }
+  }
 }
 
 .c-header--active {
@@ -21,23 +41,5 @@
 
   .c-inline-text-menu__item-link {
     @include inuit-font-size($global-font-size-md);
-  }
-}
-
-.c-header__primary-nav {
-  display: table-cell;
-  vertical-align: middle;
-
-  .c-inline-text-menu__item {
-    margin-left: $inuit-global-spacing-unit-small;
-    margin-right: $inuit-global-spacing-unit-small;
-  }
-
-  .c-inline-text-menu__item-link {
-    @include link-secondary();
-    @include mq(md) {
-      // magic number - only instance of this font size
-      @include inuit-font-size(18px);
-    }
   }
 }

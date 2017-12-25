@@ -17,7 +17,7 @@
 }
 
 @mixin text-md {
-  @include inuit-font-size($global-font-size-md);
+  @include inuit-font-size($global-font-size-md, $inuit-global-line-height + 8);
 }
 
 @mixin text-default {

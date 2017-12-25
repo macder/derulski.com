@@ -43,6 +43,6 @@
   }
 
   .c-inline-text-menu__item-link {
-    @include inuit-font-size($global-font-size-md);
+    @include text-md();
   }
 }

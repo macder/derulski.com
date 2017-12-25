@@ -13,12 +13,19 @@
   border-style: solid;
   border-color: color(primary-border);
   border-radius: $global-radius;
+  &:hover {
+    background-color: color(dim-background);
+    text-decoration: none;
+    transition: $global-transition;
+  }
 }
 
 .c-btn--large {
   padding: $inuit-global-spacing-unit;
+  @include text-lg();
 }
 
 .c-btn--small {
   padding: $inuit-global-spacing-unit-tiny;
+  @include text-sm();
 }

@@ -1,0 +1,34 @@
+{
+  "menu": [
+    {
+      "get_link": "#",
+      "title": "Home"
+    },
+    {
+      "get_link": "#",
+      "title": "Contact"
+    },
+    {
+      "get_link": "#",
+      "title": "Privacy Policy"
+    }
+  ],
+  "social": [
+    {
+      "get_link": "#",
+      "icon": "fa-github-square fa-2x",
+      "label": "GitHub Profile"
+    },
+    {
+      "get_link": "#",
+      "icon": "fa-linkedin-square fa-2x",
+      "label": "LinkedIn Profile"
+    },
+    {
+      "get_link": "#",
+      "icon": "fa-twitter-square fa-2x",
+      "label": "Twitter Profile"
+    }
+  ],
+  "copyr": "Copyright 2006 - 2018 - Maciej Derulski"
+}

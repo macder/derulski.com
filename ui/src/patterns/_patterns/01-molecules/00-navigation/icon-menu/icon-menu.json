@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "get_link": "#",
+      "icon": "fa-github-square fa-3x",
+      "label": "GitHub Profile"
+    },
+    {
+      "get_link": "#",
+      "icon": "fa-linkedin-square fa-3x",
+      "label": "LinkedIn Profile"
+    },
+    {
+      "get_link": "#",
+      "icon": "fa-twitter-square fa-3x",
+      "label": "Twitter Profile"
+    }
+  ]
+}

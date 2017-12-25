@@ -1,3 +1,20 @@
 .c-footer {
+  padding: $inuit-global-spacing-unit;
+}
 
+.c-footer__nav {
+  .c-inline-text-menu__item-link {
+    @include link-secondary();
+  }
+}
+
+.c-footer__icon-nav {
+  .c-icon-menu__item-link {
+    @include link-secondary();
+  }
+}
+
+
+.c-footer__text {
+  color: color(secondary-text);
 }

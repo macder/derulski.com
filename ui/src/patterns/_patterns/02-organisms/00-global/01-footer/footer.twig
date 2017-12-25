@@ -1,3 +1,13 @@
-<div class="c-footer">
+<div class="c-footer u-bg-darkest">
+  <div class="u-clearfix">
+    <nav id="navigation" class="c-footer__nav u-pull-left">
+      {% include '01-molecules/00-navigation/inline-text-menu/inline-text-menu.twig' with { items: menu } %}
+    </nav>
 
+    <div class="c-footer__icon-nav u-pull-right">
+      {% include '01-molecules/00-navigation/icon-menu/icon-menu.twig' with { items: social } %}
+    </div>
+  </div>
+
+  <p class="c-footer__text u-text-center u-m-none u-text-sm">{{ copyr }}</p>
 </div>

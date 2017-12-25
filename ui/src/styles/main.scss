@@ -146,9 +146,11 @@
 // Build and include your project’s UI Compoments here.
 // @import "components/example.components.buttons";
 @import "../patterns/_patterns/00-atoms/buttons/buttons";
+@import "../patterns/_patterns/01-molecules/00-navigation/icon-menu/icon-menu";
 @import "../patterns/_patterns/01-molecules/toggles/hamburger/hamburger";
 
 @import "../patterns/_patterns/02-organisms/00-global/00-header/header";
+@import "../patterns/_patterns/02-organisms/00-global/01-footer/footer";
 @import "../patterns/_patterns/02-organisms/sections/features/features";
 
 

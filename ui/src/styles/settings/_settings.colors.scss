@@ -13,16 +13,23 @@ $colors: (
 );
 
 $functional-colors: (
+  // text
   primary-text: color(black),
   secondary-text: color(white),
+
+  // links
   primary-link: color(crimson),
   secondary-link: color(white),
   secondary-link-hover: color(crimson),
+
+  // backgrounds
   primary-background: color(white),
   light-background: color(concrete),
   dim-background: color(mercury),
   dark-background: color(mine-shaft),
   darker-background: color(cod-grey),
   darkest-background: color(black),
+
+  // borders
   primary-border: color(dusty-gray),
 );

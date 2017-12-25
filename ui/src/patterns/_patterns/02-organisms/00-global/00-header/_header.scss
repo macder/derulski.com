@@ -9,9 +9,7 @@
   height: $global-header-height;
 
   .c-hamburger {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    @include va-align(50%);
   }
 }
 

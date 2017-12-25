@@ -41,8 +41,6 @@ export default class Header {
   toggleBurger(el) {
     el.toggleClass('is-active');
     this.$el.header.toggleClass('c-header--active');
-    this.$j('html').toggleClass('u-scroll-none');
-    this.$j('#content, #footer').toggleClass('u-hidden');
   }
 
   /**

@@ -1,0 +1,15 @@
+.c-hero-image {
+  width: 100%;
+  min-height: $global-hero-height;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.c-hero-image--medium {
+  min-height: $global-hero-height-md;
+}
+
+.c-hero-image--large {
+  min-height: $global-hero-height-lg;
+}

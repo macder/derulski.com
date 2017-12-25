@@ -1,5 +1,5 @@
 body {
-  // @include text-default;
+  @include text-default;
   font-family: $global-font;
-  // color: color(primary-text);
+  color: color(primary-text);
 }

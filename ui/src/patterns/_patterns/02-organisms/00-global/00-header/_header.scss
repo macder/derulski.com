@@ -1,13 +1,18 @@
 .c-header {
   display: table;
   width: 100%;
-  height:
-    $inuit-global-spacing-unit-huge -
-    $inuit-global-spacing-unit;
+  height: $global-header-height;
 }
 
 .c-header__hamburger {
-  @include vt-align(middle);
+  position: relative;
+  height: $global-header-height;
+
+  .c-hamburger {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .c-header__primary-nav {

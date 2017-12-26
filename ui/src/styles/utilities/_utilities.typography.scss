@@ -49,3 +49,7 @@
 .u-text-capitalize {
   @include text-case(capitalize);
 }
+
+.u-text-secondary {
+  color: color(secondary-text);
+}

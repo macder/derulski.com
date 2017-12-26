@@ -1,0 +1,27 @@
+.c-hero {
+  position: relative;
+  min-height: $global-hero-height;
+
+  @include mq(sm) {
+    min-height: $global-hero-height-md;
+  }
+
+  @include mq(md) {
+    min-height: $global-hero-height-lg;
+  }
+}
+
+.c-hero__text {
+  @include va-align(50%);
+  width: 100%;
+  @include text-md();
+  font-weight: lighter;
+
+  @include mq(sm) {
+    @include text-lg();
+  }
+
+  @include mq(md) {
+    @include text-xlg();
+  }
+}

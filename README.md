@@ -16,3 +16,6 @@ Launching early 2018
 
 **Features**<br>
 [Patterns](https://github.com/macder/derulski.com/tree/develop/ui/src/patterns/_patterns)
+
+**WP**<br>
+[Theme](https://github.com/macder/derulski.com/tree/develop/wp/wp-content/themes/derulski)

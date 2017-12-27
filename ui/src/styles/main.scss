@@ -150,6 +150,7 @@
 @import "../patterns/_patterns/00-atoms/buttons/buttons";
 @import "../patterns/_patterns/00-atoms/images/hero/hero-images";
 @import "../patterns/_patterns/01-molecules/blocks/hero/hero";
+@import "../patterns/_patterns/01-molecules/media/thumb-overlay-link/thumb-overlay-link";
 @import "../patterns/_patterns/01-molecules/text/excerpt/excerpt";
 @import "../patterns/_patterns/01-molecules/toggles/hamburger/hamburger";
 @import "../patterns/_patterns/02-organisms/00-global/00-header/header";
@@ -175,6 +176,7 @@ $inuit-offsets: true;
 @import "utilities/utilities.backgrounds";
 @import "utilities/utilities.hide";
 @import "utilities/utilities.links";
+@import "utilities/utilities.overlay";
 @import "utilities/utilities.position";
 @import "utilities/utilities.pull";
 @import "utilities/utilities.typography";

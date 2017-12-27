@@ -1,0 +1,18 @@
+/* ==========================================================================
+   #OVERLAY
+   ========================================================================== */
+
+/**
+ *
+ */
+
+.u-overlay-darkest {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: color(darkest-background);
+}

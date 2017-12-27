@@ -3,9 +3,7 @@
   .c-excerpt {
     margin-bottom: $inuit-global-spacing-unit-large;
     padding-bottom: $inuit-global-spacing-unit-large;
-    border-bottom-color: color(light-border);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
+    @include border-bottom(light-border);
 
     &:last-child {
       border-bottom: none;

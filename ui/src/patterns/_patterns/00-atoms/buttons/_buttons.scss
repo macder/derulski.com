@@ -9,9 +9,7 @@
 
 .c-btn--primary {
   background-color: color(light-background);
-  border-width: 1px;
-  border-style: solid;
-  border-color: color(primary-border);
+  @include border(primary-border);
   border-radius: $global-radius;
   &:hover {
     background-color: color(dim-background);

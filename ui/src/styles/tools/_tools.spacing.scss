@@ -17,3 +17,14 @@
   padding-top: $top;
   padding-bottom: if($bottom, $bottom, $top);
 }
+
+@mixin margin-h($left, $right: null) {
+  margin-left: $left;
+  margin-right: if($right, $right, $left);
+}
+
+@mixin margin-v($top, $bottom: null) {
+  margin-top: $top;
+  margin-bottom: if($bottom, $bottom, $top);
+}
+

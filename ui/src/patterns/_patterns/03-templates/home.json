@@ -160,18 +160,6 @@
         },
         "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque ac, tempus iaculis tortor. Fusce hendrerit diam vitae sollicitudin aliquam. Quisque consequat maximus fringilla. Sed semper pulvinar laoreet.",
         "url": "#"
-      },
-      {
-        "title": "Lorem ipsum dolor sit amet",
-        "date": "December 20, 2017",
-        "author": "Maciej Derulski",
-        "image": {
-          "src": "https://satyr.io/180x135",
-          "alt": "alt text",
-          "title": "title text"
-        },
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque ac, tempus iaculis tortor. Fusce hendrerit diam vitae sollicitudin aliquam. Quisque consequat maximus fringilla. Sed semper pulvinar laoreet.",
-        "url": "#"
       }
     ]
   }

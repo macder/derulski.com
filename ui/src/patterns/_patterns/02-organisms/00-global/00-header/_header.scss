@@ -12,11 +12,12 @@
     @include va-align(50%);
   }
 
+  // it's not vegan
   .hamburger-inner {
     &,
     &::before,
     &::after {
-      height: 2px !important;
+      height: $global-burger-layer-height !important;
       background-color: color(primary-background) !important;
     }
   }

@@ -136,6 +136,7 @@
     ]
   },
   "recentPosts": {
+    "heading": "Recent Posts",
     "items": [
       {
         "title": "Lorem ipsum dolor sit amet",
@@ -146,7 +147,7 @@
           "alt": "alt text",
           "title": "title text"
         },
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque ac, tempus iaculis tortor. Fusce hendrerit diam vitae sollicitudin aliquam. Quisque consequat maximus fringilla. Sed semper pulvinar laoreet.",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
         "url": "#"
       },
       {
@@ -158,8 +159,31 @@
           "alt": "alt text",
           "title": "title text"
         },
-        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque ac, tempus iaculis tortor. Fusce hendrerit diam vitae sollicitudin aliquam. Quisque consequat maximus fringilla. Sed semper pulvinar laoreet.",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
         "url": "#"
+      }
+    ]
+  },
+  "featuredProjects": {
+    "heading": "Featured Projects",
+    "items": [
+      {
+        "image": {
+          "src": "https://satyr.io/368x208/acdc",
+          "alt": "Lorem Ipsum",
+          "title": "Lorem Ipsum"
+        },
+        "title": "Lorem Ipsum",
+        "link": "#"
+      },
+      {
+        "image": {
+          "src": "https://satyr.io/368x208/acdc",
+          "alt": "Lorem Ipsum",
+          "title": "Lorem Ipsum"
+        },
+        "title": "Lorem Ipsum",
+        "link": "#"
       }
     ]
   }

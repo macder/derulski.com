@@ -1,0 +1,12 @@
+.c-excerpt {
+  @include mq($until: sm) {
+    .o-media__img {
+      float: none;
+      margin-bottom: $inuit-global-spacing-unit;
+    }
+  }
+}
+
+.c-excerpt__link {
+  text-decoration: none !important;
+}

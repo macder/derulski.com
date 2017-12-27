@@ -1,7 +1,5 @@
 .c-hero {
-  padding-top:
-    $inuit-global-spacing-unit-huge -
-    $inuit-global-spacing-unit;
+  padding-top: $global-header-height;
 }
 
 .c-hero__img {
@@ -18,10 +16,9 @@
 }
 
 .c-hero__text {
-  @include va-align(50%);
   width: 100%;
+  @include va-align(50%);
   @include text-md();
-  font-weight: lighter;
 
   @include mq(sm) {
     @include text-lg();

@@ -39,14 +39,21 @@ $inuit-spacing-sizes: (
   null: $inuit-global-spacing-unit,
   '-tiny': $inuit-global-spacing-unit-tiny,
   '-small': $inuit-global-spacing-unit-small,
-  // '-medium': $inuit-global-spacing-unit-medium,
   '-large': $inuit-global-spacing-unit-large,
-  // '-xlarge': $inuit-global-spacing-unit-xlarge,
   '-huge': $inuit-global-spacing-unit-huge,
   '-none': 0
 ) !default;
 
 $inuit-responsive-spacing: true;
+
+$inuit-responsive-spacing-directions:
+  $inuit-spacing-directions !default;
+
+$inuit-responsive-spacing-properties:
+  $inuit-spacing-properties !default;
+
+$inuit-responsive-spacing-sizes:
+  $inuit-spacing-sizes !default;
 
 $global-font: 'Ubuntu', sans-serif;
 // $inuit-global-font-size: 18px;

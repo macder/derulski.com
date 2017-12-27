@@ -27,8 +27,7 @@
   @include vt-align(middle);
 
   .c-inline-text-menu__item {
-    margin-left: $inuit-global-spacing-unit-small;
-    margin-right: $inuit-global-spacing-unit-small;
+    @include margin-h($inuit-global-spacing-unit-small);
   }
 
   .c-inline-text-menu__item-link {

@@ -1,0 +1,27 @@
+/* ==========================================================================
+   #BORDERS
+   ========================================================================== */
+
+/**
+ *
+ *
+ *
+ */
+
+@mixin border($color: primary-border, $style: solid, $width: 1px) {
+  border-color: color($color);
+  border-style: $style;
+  border-width: $width;
+}
+
+@mixin border-top($color: primary-border, $style: solid, $width: 1px) {
+  border-top-color: color($color);
+  border-top-style: $style;
+  border-top-width: $width;
+}
+
+@mixin border-bottom($color: primary-border, $style: solid, $width: 1px) {
+  border-bottom-color: color($color);
+  border-bottom-style: $style;
+  border-bottom-width: $width;
+}

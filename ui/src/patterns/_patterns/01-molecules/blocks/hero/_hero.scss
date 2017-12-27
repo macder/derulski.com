@@ -1,4 +1,10 @@
 .c-hero {
+  padding-top:
+    $inuit-global-spacing-unit-huge -
+    $inuit-global-spacing-unit;
+}
+
+.c-hero__img {
   position: relative;
   min-height: $global-hero-height;
 

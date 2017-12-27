@@ -1,6 +1,10 @@
-<blockquote class="c-quote u-mh-large">
+<blockquote class="c-quote u-mh-large u-mb-none">
   <p class="c-quote__text u-text-md u-mb-tiny"><i>{{ body }}</i></p>
   <cite class="c-quote__cite">
-    <a class="c-quote__cite__link" href="{{ url }}">{{ cite }}</a>
+    {% if url %}
+      <a class="c-quote__cite-link" href="{{ url }}">{{ cite }}</a>
+    {% else %}
+      <p class="c-quote__cite-text u-mb-none">{{ cite }}</p>
+    {% endif %}
   </cite>
 </blockquote>

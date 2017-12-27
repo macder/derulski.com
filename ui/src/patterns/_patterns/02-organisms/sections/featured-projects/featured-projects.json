@@ -1,0 +1,23 @@
+{
+  "heading": "Featured Projects",
+  "items": [
+    {
+      "image": {
+        "src": "https://satyr.io/368x208/acdc",
+        "alt": "Lorem Ipsum",
+        "title": "Lorem Ipsum"
+      },
+      "title": "Lorem Ipsum",
+      "link": "#"
+    },
+    {
+      "image": {
+        "src": "https://satyr.io/368x208/acdc",
+        "alt": "Lorem Ipsum",
+        "title": "Lorem Ipsum"
+      },
+      "title": "Lorem Ipsum",
+      "link": "#"
+    }
+  ]
+}

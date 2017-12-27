@@ -1,0 +1,6 @@
+<div class="c-featured-projects">
+  <h2 class="u-mb-large u-text-center u-text-lg">{{ heading }}</h2>
+  {% for item in items %}
+    {% include '01-molecules/media/thumb-overlay-link/thumb-overlay-link.twig' with item %}
+  {% endfor %}
+</div>

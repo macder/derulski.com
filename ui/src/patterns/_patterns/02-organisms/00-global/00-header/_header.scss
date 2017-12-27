@@ -11,6 +11,15 @@
   .c-hamburger {
     @include va-align(50%);
   }
+
+  .hamburger-inner {
+    &,
+    &::before,
+    &::after {
+      height: 2px !important;
+      background-color: color(primary-background) !important;
+    }
+  }
 }
 
 .c-header__primary-nav {

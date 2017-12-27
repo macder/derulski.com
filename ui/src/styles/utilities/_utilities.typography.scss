@@ -50,6 +50,10 @@
   @include text-case(capitalize);
 }
 
+.u-text-primary {
+  color: color(primary-text);
+}
+
 .u-text-secondary {
   color: color(secondary-text);
 }

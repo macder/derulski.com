@@ -1,0 +1,22 @@
+.c-quote-bar {
+
+  .c-quote {
+    color: color(secondary-text);
+    @include mq(md) {
+      @include padding-h($inuit-global-spacing-unit-huge);
+    }
+
+    .c-quote__text {
+      text-align: center;
+      @include mq(md) {
+        @include padding-h($inuit-global-spacing-unit);
+      }
+    }
+
+    .c-quote__cite-text {
+      margin-top: $inuit-global-spacing-unit-small;
+      text-align: right;
+      font-style: normal;
+    }
+  }
+}

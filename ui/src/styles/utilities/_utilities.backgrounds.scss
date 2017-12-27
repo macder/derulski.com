@@ -6,6 +6,22 @@
  * utility classes for background skins
  */
 
+.u-bg-primary {
+  background-color: color(primary-background);
+}
+
+.u-bg-light {
+  background-color: color(light-background);
+}
+
+.u-bg-dim {
+  background-color: color(dim-background);
+}
+
+.u-bg-dark {
+  background-color: color(dark-background);
+}
+
 .u-bg-darker {
   background-color: color(darker-background);
 }

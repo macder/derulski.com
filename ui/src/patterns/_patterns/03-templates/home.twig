@@ -1,0 +1,31 @@
+<div class="u-pos-fixed">
+  {% include '02-organisms/00-global/00-header/header.twig' with primary_nav %}
+</div>
+
+{% include '01-molecules/blocks/hero/hero.twig' with hero %}
+
+<div class="u-pt-large u-bg-light">
+  <div class="o-wrapper">
+    {% include '02-organisms/sections/services/services.twig' with services %}
+  </div>
+</div>
+
+{% include '02-organisms/sections/quote-bar/quote-bar.twig' with quoteBar %}
+
+<div class="o-wrapper">
+  {% include '02-organisms/sections/features/features.twig' with features %}
+</div>
+
+{# TEMP #}
+<div class="u-bg-dark" style="height: 294px;"></div>
+{# /TEMP #}
+
+<div class="o-wrapper u-pt-huge">
+  <div class="o-layout">
+    <div class="o-layout__item u-2/3@md">
+      {% include '02-organisms/lists/excerpt-list/excerpt-list.twig' with recentPosts %}
+    </div>
+  </div>
+</div>
+
+{% include '02-organisms/00-global/01-footer/footer.twig' with footer %}

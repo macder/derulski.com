@@ -169,7 +169,7 @@
     "items": [
       {
         "image": {
-          "src": "https://satyr.io/368x208/acdc",
+          "src": "https://satyr.io/368x208",
           "alt": "Lorem Ipsum",
           "title": "Lorem Ipsum"
         },
@@ -178,7 +178,7 @@
       },
       {
         "image": {
-          "src": "https://satyr.io/368x208/acdc",
+          "src": "https://satyr.io/368x208",
           "alt": "Lorem Ipsum",
           "title": "Lorem Ipsum"
         },

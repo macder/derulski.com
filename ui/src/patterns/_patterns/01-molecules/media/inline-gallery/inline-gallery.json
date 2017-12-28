@@ -1,0 +1,40 @@
+{
+  "items": [
+    {
+      "image": {
+        "src": "https://satyr.io/578x328",
+        "alt": "Lorem Ipsum",
+        "title": "Lorem Ipsum"
+      },
+      "thumb": {
+        "src": "https://satyr.io/186x106",
+        "alt": "Lorem Ipsum",
+        "title": "Lorem Ipsum"
+      }
+    },
+    {
+      "image": {
+        "src": "https://satyr.io/578x328/antiquewhite",
+        "alt": "Lorem Ipsum",
+        "title": "Lorem Ipsum"
+      },
+      "thumb": {
+        "src": "https://satyr.io/186x106/antiquewhite",
+        "alt": "Lorem Ipsum",
+        "title": "Lorem Ipsum"
+      }
+    },
+    {
+      "image": {
+        "src": "https://satyr.io/578x328/lavender",
+        "alt": "Lorem Ipsum",
+        "title": "Lorem Ipsum"
+      },
+      "thumb": {
+        "src": "https://satyr.io/186x106/lavender",
+        "alt": "Lorem Ipsum",
+        "title": "Lorem Ipsum"
+      }
+    }
+  ]
+}

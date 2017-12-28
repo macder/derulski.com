@@ -27,3 +27,8 @@
   padding: $inuit-global-spacing-unit-tiny;
   @include text-sm();
 }
+
+.c-btn--icon {
+  border: none;
+  background: none;
+}

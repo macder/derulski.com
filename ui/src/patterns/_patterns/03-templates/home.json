@@ -136,7 +136,7 @@
     ]
   },
   "recentPosts": {
-    "heading": "Recent Posts",
+    "title": "Recent Posts",
     "items": [
       {
         "title": "Lorem ipsum dolor sit amet",
@@ -169,7 +169,7 @@
     "items": [
       {
         "image": {
-          "src": "https://satyr.io/368x208",
+          "src": "https://satyr.io/320x180",
           "alt": "Lorem Ipsum",
           "title": "Lorem Ipsum"
         },
@@ -178,7 +178,7 @@
       },
       {
         "image": {
-          "src": "https://satyr.io/368x208",
+          "src": "https://satyr.io/320x180",
           "alt": "Lorem Ipsum",
           "title": "Lorem Ipsum"
         },

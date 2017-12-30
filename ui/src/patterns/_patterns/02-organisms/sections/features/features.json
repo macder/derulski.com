@@ -2,61 +2,31 @@
   "items": [
     {
       "icon": "fa-wordpress fa-fw",
-      "image": {
-        "src": "https://satyr.io/100x100/1",
-        "alt": "alt text",
-        "title": "title text"
-      },
       "heading": "Lorem Ipsum",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt. Lorem ipsum dolor sit amet. Aliquam sit amet semper elit. Morbi sem diam, laoreet in egestas et, commodo ac quam. Maecenas lacinia tempor tempus."
     },
     {
       "icon": "fa-mobile fa-fw",
-      "image": {
-        "src": "https://satyr.io/100x100/1",
-        "alt": "alt text",
-        "title": "title text"
-      },
       "heading": "Lorem Ipsum",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt. Lorem ipsum dolor sit amet. Aliquam sit amet semper elit. Morbi sem diam, laoreet in egestas et, commodo ac quam. Maecenas lacinia tempor tempus. Lorem ipsum dolor sit amet, consectetur adipiscing."
     },
     {
       "icon": "fa-github fa-fw",
-      "image": {
-        "src": "https://satyr.io/100x100/1",
-        "alt": "alt text",
-        "title": "title text"
-      },
       "heading": "Lorem Ipsum",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt. Lorem ipsum dolor sit amet. Aliquam sit amet semper elit. Morbi sem diam, laoreet in egestas et, commodo ac quam. Maecenas lacinia tempor tempus. Lorem ipsum dolor sit amet, consectetur adipiscing."
     },
     {
       "icon": "fa-cubes fa-fw",
-      "image": {
-        "src": "https://satyr.io/100x100/1",
-        "alt": "alt text",
-        "title": "title text"
-      },
       "heading": "Lorem Ipsum",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt. Lorem ipsum dolor sit amet. Aliquam sit amet semper elit. Morbi sem diam, laoreet in egestas et, commodo ac quam. Maecenas lacinia tempor tempus."
     },
     {
       "icon": "fa-universal-access fa-fw",
-      "image": {
-        "src": "https://satyr.io/100x100/1",
-        "alt": "alt text",
-        "title": "title text"
-      },
       "heading": "Lorem Ipsum",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt. Lorem ipsum dolor sit amet. Aliquam sit amet semper elit. Morbi sem diam, laoreet in egestas et, commodo ac quam. Maecenas lacinia tempor tempus."
     },
     {
       "icon": "fa-line-chart fa-fw",
-      "image": {
-        "src": "https://satyr.io/100x100/1",
-        "alt": "alt text",
-        "title": "title text"
-      },
       "heading": "Lorem Ipsum",
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt. Lorem ipsum dolor sit amet. Aliquam sit amet semper elit. Morbi sem diam, laoreet in egestas et, commodo ac quam. Maecenas lacinia tempor tempus."
     }

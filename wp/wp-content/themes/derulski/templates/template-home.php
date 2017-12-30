@@ -22,16 +22,16 @@ $context['hero'] = array(
 );
 
 $context['recent_posts'] = array_map(
-	function( $item ) {
-		return array(
-			'title' => $item->title(),
-			'date' => $item->date(),
-			'author' => $item->author()->display_name,
-			'image' => $item->thumbnail(),
-			'body' => $item->get_content(50),
-			'url' => $item->link(),
-		);
-	},
+  function( $item ) {
+    return array(
+      'title' => $item->title(),
+      'date' => $item->date(),
+      'author' => $item->author()->display_name,
+      'image' => $item->thumbnail(),
+      'body' => $item->get_content(50),
+      'url' => $item->link(),
+    );
+  },
   Timber::get_posts(
     array(
       'post_type' => 'post',

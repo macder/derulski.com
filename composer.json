@@ -25,7 +25,8 @@
     "php": ">=5.4",
     "johnpbloch/wordpress": "4.9.1",
     "wpackagist-plugin/timber-library": "*",
-    "advanced-custom-fields/advanced-custom-fields-pro": "*"
+    "advanced-custom-fields/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/wp-super-cache": "*"
   },
   "extra": {
     "wordpress-install-dir": "wp",

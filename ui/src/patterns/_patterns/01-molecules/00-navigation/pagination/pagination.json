@@ -1,0 +1,33 @@
+{
+  "prev": {
+    "get_link": "#",
+    "label": "Prev"
+  },
+  "next": {
+    "get_link": "#",
+    "label": "Next"
+  },
+  "items": [
+    {
+      "get_link": "#",
+      "label": "1"
+    },
+    {
+      "get_link": "#",
+      "label": "2"
+    },
+    {
+      "get_link": "#",
+      "label": "3",
+      "active": true
+    },
+    {
+      "get_link": "#",
+      "label": "4"
+    },
+    {
+      "get_link": "#",
+      "label": "5"
+    }
+  ]
+}

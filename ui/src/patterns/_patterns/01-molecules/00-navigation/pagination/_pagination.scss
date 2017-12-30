@@ -1,0 +1,11 @@
+.c-pagination__item-link {
+  display: inline-block;
+  padding:
+    $inuit-global-spacing-unit-tiny
+    $inuit-global-spacing-unit-small;
+}
+
+.c-pagination__item-link--active {
+  color: color(primary-link) !important;
+  background-color: color(light-background);
+}

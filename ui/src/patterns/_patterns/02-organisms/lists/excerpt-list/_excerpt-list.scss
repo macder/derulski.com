@@ -6,6 +6,7 @@
     @include border-bottom(light-border);
 
     &:last-child {
+      padding-bottom: 0;
       border-bottom: none;
     }
   }

@@ -7,9 +7,14 @@
   ],
   "require": {
     "php": ">=5.4",
-    "johnpbloch/wordpress": "4.9.1"
+    "johnpbloch/wordpress": "4.9.1",
+    "wpackagist-plugin/advanced-custom-fields": "*",
+    "wpackagist-plugin/timber-library": "*"
   },
   "extra": {
-    "wordpress-install-dir": "wp"
+    "wordpress-install-dir": "wp",
+    "installer-paths" : {
+      "wp/wp-content/plugins/{$name}/": ["type:wordpress-plugin"]
+    }
   }
 }

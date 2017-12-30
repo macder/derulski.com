@@ -1,0 +1,8 @@
+.c-cost__heading {
+  @include inuit-font-size(36px);
+}
+
+.c-cost__text,
+.c-cost__cta-link {
+  @include inuit-font-size(20px, 28px);
+}

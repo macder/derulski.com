@@ -21,6 +21,25 @@ $context['hero'] = array(
   'text' => get_field('hero_heading')
 );
 
-// print_r(get_field('cost'));
+$context['recent_posts'] = array_map(
+	function( $item ) {
+		return array(
+			'title' => $item->title(),
+			'date' => $item->date(),
+			'author' => $item->author()->display_name,
+			'image' => $item->thumbnail(),
+			'body' => $item->get_content(50),
+			'url' => $item->link(),
+		);
+	},
+  Timber::get_posts(
+    array(
+      'post_type' => 'post',
+      'posts_per_page' => '2',
+    )
+  )
+);
+
+// print_r($context['recent_posts']);
 
 Timber::render( array( 'home.twig' ), $context );

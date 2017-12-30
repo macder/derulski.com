@@ -18,4 +18,14 @@
   </div>
 
   {% include '02-organisms/sections/cost/cost.twig' with post.get_field('cost') %}
+
+  <div class="o-wrapper u-pt-large">
+    <div class="o-layout">
+      <div class="o-layout__item u-2/3@md u-pr-large@md">
+        {% include '02-organisms/lists/excerpt-list/excerpt-list.twig' with {
+          items: recent_posts
+        }%}
+      </div>
+    </div>
+  </div>
 {% endblock %}

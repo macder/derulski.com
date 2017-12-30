@@ -38,7 +38,8 @@
     {% block footer %}
       <footer id="footer">
         {% include "02-organisms/00-global/01-footer/footer.twig" with {
-          menu: secondary_menu
+          menu: secondary_menu,
+          social: social_menu
         }%}
       </footer>
     {% endblock %}

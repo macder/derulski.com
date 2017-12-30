@@ -16,4 +16,6 @@
       items: post.get_field('features')
     }%}
   </div>
+
+  {% include '02-organisms/sections/cost/cost.twig' with post.get_field('cost') %}
 {% endblock %}

@@ -21,6 +21,6 @@ $context['hero'] = array(
   'text' => get_field('hero_heading')
 );
 
-// print_r(get_field('services'));
+// print_r(get_field('cost'));
 
 Timber::render( array( 'home.twig' ), $context );

@@ -1,7 +1,7 @@
 <ul class="c-pagination o-list-inline">
   {% if prev %}
     <li class="c-pagination__item o-list-inline__item">
-      <a class="c-pagination__item-link u-link-inverse" href="{{ prev.get_link }}">
+      <a class="c-pagination__item-link u-link-inverse u-pl-none" href="{{ prev.get_link }}">
         <b>{{ prev.label }}</b>
       </a>
     </li>
@@ -15,7 +15,7 @@
   {% endfor %}
   {% if next %}
     <li class="c-pagination__item o-list-inline__item">
-      <a class="c-pagination__item-link u-link-inverse" href="{{ next.get_link }}">
+      <a class="c-pagination__item-link u-link-inverse u-pr-none" href="{{ next.get_link }}">
         <b>{{ next.label }}</b>
       </a>
     </li>

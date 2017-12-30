@@ -1,0 +1,160 @@
+{
+  "hero": {
+    "image": "/build/images/bg_hero_large.jpg",
+    "text": "Lorem ipsum dolor sit amet."
+  },
+  "posts": {
+    "items": [
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "date": "December 20, 2017",
+        "author": "Maciej Derulski",
+        "image": {
+          "src": "https://satyr.io/180x135",
+          "alt": "alt text",
+          "title": "title text"
+        },
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+        "url": "#"
+      },
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "date": "December 20, 2017",
+        "author": "Maciej Derulski",
+        "image": {
+          "src": "https://satyr.io/180x135",
+          "alt": "alt text",
+          "title": "title text"
+        },
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+        "url": "#"
+      },
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "date": "December 20, 2017",
+        "author": "Maciej Derulski",
+        "image": {
+          "src": "https://satyr.io/180x135",
+          "alt": "alt text",
+          "title": "title text"
+        },
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+        "url": "#"
+      },
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "date": "December 20, 2017",
+        "author": "Maciej Derulski",
+        "image": {
+          "src": "https://satyr.io/180x135",
+          "alt": "alt text",
+          "title": "title text"
+        },
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+        "url": "#"
+      },
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "date": "December 20, 2017",
+        "author": "Maciej Derulski",
+        "image": {
+          "src": "https://satyr.io/180x135",
+          "alt": "alt text",
+          "title": "title text"
+        },
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+        "url": "#"
+      },
+      {
+        "title": "Lorem ipsum dolor sit amet",
+        "date": "December 20, 2017",
+        "author": "Maciej Derulski",
+        "image": {
+          "src": "https://satyr.io/180x135",
+          "alt": "alt text",
+          "title": "title text"
+        },
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+        "url": "#"
+      }
+    ]
+  },
+  "pagination": {
+    "prev": {
+      "get_link": "#",
+      "label": "Prev"
+    },
+    "next": {
+      "get_link": "#",
+      "label": "Next"
+    },
+    "items": [
+      {
+        "get_link": "#",
+        "label": "1"
+      },
+      {
+        "get_link": "#",
+        "label": "2"
+      },
+      {
+        "get_link": "#",
+        "label": "3",
+        "active": true
+      },
+      {
+        "get_link": "#",
+        "label": "4"
+      },
+      {
+        "get_link": "#",
+        "label": "5"
+      }
+    ]
+  },
+
+  "sidebar": {
+    "categories": {
+      "heading": "Categories",
+      "items": [
+        {
+          "get_link": "#",
+          "title": "User Interface"
+        },
+        {
+          "get_link": "#",
+          "title": "Optimization"
+        },
+        {
+          "get_link": "#",
+          "title": "Tutorial"
+        },
+        {
+          "get_link": "#",
+          "title": "Opinion"
+        },
+        {
+          "get_link": "#",
+          "title": "Uncategorized"
+        }
+      ]
+    },
+    "popular": {
+      "heading": "Popular Posts",
+      "items": [
+        {
+          "get_link": "#",
+          "title": "Lorem ipsum dolor sit amet"
+        },
+        {
+          "get_link": "#",
+          "title": "Proin finibus sem nec enim euismod porta"
+        },
+        {
+          "get_link": "#",
+          "title": "Duis tincidunt justo"
+        }
+      ]
+    }
+  }
+}

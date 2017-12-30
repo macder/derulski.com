@@ -17,8 +17,10 @@ $context = Timber::get_context();
 $context['post'] = new TimberPost();
 
 $context['hero'] = array(
-	'image' => ( new TimberImage( get_field('hero_image') ) )->src(),
-	'text' => get_field('hero_heading')
+  'image' => ( new TimberImage( get_field('hero_image') ) )->src(),
+  'text' => get_field('hero_heading')
 );
+
+// print_r(get_field('services'));
 
 Timber::render( array( 'home.twig' ), $context );

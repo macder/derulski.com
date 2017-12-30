@@ -28,7 +28,7 @@ $context['recent_posts'] = array_map(
       'date' => $item->date(),
       'author' => $item->author()->display_name,
       'image' => $item->thumbnail(),
-      'body' => $item->get_content(50),
+      'body' => $item->preview()->read_more(false),
       'url' => $item->link(),
     );
   },

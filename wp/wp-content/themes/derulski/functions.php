@@ -86,6 +86,21 @@ class DerulskiSite extends TimberSite {
   }
 
   /**
+   * Register custom option pages in dashboard
+   *
+   */
+  public function register_options_pages() {
+    if( function_exists('acf_add_options_page') ) {
+      acf_add_options_page( array(
+        'page_title'  => 'Global Settings',
+        'menu_title'  => 'Global Settings',
+        'menu_slug'   => 'global-settings',
+        'capability'  => 'edit_posts',
+      ));
+    }
+  }
+
+  /**
    * Register all the custom post types
    *
    */

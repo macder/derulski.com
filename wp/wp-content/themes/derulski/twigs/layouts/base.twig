@@ -27,7 +27,9 @@
     <section id="content" role="main">
       <a id="main-content" aria-hidden="true"></a>
       {% block hero %}
-        {% include "01-molecules/blocks/hero/hero.twig" with hero %}
+        {% if hero %}
+          {% include "01-molecules/blocks/hero/hero.twig" with hero %}
+        {% endif %}
       {% endblock %}
 
       {% block content %}

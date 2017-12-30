@@ -1,7 +1,11 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-  <div>
-    <p>home</p>
+  <div class="u-pt-large u-bg-light">
+    <div class="o-wrapper">
+      {% include '02-organisms/sections/services/services.twig' with {
+        items: post.get_field('services')
+      }%}
+    </div>
   </div>
 {% endblock %}

@@ -13,8 +13,8 @@ Vagrant.configure("2") do |config|
     #config.vm.synced_folder ".", "/var/www", :nfs => { :mount_options => ["dmode=777","fmode=666"] }
 
     config.vm.provision "shell", inline: <<-SHELL
-        sudo sed -i s,/var/www/public,/var/www/wp,g /etc/apache2/sites-available/000-default.conf
-        sudo sed -i s,/var/www/public,/var/www/wp,g /etc/apache2/sites-available/scotchbox.local.conf
+        sudo sed -i s,/var/www/public,/var/www,g /etc/apache2/sites-available/000-default.conf
+        sudo sed -i s,/var/www/public,/var/www,g /etc/apache2/sites-available/scotchbox.local.conf
         sudo service apache2 restart
     SHELL
 end

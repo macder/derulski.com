@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "5ef01829c7497ec4123d4fb95ca261d6",
+    "content-hash": "aa84d361f1e88a8730a0e8421e9ca2df",
     "packages": [
         {
             "name": "composer/installers",
@@ -253,26 +253,6 @@
                 "wordpress"
             ],
             "time": "2017-05-31T18:42:33+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/advanced-custom-fields",
-            "version": "5.6.7",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/advanced-custom-fields/",
-                "reference": "tags/5.6.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/advanced-custom-fields.5.6.7.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/advanced-custom-fields/"
         },
         {
             "name": "wpackagist-plugin/timber-library",

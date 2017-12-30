@@ -14,11 +14,25 @@ class DerulskiSite extends TimberSite {
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'menus' );
     add_theme_support( 'html5', array( 'comment-list', 'comment-form', 'search-form', 'gallery', 'caption' ) );
+
+    // add stuff to Timber context
     add_filter( 'timber_context', array( $this, 'add_to_context' ) );
+
+    // register custom Twig functions/extensions
     add_filter( 'get_twig', array( $this, 'add_to_twig' ) );
+
+    // register all the custom post types
     add_action( 'init', array( $this, 'register_post_types' ) );
+
+    // register all the custom taxonomies
     add_action( 'init', array( $this, 'register_taxonomies' ) );
+
+    // register all the menus
     add_action( 'init', array( $this, 'register_menus' ) );
+
+    // register all the dashboards custom option pages
+    add_action( 'init', array( $this, 'register_options_pages' ) );
+
     // use newer jQuery from CDN
     add_action( 'wp_enqueue_scripts', array( $this, 'include_jquery') );
     parent::__construct();

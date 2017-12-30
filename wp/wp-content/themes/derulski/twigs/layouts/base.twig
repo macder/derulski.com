@@ -31,10 +31,14 @@
     </section>
 
     {% block footer %}
-
+      <footer id="footer">
+        {% include "02-organisms/00-global/01-footer/footer.twig" with {
+          menu: secondary_menu
+        }%}
+      </footer>
     {% endblock %}
     {{ function('wp_footer') }}
-    {# <script defer src="/build/bundle.js"></script> #}
+    <script defer src="/build/bundle.js"></script>
 
   </body>
 </html>

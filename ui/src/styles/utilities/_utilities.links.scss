@@ -11,3 +11,7 @@
 .u-link-secondary {
   @include link-secondary();
 }
+
+.u-link-inverse {
+  @include link-inverse();
+}

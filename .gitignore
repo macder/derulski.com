@@ -1,4 +1,5 @@
 .vagrant
+.env
 /ui/node_modules
 /ui/build
 

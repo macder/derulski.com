@@ -19,6 +19,8 @@ class DerulskiSite extends TimberSite {
     add_action( 'init', array( $this, 'register_post_types' ) );
     add_action( 'init', array( $this, 'register_taxonomies' ) );
     add_action( 'init', array( $this, 'register_menus' ) );
+    // use newer jQuery from CDN
+    add_action( 'wp_enqueue_scripts', array( $this, 'include_jquery') );
     parent::__construct();
   }
 
@@ -48,6 +50,16 @@ class DerulskiSite extends TimberSite {
     $twig->addExtension( new Twig_Extension_StringLoader() );
     // $twig->addFilter('myfoo', new Twig_SimpleFilter('myfoo', array($this, 'myfoo')));
     return $twig;
+  }
+
+  /**
+   * Use newer jQuery from CDN
+   *
+   */
+  public function include_jquery() {
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js', array(), null, true);
+    wp_enqueue_script("jquery");
   }
 
   /**

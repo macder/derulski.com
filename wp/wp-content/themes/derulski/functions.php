@@ -31,6 +31,7 @@ class DerulskiSite extends TimberSite {
    */
   public function add_to_context( $context ) {
     $context['primary_menu'] = ( new TimberMenu('primary') )->get_items();
+    $context['secondary_menu'] = ( new TimberMenu('secondary') )->get_items();
     $context['site'] = $this;
     return $context;
   }
@@ -55,6 +56,7 @@ class DerulskiSite extends TimberSite {
    */
   public function register_menus() {
     register_nav_menu('primary', 'Primary Navigation');
+    register_nav_menu('secondary', 'Footer Navigation');
   }
 
   /**

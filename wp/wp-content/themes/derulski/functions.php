@@ -9,7 +9,7 @@ Timber::$dirname = array('templates', 'twigs');
 
 class DerulskiSite extends TimberSite {
 
-  function __construct() {
+  public function __construct() {
     add_theme_support( 'post-formats' );
     add_theme_support( 'post-thumbnails' );
     add_theme_support( 'menus' );
@@ -21,15 +21,14 @@ class DerulskiSite extends TimberSite {
     parent::__construct();
   }
 
-  function register_post_types() {
-    //this is where you can register custom post types
-  }
-
-  function register_taxonomies() {
-    //this is where you can register custom taxonomies
-  }
-
-  function add_to_context( $context ) {
+  /**
+   * Adds sitewide values to Timber context
+   *
+   * @param $context array
+   *
+   * @return array
+   */
+  public function add_to_context( $context ) {
     $context['foo'] = 'bar';
     $context['stuff'] = 'I am a value set in your functions.php file';
     $context['notes'] = 'These values are available everytime you call Timber::get_context();';
@@ -38,13 +37,43 @@ class DerulskiSite extends TimberSite {
     return $context;
   }
 
-  function add_to_twig( $twig ) {
+  /**
+   * Add functions/extensions to Twig
+   *
+   * @param $twig Twig_Environment
+   *
+   * @return Twig_Environment
+   */
+  public function add_to_twig( $twig ) {
     /* this is where you can add your own functions to twig */
     $twig->addExtension( new Twig_Extension_StringLoader() );
     // $twig->addFilter('myfoo', new Twig_SimpleFilter('myfoo', array($this, 'myfoo')));
     return $twig;
   }
 
+  /**
+   * Register custom menus
+   *
+   */
+  public function register_menus() {
+
+  }
+
+  /**
+   * Register all the custom post types
+   *
+   */
+  public function register_post_types() {
+    //this is where you can register custom post types
+  }
+
+  /**
+   * Register all the custom taxonomies
+   *
+   */
+  public function register_taxonomies() {
+    //this is where you can register custom taxonomies
+  }
 }
 
 new DerulskiSite();

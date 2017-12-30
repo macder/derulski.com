@@ -8,11 +8,19 @@
  *
  */
 
-@mixin link-secondary() {
-  color: color(secondary-link);
+@mixin link($color, $hover) {
+  color: color($color);
   &:hover {
-    color: color(secondary-link-hover);
+    color: color($hover);
     text-decoration: none;
     transition: .2s ease-in-out;
   }
+}
+
+@mixin link-secondary() {
+  @include link(secondary-link, secondary-link-hover);
+}
+
+@mixin link-inverse() {
+  @include link(inverse-link, inverse-link-hover);
 }

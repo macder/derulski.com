@@ -3,12 +3,29 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.6.7",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+        },
+        "require": {
+          "philippbaschke/acf-pro-installer": "^1.0",
+          "composer/installers": "^1.0"
+        }
+      }
     }
   ],
   "require": {
     "php": ">=5.4",
     "johnpbloch/wordpress": "4.9.1",
-    "wpackagist-plugin/timber-library": "*"
+    "wpackagist-plugin/timber-library": "*",
+    "advanced-custom-fields/advanced-custom-fields-pro": "*"
   },
   "extra": {
     "wordpress-install-dir": "wp",

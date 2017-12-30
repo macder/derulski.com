@@ -17,6 +17,10 @@
   }
 }
 
+@mixin link-primary() {
+  @include link(primary-link, primary-link-hover);
+}
+
 @mixin link-secondary() {
   @include link(secondary-link, secondary-link-hover);
 }

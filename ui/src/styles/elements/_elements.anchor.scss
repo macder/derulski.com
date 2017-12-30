@@ -1,8 +1,4 @@
 a {
-  color: color(primary-link);
+  @include link-primary();
   text-decoration: none;
-  &:hover {
-    text-decoration: underline;
-    // transition: .2s ease-in-out;
-  }
 }

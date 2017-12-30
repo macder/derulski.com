@@ -15,7 +15,9 @@
   <body data-template="base.twig">
     <a href="#main-content" class="u-hidden-visually">skip to main content</a>
     {% block header %}
-
+      {% include "02-organisms/00-global/00-header/header.twig" with {
+        items: primary_menu
+      }%}
     {% endblock %}
 
     <section id="content" role="main">

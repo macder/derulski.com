@@ -107,6 +107,14 @@ class DerulskiSite extends TimberSite {
         'parent_slug' => 'global-settings',
         'menu_slug'   => 'footer-settings',
       ));
+
+      acf_add_options_page( array(
+        'page_title'  => 'Post Settings',
+        'menu_title'  => 'Post Settings',
+        'menu_slug'   => 'post-settings',
+        'parent_slug' => 'edit.php',
+        'capability'  => 'edit_posts',
+      ));
     }
   }
 

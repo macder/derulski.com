@@ -152,7 +152,6 @@
 @import "../patterns/_patterns/01-molecules/00-navigation/pagination/pagination";
 @import "../patterns/_patterns/01-molecules/blocks/hero/hero";
 @import "../patterns/_patterns/01-molecules/media/inline-gallery/inline-gallery";
-@import "../patterns/_patterns/01-molecules/media/inline-gallery/slider";
 @import "../patterns/_patterns/01-molecules/media/thumb-overlay-link/thumb-overlay-link";
 @import "../patterns/_patterns/01-molecules/text/excerpt/excerpt";
 @import "../patterns/_patterns/01-molecules/toggles/hamburger/hamburger";
@@ -187,4 +186,5 @@ $inuit-offsets: true;
 @import "utilities/utilities.typography";
 
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
 

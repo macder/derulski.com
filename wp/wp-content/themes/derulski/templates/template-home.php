@@ -18,7 +18,8 @@ $context['post'] = new TimberPost();
 
 $context['hero'] = array(
   'image' => ( new TimberImage( get_field('hero_image') ) )->src(),
-  'text' => get_field('hero_heading')
+  'text' => get_field('hero_heading'),
+  'sub_text' => get_field('hero_sub_text'),
 );
 
 $context['recent_posts'] = array_map(

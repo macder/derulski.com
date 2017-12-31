@@ -18,7 +18,8 @@ $context = Timber::get_context();
 $hero = get_field('hero_blog_index', 'option');
 $context['hero'] = array(
   'image' => ( new TimberImage( $hero['hero']['image'] ) )->src(),
-  'text' => $hero['hero']['heading']
+  'text' => $hero['hero']['heading'],
+  'sub_text' => $hero['hero']['sub_text'],
 );
 
 $query = new Timber\PostQuery();

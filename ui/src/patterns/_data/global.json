@@ -42,17 +42,17 @@
       {
         "get_link": "#",
         "icon": "fa-github-square fa-2x",
-        "label": "GitHub Profile"
+        "name": "GitHub Profile"
       },
       {
         "get_link": "#",
         "icon": "fa-linkedin-square fa-2x",
-        "label": "LinkedIn Profile"
+        "name": "LinkedIn Profile"
       },
       {
         "get_link": "#",
         "icon": "fa-twitter-square fa-2x",
-        "label": "Twitter Profile"
+        "name": "Twitter Profile"
       }
     ],
     "copyr": "Copyright &copy; 2018 - Maciej Derulski"

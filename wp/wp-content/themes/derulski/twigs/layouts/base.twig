@@ -2,7 +2,13 @@
 <html {{ site.language_attributes }}>
 <head>
   <meta charset="{{ site.charset }}">
-  <title>{{ wp_title }}</title>
+  <title>
+    {% if wp_title %}
+      {{ wp_title }} | {{ site.name }}
+    {% else %}
+      {{ site.name }} | {{ site.description }}
+    {% endif %}
+  </title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">

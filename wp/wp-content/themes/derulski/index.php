@@ -21,6 +21,8 @@ $context['hero'] = array(
   'text' => $hero['hero']['heading']
 );
 
+$query = new Timber\PostQuery();
+
 $context['posts'] = array_map(
   function( $item ) {
     return array(
@@ -32,9 +34,9 @@ $context['posts'] = array_map(
       'url' => $item->link(),
     );
   },
-  Timber::get_posts()
+  $query->get_posts()
 );
 
-// print_r($context['posts']);
+$context['pagination'] = get_object_vars( $query->pagination() );
 
 Timber::render( array( 'index.twig' ), $context );

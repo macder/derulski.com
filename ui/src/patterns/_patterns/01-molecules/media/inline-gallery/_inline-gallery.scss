@@ -6,6 +6,7 @@
 
 .c-inline-gallery__nav-item {
   margin-right: $inuit-global-spacing-unit-tiny;
+  cursor: pointer;
 
   &:last-child {
     margin-right: 0;

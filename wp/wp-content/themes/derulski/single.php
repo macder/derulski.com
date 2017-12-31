@@ -14,11 +14,11 @@ $post = Timber::query_post();
 $context['post'] = $post;
 
 $template = ( post_password_required( $post->ID ) )
-	? 'single-password.twig'
-	: array(
-			'single-' . $post->ID . '.twig',
-			'single-' . $post->post_type . '.twig',
-			'single.twig'
-		);
+  ? 'single-password.twig'
+  : array(
+      'single-' . $post->ID . '.twig',
+      'single-' . $post->post_type . '.twig',
+      'single.twig'
+    );
 
 Timber::render( $template, $context );

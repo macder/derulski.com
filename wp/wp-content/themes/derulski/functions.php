@@ -124,7 +124,24 @@ class DerulskiSite extends TimberSite {
    *
    */
   public function register_post_types() {
-    //this is where you can register custom post types
+    register_post_type( 'project',
+      array(
+        'labels' => array(
+          'name' => 'Projects',
+          'singular_name' => 'Project'
+        ),
+        'supports' => array(
+          'page-attributes',
+          'title',
+        ),
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 5,
+        'public' => true,
+        'has_archive' => true,
+        'rewrite' => array('slug' => 'projects'),
+      )
+    );
   }
 
   /**

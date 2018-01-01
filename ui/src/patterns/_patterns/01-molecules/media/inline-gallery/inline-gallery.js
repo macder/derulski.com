@@ -30,12 +30,8 @@ export default class InlineGallery {
    */
   initSwiper() {
     this.swiper = new Swiper ('.gallery-top', {
-      cubeEffect: {
-        shadow: false,
-        slideShadows: false,
-      },
-      effect: 'cube',
-      speed: 800,
+      speed: 1200,
+      effect: 'flip',
     });
   }
 

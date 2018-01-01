@@ -1,0 +1,255 @@
+{
+  "hero": {
+    "image": "/build/images/bg_hero_large.jpg",
+    "text": "Lorem ipsum dolor sit amet."
+  },
+  "projects": {
+    "items": [
+      {
+        "gallery": [
+          {
+            "image": {
+              "src": "https://satyr.io/564x320",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          },
+          {
+            "image": {
+              "src": "https://satyr.io/564x320/antiquewhite",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104/antiquewhite",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          },
+          {
+            "image": {
+              "src": "https://satyr.io/564x320/lavender",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104/lavender",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          }
+        ],
+        "summary": {
+          "title": "Lorem Ipsum Dolor Sit",
+          "sub_heading": "Sed Euismod Malesuada",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis semper urna, at condimentum neque accumsan eu. Vivamus pellentesque mi libero, in lobortis metus auctor in. Proin sit amet libero augue. Vestibulum a venenatis dui, vitae pellentesque arcu. Donec pharetra id mauris suscipit finibus.",
+          "list": {
+            "items": [
+              "Lorem ipsum",
+              "Dolor sit",
+              "Consectetur",
+              "Semper urna"
+            ]
+          }
+        }
+      },
+      {
+        "reverse_layout": true,
+        "gallery": [
+          {
+            "image": {
+              "src": "https://satyr.io/564x320",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          },
+          {
+            "image": {
+              "src": "https://satyr.io/564x320/antiquewhite",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104/antiquewhite",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          },
+          {
+            "image": {
+              "src": "https://satyr.io/564x320/lavender",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104/lavender",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          }
+        ],
+        "summary": {
+          "title": "Lorem Ipsum Dolor Sit",
+          "sub_heading": "Sed Euismod Malesuada",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis semper urna, at condimentum neque accumsan eu. Vivamus pellentesque mi libero, in lobortis metus auctor in. Proin sit amet libero augue. Vestibulum a venenatis dui, vitae pellentesque arcu. Donec pharetra id mauris suscipit finibus.",
+          "list": {
+            "items": [
+              "Lorem ipsum",
+              "Dolor sit",
+              "Consectetur",
+              "Semper urna"
+            ]
+          }
+        }
+      },
+      {
+        "gallery": [
+          {
+            "image": {
+              "src": "https://satyr.io/564x320",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          },
+          {
+            "image": {
+              "src": "https://satyr.io/564x320/antiquewhite",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104/antiquewhite",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          },
+          {
+            "image": {
+              "src": "https://satyr.io/564x320/lavender",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104/lavender",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          }
+        ],
+        "summary": {
+          "title": "Lorem Ipsum Dolor Sit",
+          "sub_heading": "Sed Euismod Malesuada",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis semper urna, at condimentum neque accumsan eu. Vivamus pellentesque mi libero, in lobortis metus auctor in. Proin sit amet libero augue. Vestibulum a venenatis dui, vitae pellentesque arcu. Donec pharetra id mauris suscipit finibus.",
+          "list": {
+            "items": [
+              "Lorem ipsum",
+              "Dolor sit",
+              "Consectetur",
+              "Semper urna"
+            ]
+          }
+        }
+      },
+      {
+        "reverse_layout": true,
+        "gallery": [
+          {
+            "image": {
+              "src": "https://satyr.io/564x320",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          },
+          {
+            "image": {
+              "src": "https://satyr.io/564x320/antiquewhite",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104/antiquewhite",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          },
+          {
+            "image": {
+              "src": "https://satyr.io/564x320/lavender",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            },
+            "thumb": {
+              "src": "https://satyr.io/182x104/lavender",
+              "alt": "Lorem Ipsum",
+              "title": "Lorem Ipsum"
+            }
+          }
+        ],
+        "summary": {
+          "title": "Lorem Ipsum Dolor Sit",
+          "sub_heading": "Sed Euismod Malesuada",
+          "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis semper urna, at condimentum neque accumsan eu. Vivamus pellentesque mi libero, in lobortis metus auctor in. Proin sit amet libero augue. Vestibulum a venenatis dui, vitae pellentesque arcu. Donec pharetra id mauris suscipit finibus.",
+          "list": {
+            "items": [
+              "Lorem ipsum",
+              "Dolor sit",
+              "Consectetur",
+              "Semper urna"
+            ]
+          }
+        }
+      }
+    ]
+  },
+  "pagination": {
+    "prev": {
+      "link": "#"
+    },
+    "next": {
+      "link": "#"
+    },
+    "pages": [
+      {
+        "link": "#",
+        "title": "1"
+      },
+      {
+        "link": "#",
+        "title": "2"
+      },
+      {
+        "link": "#",
+        "title": "3",
+        "current": true
+      },
+      {
+        "link": "#",
+        "title": "4"
+      },
+      {
+        "link": "#",
+        "title": "5"
+      }
+    ]
+  }
+}

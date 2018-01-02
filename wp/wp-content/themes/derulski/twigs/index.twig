@@ -2,6 +2,10 @@
 
 {% block content %}
 
-  {% include '03-templates/blog-index.twig' %}
+  {% embed '03-templates/blog-index.twig' %}
+    {% block sidebar %}
+      {{ sidebar }}
+    {% endblock %}
+  {% endembed %}
 
 {% endblock %}

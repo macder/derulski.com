@@ -1,5 +1,12 @@
 <div class="o-wrapper u-pt-large">
   <div class="o-layout">
+
+    {% if index_name %}
+      <div class="o-layout__item u-2/3@md u-pt u-pr-large@md">
+        <h2 class="u-text-center">{{ index_name }}</h2>
+      </div>
+    {% endif %}
+
     <div class="o-layout__item u-2/3@md u-pt u-pr-large@md">
       {% include '02-organisms/lists/excerpt-list/excerpt-list.twig' with {
         items: posts

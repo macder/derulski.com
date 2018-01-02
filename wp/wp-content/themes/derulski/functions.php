@@ -34,6 +34,8 @@ class DerulskiSite extends TimberSite {
     // register all the dashboards custom option pages
     add_action( 'init', array( $this, 'register_options_pages' ) );
 
+    add_action( 'widgets_init', array( $this, 'register_widgets' ) );
+
     // use newer jQuery from CDN
     add_action( 'wp_enqueue_scripts', array( $this, 'include_jquery') );
     parent::__construct();
@@ -158,6 +160,21 @@ class DerulskiSite extends TimberSite {
    */
   public function register_taxonomies() {
     //this is where you can register custom taxonomies
+  }
+
+  /**
+   * Register all the custom taxonomies
+   *
+   */
+  public function register_widgets () {
+    register_sidebar( array(
+      'name'          => 'Blog index sidebar',
+      'id'            => 'blog_index_sidebar',
+      'before_widget' => '<div class="c-blog-sidebar__item o-box">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3 class="c-horizontal-text-menu__heading u-text-center">',
+      'after_title'   => '</h3>',
+    ) );
   }
 }
 

@@ -14,5 +14,31 @@
  */
 
 $context = Timber::get_context();
-$context['posts'] = Timber::get_posts();
+
+$hero = get_field('hero_blog_index_content', 'option');
+
+$context['hero'] = array(
+  'image' => ( new TimberImage( $hero['hero']['image'] ) )->src(),
+  'text' => $hero['hero']['heading'],
+  'sub_text' => $hero['hero']['sub_text'],
+);
+
+$query = new Timber\PostQuery();
+
+$context['posts'] = array_map(
+  function( $item ) {
+    return array(
+      'title' => $item->title(),
+      'date' => $item->date(),
+      'author' => $item->author()->display_name,
+      'image' => $item->thumbnail(),
+      'body' => $item->preview()->read_more(false),
+      'url' => $item->link(),
+    );
+  },
+  $query->get_posts()
+);
+
+$context['pagination'] = get_object_vars( $query->pagination() );
+
 Timber::render( array( 'index.twig' ), $context );

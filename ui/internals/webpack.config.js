@@ -30,6 +30,7 @@ module.exports = [{
         include: [
           path.resolve(process.cwd(), 'src'),
         ],
+        exclude: /node_modules\/(?!(dom7|swiper)\/).*/,
         query: {
           plugins: ['transform-class-properties'],
           presets: [['es2015', {modules: false}]]

@@ -1,11 +1,14 @@
-.c-inline-gallery__nav {
+@import "node_modules/swiper/dist/css/swiper";
+
+.c-inline-gallery {
   max-width: 578px;
 }
 
 .c-inline-gallery__nav-item {
+  // margin-right: $inuit-global-spacing-unit-tiny;
   cursor: pointer;
-}
 
-.c-inline-gallery__nav-thumb {
-  width: 100%;
+  &:last-child {
+    // margin-right: 0;
+  }
 }

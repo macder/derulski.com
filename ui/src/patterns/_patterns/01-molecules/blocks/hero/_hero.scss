@@ -18,6 +18,9 @@
 .c-hero__text {
   width: 100%;
   @include va-align(50%);
+}
+
+.c-hero__text-main {
   @include text-md();
 
   @include mq(sm) {
@@ -26,5 +29,11 @@
 
   @include mq(md) {
     @include text-xlg();
+  }
+}
+
+.c-hero__text-sub {
+  @include mq(md) {
+     @include inuit-font-size($inuit-font-size-h4);
   }
 }

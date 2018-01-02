@@ -1,0 +1,12 @@
+<div class="c-project-details">
+  <div class="o-layout {{ reverse_layout ? 'o-layout--reverse' }}">
+    <div class="o-layout__item u-1/2@md">
+      {% include '01-molecules/text/summary/summary.twig' with summary %}
+    </div>
+    <div class="o-layout__item u-1/2@md">
+      {% include '01-molecules/media/inline-gallery/inline-gallery.twig' with {
+        items: gallery
+      }%}
+    </div>
+  </div>
+</div>

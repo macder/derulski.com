@@ -26,6 +26,30 @@
   @include text-sm;
 }
 
+.u-text-h1 {
+  @include text-h1;
+}
+
+.u-text-h2 {
+  @include text-h2;
+}
+
+.u-text-h3 {
+  @include text-h3;
+}
+
+.u-text-h4 {
+  @include text-h4;
+}
+
+.u-text-h5 {
+  @include text-h5;
+}
+
+.u-text-h6 {
+  @include text-h6;
+}
+
 .u-text-center {
   @include text-justify(center);
 }
@@ -56,6 +80,10 @@
 
 .u-text-secondary {
   color: color(secondary-text);
+}
+
+.u-text-normal {
+  font-weight: normal;
 }
 
 .u-text-light {

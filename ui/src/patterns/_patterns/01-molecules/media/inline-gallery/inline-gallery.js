@@ -1,30 +1,60 @@
-import $ from 'jquery';
-import 'slick-carousel';
+import Swiper from 'swiper/dist/js/swiper.js';
 
 export default class InlineGallery {
 
   /**
-   * Temporary image slider code
-   * Will be replaced soon
+   *
    */
   constructor() {
+    this.$j = jQuery;
+    this.swiper = {};
+    this.init();
+    this.listen();
+  }
 
-    // TEMP
-    $('.slider-for').slick({
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows: false,
-      fade: true,
-      asNavFor: '.slider-nav'
+  /**
+   * Init all components when DOM ready
+   *
+   * @return {void}
+   */
+  init() {
+    this.$j(document).ready( () => {
+      this.initSwiper();
     });
-    $('.slider-nav').slick({
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      asNavFor: '.slider-for',
-      arrows: false,
-      // dots: true,
-      // centerMode: true,
-      focusOnSelect: true
+  }
+
+  /**
+   * Init swiper
+   *
+   * @return {void}
+   */
+  initSwiper() {
+    this.swiper = new Swiper ('.gallery-top', {
+      speed: 1200,
+      effect: 'flip',
+    });
+  }
+
+  /**
+   * Init event listeners
+   *
+   * @return {void}
+   */
+  listen() {
+    this.thumbClick();
+  }
+
+  /**
+   * Listen for a click on thumb
+   * Transition to slide with same index
+   *
+   * @return {void}
+   */
+  thumbClick() {
+    this.$j('.c-inline-gallery__nav-item').click( (e) => {
+      this.swiper.slideTo(
+        this.$j(e.currentTarget).data('index')
+      );
     });
   }
 }

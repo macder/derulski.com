@@ -152,13 +152,13 @@
 @import "../patterns/_patterns/01-molecules/00-navigation/pagination/pagination";
 @import "../patterns/_patterns/01-molecules/blocks/hero/hero";
 @import "../patterns/_patterns/01-molecules/media/inline-gallery/inline-gallery";
-@import "../patterns/_patterns/01-molecules/media/inline-gallery/slider";
 @import "../patterns/_patterns/01-molecules/media/thumb-overlay-link/thumb-overlay-link";
 @import "../patterns/_patterns/01-molecules/text/excerpt/excerpt";
 @import "../patterns/_patterns/01-molecules/toggles/hamburger/hamburger";
 @import "../patterns/_patterns/02-organisms/00-global/00-header/header";
 @import "../patterns/_patterns/02-organisms/00-global/01-footer/footer";
 @import "../patterns/_patterns/02-organisms/lists/excerpt-list/excerpt-list";
+@import "../patterns/_patterns/02-organisms/sections/cost/cost";
 @import "../patterns/_patterns/02-organisms/sections/featured-projects/featured-projects";
 @import "../patterns/_patterns/02-organisms/sections/features/features";
 @import "../patterns/_patterns/02-organisms/sections/quote-bar/quote-bar";
@@ -186,4 +186,5 @@ $inuit-offsets: true;
 @import "utilities/utilities.typography";
 
 @import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
 

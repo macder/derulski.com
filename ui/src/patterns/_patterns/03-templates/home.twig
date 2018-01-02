@@ -1,19 +1,17 @@
-<div class="u-pos-fixed">
-  {% include '02-organisms/00-global/00-header/header.twig' with primary_nav %}
-</div>
-
-{% include '01-molecules/blocks/hero/hero.twig' with hero %}
-
 <div class="u-pt-large u-bg-light">
   <div class="o-wrapper">
-    {% include '02-organisms/sections/services/services.twig' with services %}
+    {% include '02-organisms/sections/services/services.twig' with {
+      items: services
+    }%}
   </div>
 </div>
 
-{% include '02-organisms/sections/quote-bar/quote-bar.twig' with quoteBar %}
+{% include '02-organisms/sections/quote-bar/quote-bar.twig' with quote_bar %}
 
 <div class="o-wrapper">
-  {% include '02-organisms/sections/features/features.twig' with features %}
+  {% include '02-organisms/sections/features/features.twig' with {
+    items: features
+  }%}
 </div>
 
 {% include '02-organisms/sections/cost/cost.twig' with cost %}
@@ -21,13 +19,10 @@
 <div class="o-wrapper u-pt-large">
   <div class="o-layout">
     <div class="o-layout__item u-2/3@md u-pr-large@md">
-      {% include '02-organisms/lists/excerpt-list/excerpt-list.twig' with recentPosts %}
+      {% include '02-organisms/lists/excerpt-list/excerpt-list.twig' with recent_posts %}
     </div>
-
     <div class="o-layout__item u-1/3@md">
-      {% include '02-organisms/sections/featured-projects/featured-projects.twig' with featuredProjects %}
+      {# {% include '02-organisms/sections/featured-projects/featured-projects.twig' with featuredProjects %} #}
     </div>
   </div>
 </div>
-
-{% include '02-organisms/00-global/01-footer/footer.twig' with footer %}

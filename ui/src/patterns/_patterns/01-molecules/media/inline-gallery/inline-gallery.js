@@ -41,7 +41,7 @@ export default class InlineGallery {
    * @return {void}
    */
   listen() {
-    this.thumbClick();
+    // this.thumbClick();
   }
 
   /**

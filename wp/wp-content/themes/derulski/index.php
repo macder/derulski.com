@@ -39,6 +39,10 @@ $context['posts'] = array_map(
   $query->get_posts()
 );
 
+$context['sidebar'] = Timber::get_widgets('blog_sidebar');
+
 $context['pagination'] = get_object_vars( $query->pagination() );
+
+$context['index_name'] = get_the_archive_title();
 
 Timber::render( array( 'index.twig' ), $context );

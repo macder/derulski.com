@@ -1,16 +1,13 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-  {% embed '03-templates/post.twig' with
-    {
-      article: {
-        title: post.title,
-        date: post.date,
-        author: post.author,
-        body: post.content,
-      }
-    }
-  %}
+
+  {% embed '03-templates/post.twig' with {
+    title: post.title,
+    date: post.date,
+    author: post.author,
+    body: post.content,
+  } %}
 
     {% block sidebar %}
       {{ sidebar }}

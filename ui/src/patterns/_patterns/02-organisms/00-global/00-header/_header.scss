@@ -35,6 +35,7 @@
     @include mq(md) {
       // magic number - only instance of this font size ¯\_(*)_/¯
       @include inuit-font-size(18px);
+      @include text-weight($global-font-weight-regular);
     }
   }
 }

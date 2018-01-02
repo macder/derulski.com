@@ -8,5 +8,6 @@
   li {
     margin-left: 0;
     margin-bottom: $inuit-global-spacing-unit-small;
+    @include text-weight($global-font-weight-regular);
   }
 }

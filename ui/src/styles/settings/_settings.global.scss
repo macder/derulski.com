@@ -16,7 +16,7 @@ $mq-breakpoints: (
 
 $inuit-widths-breakpoint-separator: \@ !default;
 
-$inuit-wrapper-width: 1200px;
+$inuit-wrapper-width: 1400px;
 
 // $inuit-fractions: 1 2 3 4 5;
 
@@ -56,19 +56,51 @@ $inuit-responsive-spacing-sizes:
   $inuit-spacing-sizes !default;
 
 $global-font: 'Ubuntu', sans-serif;
+$global-font-weight-light: 300;
+$global-font-weight-regular: 400;
+$global-font-weight-bold: 500;
+
 // $inuit-global-font-size: 18px;
 
-$inuit-font-size-h1:  36px !default;
-$inuit-font-size-h2:  28px !default;
-$inuit-font-size-h3:  24px !default;
-$inuit-font-size-h4:  20px !default;
-$inuit-font-size-h5:  18px !default;
-$inuit-font-size-h6:  16px !default;
+// $inuit-global-font-size: 18px;
+$inuit-global-line-height:  28px;
 
-$global-font-size-xlg: 48px;
-$global-font-size-lg:  32px;
-$global-font-size-md:  24px;
+$inuit-font-size-h1:  32px !default;
+$inuit-font-size-h1-desktop:  48px !default;
+
+$inuit-font-size-h2:  26px !default;
+$inuit-font-size-h2-desktop:  36px !default;
+
+$inuit-font-size-h3:  22px !default;
+$inuit-font-size-h3-desktop:  28px !default;
+
+$inuit-font-size-h4:  18px !default;
+$inuit-font-size-h4-desktop:  18px !default;
+
+$inuit-font-size-h5:  14px !default;
+$inuit-font-size-h5-desktop:  16px !default;
+
+$inuit-font-size-h6:  12px !default;
+$inuit-font-size-h6-desktop:  14px !default;
+
+
+$global-font-size-huge: 32px;
+$global-font-size-huge-desktop: 48px;
+
+$global-font-size-xlg: 26px;
+$global-font-size-xlg-desktop: 36px;
+
+$global-font-size-lg:  22px;
+$global-font-size-lg-desktop:  28px;
+
+$global-font-size-md:  18px;
+$global-font-size-md-desktop:  18px;
+
 $global-font-size-sm:  14px;
+$global-font-size-sm-desktop:  16px;
+
+$global-font-size-xsm:  12px;
+$global-font-size-xsm-desktop:  14px;
 
 $global-header-height: 72px;
 $global-burger-layer-height: 2px;

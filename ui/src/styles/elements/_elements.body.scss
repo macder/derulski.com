@@ -1,5 +1,6 @@
 body {
   @include text-default;
   font-family: $global-font;
+  @include text-weight($global-font-weight-light);
   color: color(primary-text);
 }

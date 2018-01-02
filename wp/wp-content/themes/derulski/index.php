@@ -39,7 +39,7 @@ $context['posts'] = array_map(
   $query->get_posts()
 );
 
-$context['sidebar'] = Timber::get_widgets('blog_index_sidebar');
+$context['sidebar'] = Timber::get_widgets('blog_sidebar');
 
 $context['pagination'] = get_object_vars( $query->pagination() );
 

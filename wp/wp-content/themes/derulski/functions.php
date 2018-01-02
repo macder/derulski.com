@@ -163,14 +163,14 @@ class DerulskiSite extends TimberSite {
   }
 
   /**
-   * Register all the custom taxonomies
+   * Register sidebar widget areas
    *
    */
   public function register_widgets () {
     register_sidebar( array(
-      'name'          => 'Blog index sidebar',
-      'id'            => 'blog_index_sidebar',
-      'before_widget' => '<div class="c-blog-sidebar__item o-box">',
+      'name'          => 'Blog sidebar',
+      'id'            => 'blog_sidebar',
+      'before_widget' => '<div class="c-sidebar__item o-box">',
       'after_widget'  => '</div>',
       'before_title'  => '<h3 class="c-horizontal-text-menu__heading u-text-center">',
       'after_title'   => '</h3>',

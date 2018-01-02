@@ -1,6 +1,7 @@
 <div class="c-project-list">
   {% for item in items %}
-    <div class="c-project-list__item u-pv-huge {{ loop.index is divisible by(2) ? 'u-bg-dim' }} ">
+    {% set reverse_layout = loop.index is divisible by(2) ? true : false %}
+    <div class="c-project-list__item u-pv-huge {{ reverse_layout ? 'u-bg-dim' }} ">
       <div class="o-wrapper">
         {% include '02-organisms/sections/project-details/project-details.twig' with item %}
       </div>

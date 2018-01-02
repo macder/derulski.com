@@ -19,6 +19,13 @@ $context['hero'] = array(
   'sub_text' => $hero['hero']['sub_text'],
 );
 
+$query = new Timber\PostQuery(
+  array(
+    'posts_per_page' => '4',
+    'post_type' => 'project'
+  )
+);
+
 $context['projects'] = array_map(
   function( $item ) {
     return array(
@@ -45,10 +52,7 @@ $context['projects'] = array_map(
       ),
     );
   },
-  ( new Timber\PostQuery( array(
-    'posts_per_page' => '4',
-    'post_type' => 'project'
-  )))->get_posts()
+  $query->get_posts()
 );
 
 Timber::render('archive-project.twig', $context );

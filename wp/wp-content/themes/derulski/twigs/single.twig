@@ -1,16 +1,14 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-  <div class="o-wrapper u-pt-huge">
-    <div class="o-layout u-mv-large">
-      <div class="o-layout__item u-2/3@md">
-        {% include '02-organisms/text/article/article.twig' with {
-          title: post.title,
-          date: post.date,
-          author: post.author,
-          body: post.content,
-        }%}
-      </div>
-    </div>
-  </div>
+
+  {% include '03-templates/post.twig' with {
+    article: {
+      title: post.title,
+      date: post.date,
+      author: post.author,
+      body: post.content,
+    }
+  } %}
+
 {% endblock %}

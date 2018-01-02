@@ -146,8 +146,8 @@ class DerulskiSite extends TimberSite {
         'show_in_menu' => true,
         'menu_position' => 5,
         'public' => true,
-        'has_archive' => true,
-        'rewrite' => array('slug' => 'projects'),
+        'has_archive' => 'projects',
+        'rewrite' => array('slug' => 'project'),
       )
     );
   }

@@ -40,7 +40,7 @@
   "summary": {
     "title": "Lorem Ipsum Dolor Sit",
     "sub_heading": "Sed Euismod Malesuada",
-    "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis semper urna, at condimentum neque accumsan eu. Vivamus pellentesque mi libero, in lobortis metus auctor in. Proin sit amet libero augue. Vestibulum a venenatis dui, vitae pellentesque arcu. Donec pharetra id mauris suscipit finibus.",
+    "body": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla mattis semper urna, at condimentum neque accumsan eu. Vivamus pellentesque mi libero, in lobortis metus auctor in. Proin sit amet libero augue. Vestibulum a venenatis dui, vitae pellentesque arcu. Donec pharetra id mauris suscipit finibus.</p>",
     "list": {
       "items": [
         "Lorem ipsum",

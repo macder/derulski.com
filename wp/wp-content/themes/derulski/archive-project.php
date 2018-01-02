@@ -19,5 +19,36 @@ $context['hero'] = array(
   'sub_text' => $hero['hero']['sub_text'],
 );
 
+$context['posts'] = array_map(
+  function( $item ) {
+    return array(
+      'summary' => array(
+        'title' => $item->title(),
+        'sub_heading' => $item->get_field('summary_sub_heading'),
+        'body' => $item->get_field('summary_body'),
+        'list' => array(
+          'items' => array_column( $item->get_field('summary_list'), 'name' ),
+        ),
+      ),
+      'gallery' => array_map(
+        function( $item ) {
+          $image = new TimberImage( $item['image'] );
+          $thumb = new TimberImage( $item['image'] );
+          $thumb->src = ( new Timber\ImageHelper() )->resize( $thumb->src, 182, 104 );
+
+          return array(
+            'image' => $image,
+            'thumb' => $thumb,
+          );
+        },
+        $item->get_field('gallery')
+      ),
+    );
+  },
+  ( new Timber\PostQuery() )->get_posts()
+);
+
+// print_r( $context['posts'] );
+
 Timber::render('archive-project.twig', $context );
 

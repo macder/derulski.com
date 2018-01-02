@@ -1,8 +1,7 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-
-  {% include '03-templates/post.twig' with {
+  {% embed '03-templates/post.twig' with {
     article: {
       title: post.title,
       date: post.date,
@@ -11,4 +10,9 @@
     }
   } %}
 
+    {% block sidebar %}
+      {{ sidebar }}
+    {% endblock %}
+
+  {% endembed %}
 {% endblock %}

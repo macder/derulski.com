@@ -162,3 +162,7 @@ class DerulskiSite extends TimberSite {
 }
 
 new DerulskiSite();
+
+add_filter( 'jpeg_quality', function( $quality, $context ) {
+  return 75;
+}, 10, 2 );

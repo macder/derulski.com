@@ -1,8 +1,9 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-  <div>
-    <br><br><br><br>
-    <p>archive projects</p>
-  </div>
+
+  {% include '02-organisms/lists/project-list/project-list.twig' with {
+    items: posts
+  }%}
+
 {% endblock %}

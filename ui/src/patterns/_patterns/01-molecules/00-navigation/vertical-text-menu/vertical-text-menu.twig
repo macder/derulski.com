@@ -1,11 +1,11 @@
-<div class="c-horizontal-text-menu">
+<div class="c-vertical-text-menu">
   {% if heading %}
-    <h3 class="c-horizontal-text-menu__heading u-text-center">{{ heading }}</h3>
+    <h3 class="c-vertical-text-menu__heading u-text-center">{{ heading }}</h3>
   {% endif %}
-  <ul class="c-horizontal-text-menu__list o-list-bare">
+  <ul class="c-vertical-text-menu__list o-list-bare">
     {% for item in items %}
-      <li class="c-horizontal-text-menu__list-item u-mb-tiny">
-        <a class="c-horizontal-text-menu__list-item-link" href="{{ item.get_link }}">
+      <li class="c-vertical-text-menu__list-item">
+        <a class="c-vertical-text-menu__list-item-link" href="{{ item.get_link }}">
           {{ item.title }}
         </a>
       </li>

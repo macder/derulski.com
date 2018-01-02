@@ -45,10 +45,10 @@ $context['projects'] = array_map(
       ),
     );
   },
-  ( new Timber\PostQuery() )->get_posts()
+  ( new Timber\PostQuery( array(
+    'posts_per_page' => '4',
+    'post_type' => 'project'
+  )))->get_posts()
 );
 
-// print_r( $context['posts'] );
-
 Timber::render('archive-project.twig', $context );
-

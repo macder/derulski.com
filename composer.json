@@ -24,8 +24,9 @@
   "require": {
     "php": ">=5.4",
     "johnpbloch/wordpress": "4.9.1",
-    "wpackagist-plugin/timber-library": "*",
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/intuitive-custom-post-order": "*",
+    "wpackagist-plugin/timber-library": "*",
     "wpackagist-plugin/wp-super-cache": "*"
   },
   "extra": {

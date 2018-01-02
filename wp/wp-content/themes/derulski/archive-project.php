@@ -19,7 +19,7 @@ $context['hero'] = array(
   'sub_text' => $hero['hero']['sub_text'],
 );
 
-$context['posts'] = array_map(
+$context['projects'] = array_map(
   function( $item ) {
     return array(
       'summary' => array(

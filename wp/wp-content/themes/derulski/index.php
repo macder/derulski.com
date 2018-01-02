@@ -15,7 +15,8 @@
 
 $context = Timber::get_context();
 
-$hero = get_field('hero_blog_index', 'option');
+$hero = get_field('hero_blog_index_content', 'option');
+
 $context['hero'] = array(
   'image' => ( new TimberImage( $hero['hero']['image'] ) )->src(),
   'text' => $hero['hero']['heading'],

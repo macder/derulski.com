@@ -1,0 +1,23 @@
+<ul class="c-pagination o-list-inline">
+  {% if prev %}
+    <li class="c-pagination__item o-list-inline__item">
+      <a class="c-pagination__item-link u-link-inverse u-pl-none" href="{{ prev.link }}">
+        <b>Prev</b>
+      </a>
+    </li>
+  {% endif %}
+  {% for item in pages %}
+    <li class="c-pagination__item o-list-inline__item">
+      <a class="c-pagination__item-link {{ item.current ? 'c-pagination__item-link--active' }} u-link-inverse" href="{{ item.link }}">
+        <b>{{ item.title }}</b>
+      </a>
+    </li>
+  {% endfor %}
+  {% if next %}
+    <li class="c-pagination__item o-list-inline__item">
+      <a class="c-pagination__item-link u-link-inverse u-pr-none" href="{{ next.link }}">
+        <b>Next</b>
+      </a>
+    </li>
+  {% endif %}
+</ul>

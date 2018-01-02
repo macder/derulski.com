@@ -1,0 +1,39 @@
+/* Rule should only apply to applications like `color: black` */
+/* stylelint-disable color-named */
+$colors: (
+  black: #000000,
+  cod-grey: #1A1A1A,
+  concrete: #F2F2F2,
+  crimson: #ED1C24,
+  dusty-gray: #999999,
+  mercury: #E6E6E6,
+  mine-shaft: #333333,
+  silver: #CCCCCC,
+  white: #FFFFFF,
+);
+
+$functional-colors: (
+  // text
+  primary-text: color(black),
+  secondary-text: color(white),
+
+  // links
+  primary-link: color(crimson),
+  primary-link-hover: color(black),
+  secondary-link: color(white),
+  secondary-link-hover: color(crimson),
+  inverse-link: color(black),
+  inverse-link-hover: color(crimson),
+
+  // backgrounds
+  primary-background: color(white),
+  light-background: color(concrete),
+  dim-background: color(mercury),
+  dark-background: color(mine-shaft),
+  darker-background: color(cod-grey),
+  darkest-background: color(black),
+
+  // borders
+  primary-border: color(dusty-gray),
+  light-border: color(silver),
+);

@@ -1,0 +1,10 @@
+.c-cost__heading {
+  @include mq(md) {
+    @include inuit-font-size($inuit-font-size-h1);
+  }
+}
+
+.c-cost__text,
+.c-cost__cta-link {
+  @include inuit-font-size(20px, 28px);
+}

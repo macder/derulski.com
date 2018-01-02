@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "icon": "fa-code fa-3x",
+      "heading": "Lorem Ipsum",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt. Lorem ipsum dolor sit amet"
+    },
+    {
+      "icon": "fa-tachometer fa-3x",
+      "heading": "Pellentesque Sit",
+      "body": "Maecenas sed urna non arcu tincidunt faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt."
+    },
+    {
+      "icon": "fa-lock fa-3x",
+      "heading": "Vivamus Semper",
+      "body": "Consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt. Maecenas sed urna non arcu tincidunt faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "fa-wrench fa-3x",
+      "heading": "Maecenas Aliquam",
+      "body": "Consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt. Maecenas sed urna non arcu tincidunt faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "icon": "fa-pencil-square-o fa-3x",
+      "heading": "Vivamus Semper",
+      "body": "Consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt. Maecenas sed urna non arcu tincidunt faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.."
+    },
+    {
+      "icon": "fa-magic fa-3x",
+      "heading": "Consectetur Adipiscing",
+      "body": "Consectetur adipiscing elit. Cras interdum sollicitudin urna in tincidunt. Maecenas sed urna non arcu tincidunt faucibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit.."
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+/* ==========================================================================
+   #V-ALIGN
+   ========================================================================== */
+
+/**
+ *
+ *
+ *
+ */
+
+@mixin vt-align($align) {
+  display: table-cell;
+  vertical-align: $align;
+}
+
+@mixin va-align($percent) {
+  position: absolute;
+  top: $percent;
+  transform: translateY(-$percent);
+}

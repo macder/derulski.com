@@ -1,0 +1,34 @@
+.c-btn {
+  display: block;
+  margin: 0;
+  padding: $inuit-global-spacing-unit-small;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+}
+
+.c-btn--primary {
+  background-color: color(light-background);
+  @include border(primary-border);
+  border-radius: $global-radius;
+  &:hover {
+    background-color: color(dim-background);
+    text-decoration: none;
+    transition: $global-transition;
+  }
+}
+
+.c-btn--large {
+  padding: $inuit-global-spacing-unit;
+  @include text-lg();
+}
+
+.c-btn--small {
+  padding: $inuit-global-spacing-unit-tiny;
+  @include text-sm();
+}
+
+.c-btn--icon {
+  border: none;
+  background: none;
+}

@@ -1,0 +1,60 @@
+{
+  "primary_nav": {
+    "items": [
+      {
+        "get_link": "#",
+        "title": "Home"
+      },
+      {
+        "get_link": "#",
+        "title": "Blog"
+      },
+      {
+        "get_link": "#",
+        "title": "Projects"
+      },
+      {
+        "get_link": "#",
+        "title": "About"
+      },
+      {
+        "get_link": "#",
+        "title": "Contact"
+      }
+    ]
+  },
+  "footer": {
+    "menu": [
+      {
+        "get_link": "#",
+        "title": "Home"
+      },
+      {
+        "get_link": "#",
+        "title": "Contact"
+      },
+      {
+        "get_link": "#",
+        "title": "Privacy Policy"
+      }
+    ],
+    "social": [
+      {
+        "get_link": "#",
+        "icon": "fa-github-square fa-2x",
+        "name": "GitHub Profile"
+      },
+      {
+        "get_link": "#",
+        "icon": "fa-linkedin-square fa-2x",
+        "name": "LinkedIn Profile"
+      },
+      {
+        "get_link": "#",
+        "icon": "fa-twitter-square fa-2x",
+        "name": "Twitter Profile"
+      }
+    ],
+    "copyr": "Copyright &copy; 2018 - Maciej Derulski"
+  }
+}

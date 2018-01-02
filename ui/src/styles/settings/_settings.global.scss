@@ -5,5 +5,74 @@
 // need to be made available to the entire codebase.
 
 // Standardise some UI treatments.
-$global-radius: 3px !default;
+$global-radius: 6px !default;
 $global-transition: all 300ms ease-in-out !default;
+
+$mq-breakpoints: (
+  sm: 640px,
+  md: 960px,
+  lg: 1200px,
+);
+
+$inuit-widths-breakpoint-separator: \@ !default;
+
+$inuit-wrapper-width: 1200px;
+
+// $inuit-fractions: 1 2 3 4 5;
+
+$inuit-spacing-directions: (
+  null: null,
+  't': '-top',
+  'r': '-right',
+  'b': '-bottom',
+  'l': '-left',
+  'h': '-left' '-right',
+  'v': '-top' '-bottom'
+);
+
+$inuit-spacing-properties: (
+  'p': 'padding',
+  'm': 'margin'
+);
+
+$inuit-spacing-sizes: (
+  null: $inuit-global-spacing-unit,
+  '-tiny': $inuit-global-spacing-unit-tiny,
+  '-small': $inuit-global-spacing-unit-small,
+  '-large': $inuit-global-spacing-unit-large,
+  '-huge': $inuit-global-spacing-unit-huge,
+  '-none': 0
+) !default;
+
+$inuit-responsive-spacing: true;
+
+$inuit-responsive-spacing-directions:
+  $inuit-spacing-directions !default;
+
+$inuit-responsive-spacing-properties:
+  $inuit-spacing-properties !default;
+
+$inuit-responsive-spacing-sizes:
+  $inuit-spacing-sizes !default;
+
+$global-font: 'Ubuntu', sans-serif;
+// $inuit-global-font-size: 18px;
+
+$inuit-font-size-h1:  36px !default;
+$inuit-font-size-h2:  28px !default;
+$inuit-font-size-h3:  24px !default;
+$inuit-font-size-h4:  20px !default;
+$inuit-font-size-h5:  18px !default;
+$inuit-font-size-h6:  16px !default;
+
+$global-font-size-xlg: 48px;
+$global-font-size-lg:  32px;
+$global-font-size-md:  24px;
+$global-font-size-sm:  14px;
+
+$global-header-height: 72px;
+$global-burger-layer-height: 2px;
+
+$global-hero-height: 200px;
+$global-hero-height-md: 320px;
+$global-hero-height-lg: 436px;

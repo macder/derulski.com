@@ -29,8 +29,8 @@ module.exports = [{
         test: /\.js$/,
         include: [
           path.resolve(process.cwd(), 'src'),
-          path.resolve(process.cwd(), 'node_modules/ajax-promise-es6')
         ],
+        exclude: /node_modules\/(?!(dom7|swiper)\/).*/,
         query: {
           plugins: ['transform-class-properties'],
           presets: [['es2015', {modules: false}]]

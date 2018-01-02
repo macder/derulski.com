@@ -1,0 +1,91 @@
+/* ==========================================================================
+   #TYPOGRAPHY
+   ========================================================================== */
+
+/**
+ * Utility classes for standardized typography and typesetting.
+ */
+
+.u-text-default {
+  @include text-default;
+}
+
+.u-text-xlg {
+  @include text-xlg;
+}
+
+.u-text-lg {
+  @include text-lg;
+}
+
+.u-text-md {
+  @include text-md;
+}
+
+.u-text-sm {
+  @include text-sm;
+}
+
+.u-text-h1 {
+  @include text-h1;
+}
+
+.u-text-h2 {
+  @include text-h2;
+}
+
+.u-text-h3 {
+  @include text-h3;
+}
+
+.u-text-h4 {
+  @include text-h4;
+}
+
+.u-text-h5 {
+  @include text-h5;
+}
+
+.u-text-h6 {
+  @include text-h6;
+}
+
+.u-text-center {
+  @include text-justify(center);
+}
+
+.u-text-left {
+  @include text-justify(left);
+}
+
+.u-text-right {
+  @include text-justify(right);
+}
+
+.u-text-uppercase {
+  @include text-case(uppercase);
+}
+
+.u-text-lowercase {
+  @include text-case(lowercase);
+}
+
+.u-text-capitalize {
+  @include text-case(capitalize);
+}
+
+.u-text-primary {
+  color: color(primary-text);
+}
+
+.u-text-secondary {
+  color: color(secondary-text);
+}
+
+.u-text-normal {
+  font-weight: normal;
+}
+
+.u-text-light {
+  font-weight: lighter;
+}

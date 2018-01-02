@@ -1,0 +1,30 @@
+/* ==========================================================================
+   #BORDERS
+   ========================================================================== */
+
+/**
+ *
+ *
+ *
+ */
+
+@mixin padding-h($left, $right: null) {
+  padding-left: $left;
+  padding-right: if($right, $right, $left);
+}
+
+@mixin padding-v($top, $bottom: null) {
+  padding-top: $top;
+  padding-bottom: if($bottom, $bottom, $top);
+}
+
+@mixin margin-h($left, $right: null) {
+  margin-left: $left;
+  margin-right: if($right, $right, $left);
+}
+
+@mixin margin-v($top, $bottom: null) {
+  margin-top: $top;
+  margin-bottom: if($bottom, $bottom, $top);
+}
+

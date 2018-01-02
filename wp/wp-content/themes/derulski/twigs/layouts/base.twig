@@ -1,38 +1,49 @@
 <!DOCTYPE html>
-<html {{site.language_attributes}}>
+<html {{ site.language_attributes }}>
 <head>
-  <meta charset="{{site.charset}}">
-  <title>
-    {{ wp_title }}
-  </title>
+  <meta charset="{{ site.charset }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
   <link href="/build/style.css" rel="stylesheet">
-  {# <link rel="shortcut icon" href="/build/images/favicon.ico" /> #}
-  {{function('wp_head')}}
+  <script src="https://use.fontawesome.com/d7313147f3.js"></script>
+  <link rel="shortcut icon" href="/build/images/favicon.ico" />
+  {{ function('wp_head') }}
 </head>
 
   <body data-template="base.twig">
     <a href="#main-content" class="u-hidden-visually">skip to main content</a>
     {% block header %}
-
+      <div class="u-pos-fixed">
+        {% include "02-organisms/00-global/00-header/header.twig" with {
+          items: primary_menu
+        }%}
+      </div>
     {% endblock %}
 
     <section id="content" role="main">
       <a id="main-content" aria-hidden="true"></a>
       {% block hero %}
+        {% if hero %}
+          {% include "01-molecules/blocks/hero/hero.twig" with hero %}
+        {% endif %}
       {% endblock %}
 
       {% block content %}
-        Sorry, no content
+        Welcome to the void, clever fellow.
       {% endblock %}
     </section>
 
     {% block footer %}
-
+      <footer id="footer">
+        {% include "02-organisms/00-global/01-footer/footer.twig" with {
+          menu: secondary_menu,
+          social: social_menu
+        }%}
+      </footer>
     {% endblock %}
-    {{ function('wp_footer') }}
-    {# <script defer src="/build/bundle.js"></script> #}
 
+    {{ function('wp_footer') }}
+    <script defer src="/build/bundle.js"></script>
   </body>
 </html>

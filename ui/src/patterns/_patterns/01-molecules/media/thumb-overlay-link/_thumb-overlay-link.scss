@@ -1,0 +1,19 @@
+.c-thumb-link {
+  display: inline-block;
+  position: relative;
+
+  &:hover {
+    .c-thumb-link__overlay {
+      opacity: 0.8;
+    }
+  }
+}
+
+.c-thumb-link__image {
+  max-width: 100%;
+}
+
+.c-thumb-link__overlay-text {
+  @include va-align(50%);
+  width: 100%;
+}

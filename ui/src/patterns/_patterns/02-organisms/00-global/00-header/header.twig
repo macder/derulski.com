@@ -1,9 +1,16 @@
-<div class="c-header">
-  <div class="c-header__primary-nav">
-    {% include '01-molecules/00-navigation/primary-nav/primary-nav.twig' with { items: primary_nav } %}
+<div class="c-header u-bg-darker u-pl">
+  <div class="c-header__hamburger u-hidden-from-md">
+    {% include '01-molecules/toggles/hamburger/hamburger.twig' %}
   </div>
+  <nav id="navigation" class="c-header__primary-nav u-hidden-until-md">
+    {% include '01-molecules/00-navigation/inline-text-menu/inline-text-menu.twig' with items %}
+  </nav>
 
-  <div class="c-header__utility-nav">
-    {% include '01-molecules/00-navigation/utility-nav/utility-nav.twig' %}
-  </div>
+  {# WIP - temp #}
+  {# <div class="c-header__utility u-pull-right u-pr">
+    <button class="c-header__utility-button c-btn c-btn--icon">
+      <i class="c-header__utility-icon fa fa-search fa-fw u-text-secondary" aria-hidden="true"></i>
+    </button>
+  </div> #}
+
 </div>

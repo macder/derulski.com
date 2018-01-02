@@ -1,3 +1,63 @@
 .c-header {
+  display: table;
+  width: 100%;
+  height: $global-header-height;
+}
 
+.c-header__hamburger {
+  position: relative;
+  height: $global-header-height;
+
+  .c-hamburger {
+    @include va-align(50%);
+  }
+
+  // it's not vegan
+  .hamburger-inner {
+    &,
+    &::before,
+    &::after {
+      height: $global-burger-layer-height !important;
+      background-color: color(primary-background) !important;
+    }
+  }
+}
+
+.c-header__primary-nav {
+  @include vt-align(middle);
+
+  .c-inline-text-menu__item {
+    @include margin-h($inuit-global-spacing-unit-small);
+  }
+
+  .c-inline-text-menu__item-link {
+    @include link-secondary();
+    @include mq(md) {
+      // magic number - only instance of this font size ¯\_(*)_/¯
+      @include inuit-font-size(18px);
+    }
+  }
+}
+
+.c-header__utility-icon {
+  &.fa {
+    @include text-md();
+  }
+}
+
+.c-header--active {
+
+  .c-header__primary-nav {
+    display: block;
+  }
+
+  .c-inline-text-menu__item {
+    display: block;
+    margin-bottom: $inuit-global-spacing-unit;
+    text-align: center;
+  }
+
+  .c-inline-text-menu__item-link {
+    @include text-md();
+  }
 }

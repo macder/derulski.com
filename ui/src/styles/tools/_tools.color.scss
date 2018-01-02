@@ -1,0 +1,19 @@
+/**
+ * Usage:
+ *
+ *   background-color: color(white);
+ */
+$colors: () !default;
+$functional-colors: () !default;
+
+@function color($color) {
+  @if map-get($colors, $color) {
+    @return map-get($colors, $color);
+  } @else if map-get($functional-colors, $color) {
+    @return map-get($functional-colors, $color);
+  } @else {
+    /* Stylefmt changes the quotes every time, so turning off the error here */
+    /* stylelint-disable-next-line string-quotes */
+    @error "Color \"#{$color}\"could not be found";
+  }
+}

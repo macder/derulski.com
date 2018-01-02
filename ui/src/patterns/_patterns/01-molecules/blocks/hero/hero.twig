@@ -1,0 +1,12 @@
+<div class="c-hero">
+  <div class="c-hero__img u-bg-img" style="background-image: url({{ image }})">
+    <div class="c-hero__text">
+      <p class="c-hero__text-main u-text-secondary u-text-center u-text-light u-ph">{{ text }}</p>
+      {% if sub_text %}
+        <p class="c-hero__text-sub u-text-secondary u-text-center u-text-light u-ph">
+          <em>{{ sub_text }}</em>
+        </p>
+      {% endif %}
+    </div>
+  </div>
+</div>

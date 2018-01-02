@@ -53,6 +53,7 @@
   },
   "dependencies": {
     "hamburgers": "^0.9.1",
-    "inuitcss": "^6.0.0-beta.5"
+    "inuitcss": "^6.0.0-beta.5",
+    "swiper": "^4.0.7"
   }
 }

@@ -78,7 +78,9 @@
 @import "settings/settings.config";
 @import "node_modules/inuitcss/settings/settings.core";
 @import "settings/settings.global";
-
+// The color function needs to be available to define colors
+@import 'tools/tools.color';
+@import 'settings/settings.colors';
 
 
 
@@ -86,8 +88,14 @@
 // TOOLS
 @import "node_modules/inuitcss/tools/tools.font-size";
 @import "node_modules/inuitcss/tools/tools.clearfix";
-@import "node_modules/inuitcss/tools/tools.hidden";
+// @import "node_modules/inuitcss/tools/tools.hidden";
 @import "node_modules/sass-mq/mq";
+@import "tools/tools.borders";
+@import "tools/tools.links";
+@import "tools/tools.hidden";
+@import "tools/tools.spacing";
+@import "tools/tools.typography";
+@import "tools/tools.v-align";
 
 
 
@@ -108,6 +116,9 @@
 @import "node_modules/inuitcss/elements/elements.headings";
 @import "node_modules/inuitcss/elements/elements.images";
 @import "node_modules/inuitcss/elements/elements.tables";
+@import "elements/elements.anchor";
+@import "elements/elements.body";
+
 
 
 
@@ -119,14 +130,14 @@
 @import "node_modules/inuitcss/objects/objects.wrapper";
 @import "node_modules/inuitcss/objects/objects.layout";
 @import "node_modules/inuitcss/objects/objects.media";
-@import "node_modules/inuitcss/objects/objects.flag";
+// @import "node_modules/inuitcss/objects/objects.flag";
 @import "node_modules/inuitcss/objects/objects.list-bare";
 @import "node_modules/inuitcss/objects/objects.list-inline";
 @import "node_modules/inuitcss/objects/objects.box";
 @import "node_modules/inuitcss/objects/objects.block";
-@import "node_modules/inuitcss/objects/objects.ratio";
-@import "node_modules/inuitcss/objects/objects.crop";
-@import "node_modules/inuitcss/objects/objects.table";
+// @import "node_modules/inuitcss/objects/objects.ratio";
+// @import "node_modules/inuitcss/objects/objects.crop";
+// @import "node_modules/inuitcss/objects/objects.table";
 @import "node_modules/inuitcss/objects/objects.pack";
 
 
@@ -136,7 +147,21 @@
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
-// @import "components/example.components.buttons";
+@import "../patterns/_patterns/00-atoms/buttons/buttons";
+@import "../patterns/_patterns/00-atoms/images/hero/hero-images";
+@import "../patterns/_patterns/01-molecules/00-navigation/pagination/pagination";
+@import "../patterns/_patterns/01-molecules/blocks/hero/hero";
+@import "../patterns/_patterns/01-molecules/media/inline-gallery/inline-gallery";
+@import "../patterns/_patterns/01-molecules/media/thumb-overlay-link/thumb-overlay-link";
+@import "../patterns/_patterns/01-molecules/text/excerpt/excerpt";
+@import "../patterns/_patterns/01-molecules/toggles/hamburger/hamburger";
+@import "../patterns/_patterns/02-organisms/00-global/00-header/header";
+@import "../patterns/_patterns/02-organisms/00-global/01-footer/footer";
+@import "../patterns/_patterns/02-organisms/lists/excerpt-list/excerpt-list";
+@import "../patterns/_patterns/02-organisms/sections/cost/cost";
+@import "../patterns/_patterns/02-organisms/sections/featured-projects/featured-projects";
+@import "../patterns/_patterns/02-organisms/sections/features/features";
+@import "../patterns/_patterns/02-organisms/sections/quote-bar/quote-bar";
 
 
 
@@ -150,5 +175,16 @@ $inuit-offsets: true;
 @import "node_modules/inuitcss/utilities/utilities.headings";
 @import "node_modules/inuitcss/utilities/utilities.spacings";
 @import "node_modules/inuitcss/utilities/utilities.responsive-spacings";
-@import "node_modules/inuitcss/utilities/utilities.print";
-@import "node_modules/inuitcss/utilities/utilities.hide";
+// @import "node_modules/inuitcss/utilities/utilities.print";
+// @import "node_modules/inuitcss/utilities/utilities.hide";
+@import "utilities/utilities.backgrounds";
+@import "utilities/utilities.hide";
+@import "utilities/utilities.links";
+@import "utilities/utilities.overlay";
+@import "utilities/utilities.position";
+@import "utilities/utilities.pull";
+@import "utilities/utilities.typography";
+
+@import "node_modules/hamburgers/_sass/hamburgers/hamburgers";
+
+

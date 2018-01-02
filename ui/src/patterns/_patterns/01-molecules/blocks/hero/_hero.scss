@@ -1,0 +1,39 @@
+.c-hero {
+  padding-top: $global-header-height;
+}
+
+.c-hero__img {
+  position: relative;
+  min-height: $global-hero-height;
+
+  @include mq(sm) {
+    min-height: $global-hero-height-md;
+  }
+
+  @include mq(md) {
+    min-height: $global-hero-height-lg;
+  }
+}
+
+.c-hero__text {
+  width: 100%;
+  @include va-align(50%);
+}
+
+.c-hero__text-main {
+  @include text-md();
+
+  @include mq(sm) {
+    @include text-lg();
+  }
+
+  @include mq(md) {
+    @include text-xlg();
+  }
+}
+
+.c-hero__text-sub {
+  @include mq(md) {
+     @include inuit-font-size($inuit-font-size-h4);
+  }
+}

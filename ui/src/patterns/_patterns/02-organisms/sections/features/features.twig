@@ -1,0 +1,10 @@
+<div class="c-features u-pt-large">
+  <h2 class="c-features__heading u-mb-large u-text-center u-text-lg">Standard Features</h2>
+  <div class=" o-layout">
+    {% for item in items %}
+      <div class="o-layout__item u-1/2@md u-mb-huge">
+        {% include '01-molecules/objects/media.twig' with item %}
+      </div>
+    {% endfor %}
+  </div>
+</div>

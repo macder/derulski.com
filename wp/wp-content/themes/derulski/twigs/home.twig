@@ -1,0 +1,32 @@
+{% extends "layouts/base.twig" %}
+
+{% block content %}
+  <div class="u-pt-large u-bg-light">
+    <div class="o-wrapper">
+      {% include '02-organisms/sections/services/services.twig' with {
+        items: post.get_field('services')
+      }%}
+    </div>
+  </div>
+
+  {% include '02-organisms/sections/quote-bar/quote-bar.twig' with post.get_field('quote_bar') %}
+
+  <div class="o-wrapper">
+    {% include '02-organisms/sections/features/features.twig' with {
+      items: post.get_field('features')
+    }%}
+  </div>
+
+  {% include '02-organisms/sections/cost/cost.twig' with post.get_field('cost') %}
+
+  <div class="o-wrapper u-pt-large">
+    <div class="o-layout">
+      <div class="o-layout__item u-2/3@md u-pr-large@md">
+        {% include '02-organisms/lists/excerpt-list/excerpt-list.twig' with {
+          title: post.get_field('recent_posts_heading'),
+          items: recent_posts
+        }%}
+      </div>
+    </div>
+  </div>
+{% endblock %}

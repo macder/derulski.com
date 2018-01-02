@@ -1,0 +1,31 @@
+{
+  "prev": {
+    "link": "#"
+  },
+  "next": {
+    "link": "#"
+  },
+  "pages": [
+    {
+      "link": "#",
+      "title": "1"
+    },
+    {
+      "link": "#",
+      "title": "2"
+    },
+    {
+      "link": "#",
+      "title": "3",
+      "current": true
+    },
+    {
+      "link": "#",
+      "title": "4"
+    },
+    {
+      "link": "#",
+      "title": "5"
+    }
+  ]
+}

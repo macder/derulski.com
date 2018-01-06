@@ -189,14 +189,10 @@ add_filter( 'jpeg_quality', function( $quality, $context ) {
 }, 10, 2 );
 
 
-function custom_posts_per_page( $query ) {
-  if ( !is_admin() ) {
-    if ( isset($query->query_vars['post_type']) ) {
-      if ( $query->query_vars['post_type'] === 'project' ) {
-        set_query_var('posts_per_page', 2);
-      }
-    }
-  }
-}
+add_action( 'pre_get_posts', function ( $query ) {
+  if ( is_admin() || !isset( $query->query_vars['post_type'] ) )
+    return;
 
-add_action( 'pre_get_posts', 'custom_posts_per_page' );
+  ( $query->query_vars['post_type'] === 'project' ) &&
+    set_query_var('posts_per_page', 2);
+});

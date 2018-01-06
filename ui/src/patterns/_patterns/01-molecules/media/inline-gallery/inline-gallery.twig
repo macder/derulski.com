@@ -8,9 +8,9 @@
       {% endfor %}
     </div>
   </div>
-  <ul class="c-inline-gallery__nav o-list-inline u-mt-tiny u-hidden-until-sm">
+  <ul class="c-inline-gallery__nav o-pack u-mt-tiny u-hidden-until-sm">
     {% for item in items %}
-      <li class="c-inline-gallery__nav-item o-list-inline__item" data-index="{{ loop.index0 }}">
+      <li class="c-inline-gallery__nav-item o-pack__item" data-index="{{ loop.index0 }}">
         <img class="c-inline-gallery__nav-thumb" src="{{ item.thumb.src }}" alt="{{ item.thumb.alt }}" title="{{ item.thumb.title }}">
       </li>
     {% endfor %}

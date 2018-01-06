@@ -190,9 +190,11 @@ add_filter( 'jpeg_quality', function( $quality, $context ) {
 
 
 function custom_posts_per_page( $query ) {
-  if ( isset($query->query_vars['post_type']) ) {
-    if ( $query->query_vars['post_type'] === 'project' ) {
-      set_query_var('posts_per_page', 2);
+  if ( !is_admin() ) {
+    if ( isset($query->query_vars['post_type']) ) {
+      if ( $query->query_vars['post_type'] === 'project' ) {
+        set_query_var('posts_per_page', 2);
+      }
     }
   }
 }

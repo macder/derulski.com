@@ -91,9 +91,9 @@
 }
 
 .u-text-normal {
-  font-weight: normal;
+  @include text-weight($global-font-weight-regular);
 }
 
 .u-text-light {
-  font-weight: lighter;
+  @include text-weight($global-font-weight-light);
 }

@@ -1,5 +1,6 @@
 .c-features {
   .fa {
-    @include text-xlg();
+    @include text-huge();
+    line-height: 1; // $inuit-global-line-height !important;
   }
 }

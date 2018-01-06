@@ -9,9 +9,9 @@
  */
 
 @mixin text-huge {
-  @include inuit-font-size($global-font-size-huge);
+  @include inuit-font-size($global-font-size-huge, $inuit-global-line-height + 20);
   @include mq(md) {
-    @include inuit-font-size($global-font-size-huge-desktop);
+    @include inuit-font-size($global-font-size-huge-desktop, $inuit-global-line-height + 20);
   }
 }
 
@@ -23,9 +23,9 @@
 }
 
 @mixin text-lg {
-  @include inuit-font-size($global-font-size-lg);
+  @include inuit-font-size($global-font-size-lg, $inuit-global-line-height + 10);
   @include mq(md) {
-    @include inuit-font-size($global-font-size-lg-desktop);
+    @include inuit-font-size($global-font-size-lg-desktop, $inuit-global-line-height + 10);
   }
 }
 

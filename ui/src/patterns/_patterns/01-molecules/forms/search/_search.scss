@@ -1,0 +1,16 @@
+.c-search {
+  position: relative;
+}
+
+.c-search__input {
+  padding: $inuit-global-spacing-unit-small;
+}
+
+.c-search__button {
+  @include va-align(50%);
+
+  right: $inuit-global-spacing-unit-tiny;
+  &.fa {
+    @include text-lg;
+  }
+}

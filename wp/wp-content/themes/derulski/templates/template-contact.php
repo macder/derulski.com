@@ -23,21 +23,18 @@ $context['form'] = array(
       'id' => 'name',
       'name' => 'name',
       'label' => 'Name:',
-      'placeholder' => ''
     ],
     [
       'type' => 'text',
       'id' => 'email',
       'name' => 'email',
       'label' => 'Email:',
-      'placeholder' => ''
     ],
     [
       'type' => 'textarea',
       'id' => 'message',
       'name' => 'message',
       'label' => 'Message:',
-      'placeholder' => ''
     ]
   ),
 );
@@ -45,11 +42,15 @@ $context['form'] = array(
 $validator = array(
   'name' => [
     'label' => 'Name',
-    'rules' => 'required'
+    'rules' => 'required',
   ],
   'email' => [
     'label' => 'Email',
-    'rules' => 'required|email'
+    'rules' => 'required|email',
+  ],
+  'message' => [
+    'label' => 'Message',
+    'rules' => 'required',
   ]
 );
 

@@ -1,0 +1,14 @@
+<div class="c-stacked-form">
+  {% for field in fields %}
+    <div class="o-box o-box--small">
+
+      {% if field.type == 'text' %}
+        {% include '01-molecules/forms/field/field.twig' with field %}
+
+      {% elseif field.type == 'textarea' %}
+        {% include '01-molecules/forms/textarea/textarea.twig' with field %}
+      {% endif %}
+
+    </div>
+  {% endfor %}
+</div>

@@ -1,0 +1,28 @@
+{
+  "fields": [
+    {
+      "type": "text",
+      "id": "first-name",
+      "label": "Label:",
+      "placeholder": ""
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Label:",
+      "placeholder": ""
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Label:",
+      "placeholder": ""
+    },
+    {
+      "type": "textarea",
+      "id": "message",
+      "label": "Label:",
+      "placeholder": ""
+    }
+  ]
+}

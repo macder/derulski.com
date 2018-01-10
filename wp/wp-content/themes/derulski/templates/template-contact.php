@@ -17,6 +17,8 @@ $context = Timber::get_context();
 $context['post'] = new TimberPost();
 
 $context['form'] = array(
+  'name' => 'contact_form',
+  'method' => 'post',
   'fields' => array(
     [
       'type' => 'text',
@@ -37,25 +39,26 @@ $context['form'] = array(
       'label' => 'Message:',
     ]
   ),
+  'validator' => array(
+    'name' => [
+      'label' => 'Name',
+      'rules' => 'required',
+    ],
+    'email' => [
+      'label' => 'Email',
+      'rules' => 'required|email',
+    ],
+    'message' => [
+      'label' => 'Message',
+      'rules' => 'required',
+    ]
+  )
 );
 
-$validator = array(
-  'name' => [
-    'label' => 'Name',
-    'rules' => 'required',
-  ],
-  'email' => [
-    'label' => 'Email',
-    'rules' => 'required|email',
-  ],
-  'message' => [
-    'label' => 'Message',
-    'rules' => 'required',
-  ]
-);
+wfv_create( 'contact_form', $context['form']['validator'] );
 
-wfv_create( 'my_form', $validator );
+print_r($context['form']['validator']);
 
-// print_r($validator);
+// $context['form']['validator']->token_fields();
 
 Timber::render( array( 'contact.twig' ), $context );

@@ -1,6 +1,7 @@
 {
   "method": "get",
   "action": "/",
+  "name": "form_name",
   "fields": [
     {
       "type": "text",

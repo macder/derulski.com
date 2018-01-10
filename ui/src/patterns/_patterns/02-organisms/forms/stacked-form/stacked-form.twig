@@ -1,4 +1,4 @@
-<form class="c-stacked-form" method="{{ method }}" action="{{ action }}">
+<form class="c-stacked-form" name="{{ name }}" method="{{ method }}" action="{{ action }}">
   {% for field in fields %}
     <div class="o-box o-box--small">
 
@@ -13,7 +13,7 @@
     </div>
   {% endfor %}
 
-  {{ tokens }}
+  {{ validator.token_fields }}
 
   <div class="o-box o-box--small">
     <input class="c-btn c-btn--primary" type="submit" value="Submit">

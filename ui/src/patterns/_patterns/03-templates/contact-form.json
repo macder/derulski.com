@@ -1,27 +1,31 @@
 {
-  "method": "get",
-  "action": "/",
-  "fields": [
-    {
-      "type": "text",
-      "id": "name",
-      "name": "name",
-      "label": "Name:",
-      "placeholder": ""
-    },
-    {
-      "type": "text",
-      "id": "email",
-      "name": "email",
-      "label": "Label:",
-      "placeholder": ""
-    },
-    {
-      "type": "textarea",
-      "id": "message",
-      "name": "message",
-      "label": "Message:",
-      "placeholder": ""
-    }
-  ]
+  "form": {
+    "method": "get",
+    "action": "/",
+    "name": "contact_form",
+    "fields": [
+      {
+        "type": "text",
+        "id": "name",
+        "name": "name",
+        "label": "Name:",
+        "placeholder": ""
+      },
+      {
+        "type": "text",
+        "id": "email",
+        "name": "email",
+        "label": "Label:",
+        "placeholder": ""
+      },
+      {
+        "type": "textarea",
+        "id": "message",
+        "name": "message",
+        "label": "Message:",
+        "placeholder": ""
+      }
+    ]
+  }
+
 }

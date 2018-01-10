@@ -17,40 +17,40 @@ $context = Timber::get_context();
 $context['post'] = new TimberPost();
 
 $context['form'] = array(
-	'fields' => array(
-		[
+  'fields' => array(
+    [
       'type' => 'text',
       'id' => 'name',
       'name' => 'name',
       'label' => 'Name:',
       'placeholder' => ''
-		],
-		[
+    ],
+    [
       'type' => 'text',
       'id' => 'email',
       'name' => 'email',
       'label' => 'Email:',
       'placeholder' => ''
-		],
-		[
+    ],
+    [
       'type' => 'textarea',
       'id' => 'message',
       'name' => 'message',
       'label' => 'Message:',
       'placeholder' => ''
-		]
-	),
+    ]
+  ),
 );
 
 $validator = array(
-	'name' => [
-		'label' => 'Name',
-		'rules' => 'required'
-	],
-	'email' => [
-		'label' => 'Email',
-		'rules' => 'required|email'
-	]
+  'name' => [
+    'label' => 'Name',
+    'rules' => 'required'
+  ],
+  'email' => [
+    'label' => 'Email',
+    'rules' => 'required|email'
+  ]
 );
 
 wfv_create( 'my_form', $validator );

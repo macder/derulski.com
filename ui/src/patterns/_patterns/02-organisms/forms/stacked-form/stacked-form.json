@@ -1,26 +1,32 @@
 {
+  "method": "get",
+  "action": "/",
   "fields": [
     {
       "type": "text",
-      "id": "first-name",
+      "id": "firstname",
+      "name": "firstname",
       "label": "Label:",
       "placeholder": ""
     },
     {
       "type": "text",
       "id": "email",
+      "name": "email",
       "label": "Label:",
       "placeholder": ""
     },
     {
       "type": "text",
       "id": "title",
+      "name": "title",
       "label": "Label:",
       "placeholder": ""
     },
     {
       "type": "textarea",
       "id": "message",
+      "name": "message",
       "label": "Label:",
       "placeholder": ""
     }

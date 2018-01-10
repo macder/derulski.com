@@ -1,4 +1,5 @@
 {
-  "id": "first-name",
+  "id": "message",
+  "name": "message",
   "label": "Label:"
 }

@@ -113,11 +113,14 @@
 
 // ELEMENTS
 @import "node_modules/inuitcss/elements/elements.page";
-@import "node_modules/inuitcss/elements/elements.headings";
+// @import "node_modules/inuitcss/elements/elements.headings";
 @import "node_modules/inuitcss/elements/elements.images";
 @import "node_modules/inuitcss/elements/elements.tables";
 @import "elements/elements.anchor";
 @import "elements/elements.body";
+@import "elements/elements.headings";
+@import "elements/elements.inline";
+@import "elements/elements.input";
 
 
 
@@ -151,6 +154,7 @@
 @import "../patterns/_patterns/00-atoms/images/hero/hero-images";
 @import "../patterns/_patterns/01-molecules/00-navigation/pagination/pagination";
 @import "../patterns/_patterns/01-molecules/blocks/hero/hero";
+@import "../patterns/_patterns/01-molecules/forms/search/search";
 @import "../patterns/_patterns/01-molecules/media/inline-gallery/inline-gallery";
 @import "../patterns/_patterns/01-molecules/media/thumb-overlay-link/thumb-overlay-link";
 @import "../patterns/_patterns/01-molecules/text/excerpt/excerpt";

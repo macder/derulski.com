@@ -10,6 +10,10 @@
   @include text-default;
 }
 
+.u-text-huge {
+  @include text-huge;
+}
+
 .u-text-xlg {
   @include text-xlg;
 }
@@ -24,6 +28,10 @@
 
 .u-text-sm {
   @include text-sm;
+}
+
+.u-text-xsm {
+  @include text-xsm;
 }
 
 .u-text-h1 {
@@ -83,9 +91,9 @@
 }
 
 .u-text-normal {
-  font-weight: normal;
+  @include text-weight($global-font-weight-regular);
 }
 
 .u-text-light {
-  font-weight: lighter;
+  @include text-weight($global-font-weight-light);
 }

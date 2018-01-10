@@ -8,12 +8,6 @@
 
     .c-quote__text {
       text-align: center;
-      @include inuit-font-size(20px, 28px);
-
-      @include mq(sm) {
-        @include text-md();
-      }
-
       @include mq(md) {
         @include padding-h($inuit-global-spacing-unit);
       }

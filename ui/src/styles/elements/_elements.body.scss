@@ -1,5 +1,10 @@
+html,
+body {
+  height: 100%;
+}
 body {
   @include text-default;
   font-family: $global-font;
+  @include text-weight($global-font-weight-regular);
   color: color(primary-text);
 }

@@ -33,17 +33,21 @@
   .c-inline-text-menu__item-link {
     @include link-secondary();
     @include mq(md) {
-      // magic number - only instance of this font size ¯\_(*)_/¯
-      @include inuit-font-size(18px);
+      @include text-md;
     }
   }
 }
 
-.c-header__utility-icon {
+.c-header__utility {
+  @include vt-align(middle);
+}
+
+
+/* .c-header__utility-icon {
   &.fa {
     @include text-md();
   }
-}
+} */
 
 .c-header--active {
 

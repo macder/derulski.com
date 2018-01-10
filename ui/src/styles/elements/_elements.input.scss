@@ -1,0 +1,9 @@
+input,
+select,
+textarea {
+  padding: $inuit-global-spacing-unit-tiny;
+  width: 100%;
+  @include border();
+  border-radius: $global-radius;
+  background-color: color(primary-background);
+}

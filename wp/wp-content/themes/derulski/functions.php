@@ -144,12 +144,16 @@ class DerulskiSite extends TimberSite {
           'page-attributes',
           'title',
         ),
+        'capability_type' => 'post',
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 5,
         'public' => true,
         'has_archive' => 'projects',
-        'rewrite' => array('slug' => 'project'),
+        'rewrite' => array(
+          'slug' => 'project',
+          'with_front' => false,
+        ),
       )
     );
   }
@@ -183,3 +187,12 @@ new DerulskiSite();
 add_filter( 'jpeg_quality', function( $quality, $context ) {
   return 75;
 }, 10, 2 );
+
+
+add_action( 'pre_get_posts', function ( $query ) {
+  if ( is_admin() || !isset( $query->query_vars['post_type'] ) )
+    return;
+
+  ( $query->query_vars['post_type'] === 'project' ) &&
+    set_query_var('posts_per_page', 2);
+});

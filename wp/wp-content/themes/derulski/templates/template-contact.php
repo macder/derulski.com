@@ -57,8 +57,4 @@ $context['form'] = array(
 
 wfv_create( 'contact_form', $context['form']['validator'] );
 
-print_r($context['form']['validator']);
-
-// $context['form']['validator']->token_fields();
-
 Timber::render( array( 'contact.twig' ), $context );

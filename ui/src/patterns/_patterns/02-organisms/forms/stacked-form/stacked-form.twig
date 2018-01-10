@@ -1,7 +1,8 @@
-<div class="c-stacked-form">
+<form class="c-stacked-form" method="{{ method }}" action="{{ action }}">
   {% for field in fields %}
     <div class="o-box o-box--small">
 
+      {# WIP stuff #}
       {% if field.type == 'text' %}
         {% include '01-molecules/forms/field/field.twig' with field %}
 
@@ -11,4 +12,11 @@
 
     </div>
   {% endfor %}
-</div>
+
+  {{ tokens }}
+
+  <div class="o-box o-box--small">
+    <input class="c-btn c-btn--primary" type="submit" value="Submit">
+  </div>
+
+</form>

@@ -1,25 +1,12 @@
 <form class="c-stacked-form" name="{{ name }}" method="{{ method }}" action="{{ action }}">
   {% for field in fields %}
+    {% set type = (field.type == 'text') ? 'field' : field.type %}
+
     <div class="o-box o-box--small">
-
-      {# WIP - need to add select, radio, checkbox #}
-      {# {% if field.type == 'text' %} #}
-        {% set type = (field.type == 'text') ? 'field' : field.type %}
-
-          {# {{type}} #}
-
-        {% include '01-molecules/forms/'~ type ~'/'~ type ~'.twig' with {
-          value: validator.input().escape(field.name),
-          error_msg: validator.errors.first(field.name)
-        } %}
-
-      {# {% elseif field.type == 'textarea' %}
-        {% include '01-molecules/forms/textarea/textarea.twig' with {
-          value: validator.input().escape(field.name),
-          error_msg: validator.errors.first(field.name)
-        }%}
-      {% endif %} #}
-
+      {% include '01-molecules/forms/'~ type ~'/'~ type ~'.twig' with {
+        value: validator.input().escape(field.name),
+        error_msg: validator.errors.first(field.name)
+      }%}
     </div>
   {% endfor %}
 

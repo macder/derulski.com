@@ -22,8 +22,8 @@ $context['form'] = array(
   'fields' => array(
     [
       'type' => 'text',
-      'id' => 'name',
-      'name' => 'name',
+      'id' => 'fname',
+      'name' => 'fname',
       'label' => 'Name:',
     ],
     [
@@ -40,7 +40,7 @@ $context['form'] = array(
     ]
   ),
   'validator' => array(
-    'name' => [
+    'fname' => [
       'label' => 'Name',
       'rules' => 'required',
     ],

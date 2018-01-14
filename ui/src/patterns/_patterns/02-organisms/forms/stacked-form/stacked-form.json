@@ -2,6 +2,7 @@
   "method": "get",
   "action": "/",
   "name": "form_name",
+  "submit": "Submit",
   "fields": [
     {
       "type": "text",

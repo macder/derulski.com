@@ -19,6 +19,7 @@ $context['post'] = new TimberPost();
 $context['form'] = array(
   'name' => 'contact_form',
   'method' => 'post',
+  'submit' => 'Send',
   'fields' => array(
     [
       'type' => 'text',

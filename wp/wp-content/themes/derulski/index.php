@@ -23,6 +23,8 @@ $context['hero'] = array(
   'sub_text' => $hero['hero']['sub_text'],
 );
 
+$context['index_name'] = get_the_archive_title();
+
 $query = new Timber\PostQuery();
 
 $context['posts'] = array_map(
@@ -40,5 +42,6 @@ $context['posts'] = array_map(
 );
 
 $context['pagination'] = get_object_vars( $query->pagination() );
+$context['sidebar'] = Timber::get_widgets('blog_sidebar');
 
-Timber::render( array( 'index.twig' ), $context );
+Timber::render( 'index.twig', $context );

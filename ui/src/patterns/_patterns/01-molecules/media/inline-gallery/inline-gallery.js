@@ -5,9 +5,10 @@ export default class InlineGallery {
   /**
    *
    */
-  constructor() {
+  constructor(el) {
+    this.el = el;
     this.$j = jQuery;
-    this.swiper = {};
+    this.swiper;
     this.init();
     this.listen();
   }
@@ -29,7 +30,7 @@ export default class InlineGallery {
    * @return {void}
    */
   initSwiper() {
-    this.swiper = new Swiper ('.gallery-top', {
+    this.swiper = new Swiper (this.$j(this.el).find('.swiper-container'), {
       speed: 1200,
       effect: 'flip',
     });
@@ -51,7 +52,7 @@ export default class InlineGallery {
    * @return {void}
    */
   thumbClick() {
-    this.$j('.c-inline-gallery__nav-item').click( (e) => {
+    this.$j(this.el).find('.c-inline-gallery__nav-item').click( (e) => {
       this.swiper.slideTo(
         this.$j(e.currentTarget).data('index')
       );

@@ -1,3 +1,7 @@
 {% include '02-organisms/lists/project-list/project-list.twig' with {
   items: projects
 } %}
+
+<div class="u-text-center u-mv-large">
+  {% include '01-molecules/00-navigation/pagination/pagination.twig' with pagination %}
+</div>

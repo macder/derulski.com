@@ -1,0 +1,19 @@
+<form class="c-stacked-form" name="{{ name }}" method="{{ method }}" action="{{ action }}">
+  {% for field in fields %}
+    {% set type = (field.type == 'text') ? 'field' : field.type %}
+
+    <div class="o-box o-box--small">
+      {% include '01-molecules/forms/'~ type ~'/'~ type ~'.twig' with {
+        value: validator.input().escape(field.name),
+        error_msg: validator.errors.first(field.name)
+      }%}
+    </div>
+  {% endfor %}
+
+  {{ validator.token_fields }}
+
+  <div class="o-box o-box--small">
+    <input class="c-btn c-btn--primary" type="submit" value="{{ submit }}">
+  </div>
+
+</form>

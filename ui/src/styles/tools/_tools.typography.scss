@@ -8,16 +8,32 @@
  *
  */
 
+@mixin text-huge {
+  @include inuit-font-size($global-font-size-huge, $inuit-global-line-height + 20);
+  @include mq(md) {
+    @include inuit-font-size($global-font-size-huge-desktop, $inuit-global-line-height + 20);
+  }
+}
+
 @mixin text-xlg {
   @include inuit-font-size($global-font-size-xlg);
+  @include mq(md) {
+    @include inuit-font-size($global-font-size-xlg-desktop);
+  }
 }
 
 @mixin text-lg {
-  @include inuit-font-size($global-font-size-lg);
+  @include inuit-font-size($global-font-size-lg, $inuit-global-line-height + 10);
+  @include mq(md) {
+    @include inuit-font-size($global-font-size-lg-desktop, $inuit-global-line-height + 10);
+  }
 }
 
 @mixin text-md {
-  @include inuit-font-size($global-font-size-md, $inuit-global-line-height + 8);
+  @include inuit-font-size($global-font-size-md);
+  @include mq(md) {
+    @include inuit-font-size($global-font-size-md-desktop);
+  }
 }
 
 @mixin text-default {
@@ -26,30 +42,65 @@
 
 @mixin text-sm {
   @include inuit-font-size($global-font-size-sm);
+  @include mq(md) {
+    @include inuit-font-size($global-font-size-sm-desktop);
+  }
+}
+
+@mixin text-xsm {
+  @include inuit-font-size($global-font-size-xsm);
+  @include mq(md) {
+    @include inuit-font-size($global-font-size-xsm-desktop);
+  }
 }
 
 @mixin text-h1 {
   @include inuit-font-size($inuit-font-size-h1);
+  @include mq(md) {
+    @include inuit-font-size($inuit-font-size-h1-desktop);
+  }
+  @include text-weight($global-font-weight-bold);
 }
 
 @mixin text-h2 {
   @include inuit-font-size($inuit-font-size-h2);
+  @include mq(md) {
+    @include inuit-font-size($inuit-font-size-h2-desktop);
+  }
+  @include text-weight($global-font-weight-bold);
 }
 
 @mixin text-h3 {
   @include inuit-font-size($inuit-font-size-h3);
+  @include mq(md) {
+    @include inuit-font-size($inuit-font-size-h3-desktop);
+  }
+  @include text-weight($global-font-weight-bold);
 }
 
 @mixin text-h4 {
   @include inuit-font-size($inuit-font-size-h4);
+  @include mq(md) {
+    @include inuit-font-size($inuit-font-size-h4-desktop);
+  }
 }
 
 @mixin text-h5 {
   @include inuit-font-size($inuit-font-size-h5);
+  @include mq(md) {
+    @include inuit-font-size($inuit-font-size-h5-desktop);
+  }
 }
 
 @mixin text-h6 {
   @include inuit-font-size($inuit-font-size-h6);
+  @include mq(md) {
+    @include inuit-font-size($inuit-font-size-h6-desktop);
+  }
+}
+
+@mixin text-weight($weight) {
+  font-weight: $weight;
 }
 
 @mixin text-case($case) {

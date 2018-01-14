@@ -7,6 +7,12 @@
   }
 }
 
+.c-excerpt__date {
+  @include text-weight($global-font-weight-regular);
+}
+
 .c-excerpt__link {
   text-decoration: none !important;
 }
+
+

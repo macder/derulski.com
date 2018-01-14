@@ -90,6 +90,10 @@
   color: color(secondary-text);
 }
 
+.u-text-error {
+  color: color(error-text);
+}
+
 .u-text-normal {
   @include text-weight($global-font-weight-regular);
 }

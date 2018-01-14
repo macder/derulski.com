@@ -1,0 +1,44 @@
+{
+  "method": "get",
+  "action": "/",
+  "name": "form_name",
+  "submit": "Submit",
+  "fields": [
+    {
+      "type": "text",
+      "id": "firstname",
+      "name": "firstname",
+      "label": "Label:",
+      "placeholder": "",
+      "value": "value",
+      "error_msg": "validation error"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "name": "email",
+      "label": "Label:",
+      "placeholder": "",
+      "value": "value",
+      "error_msg": "validation error"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "name": "title",
+      "label": "Label:",
+      "placeholder": "",
+      "value": "value",
+      "error_msg": "validation error"
+    },
+    {
+      "type": "textarea",
+      "id": "message",
+      "name": "message",
+      "label": "Label:",
+      "placeholder": "",
+      "value": "value",
+      "error_msg": "validation error"
+    }
+  ]
+}

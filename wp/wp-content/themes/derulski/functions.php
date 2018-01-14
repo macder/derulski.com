@@ -196,3 +196,13 @@ add_action( 'pre_get_posts', function ( $query ) {
   ( $query->query_vars['post_type'] === 'project' ) &&
     set_query_var('posts_per_page', 2);
 });
+
+// contact form validation pass
+add_action( 'contact_form', function( $form ) {
+  echo 'pass';
+});
+
+// contact form validation fail
+add_action( 'contact_form_fail', function( $form ) {
+  echo 'fail';
+});

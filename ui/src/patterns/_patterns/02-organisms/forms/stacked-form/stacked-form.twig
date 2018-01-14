@@ -3,19 +3,22 @@
     <div class="o-box o-box--small">
 
       {# WIP - need to add select, radio, checkbox #}
-      {% if field.type == 'text' %}
+      {# {% if field.type == 'text' %} #}
+        {% set type = (field.type == 'text') ? 'field' : field.type %}
 
-        {% include '01-molecules/forms/field/field.twig' with {
+          {# {{type}} #}
+
+        {% include '01-molecules/forms/'~ type ~'/'~ type ~'.twig' with {
           value: validator.input().escape(field.name),
-          error_msg: validator.errors().first(field.name)
+          error_msg: validator.errors.first(field.name)
         } %}
 
-      {% elseif field.type == 'textarea' %}
+      {# {% elseif field.type == 'textarea' %}
         {% include '01-molecules/forms/textarea/textarea.twig' with {
           value: validator.input().escape(field.name),
-          error_msg: validator.errors().first(field.name)
+          error_msg: validator.errors.first(field.name)
         }%}
-      {% endif %}
+      {% endif %} #}
 
     </div>
   {% endfor %}

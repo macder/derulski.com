@@ -52,9 +52,8 @@ foreach ( $context['form']['fields'] as $field ) {
   );
 }
 
-$context['form']['validator'] = $validator;
+$context['validator'] = $validator;
 
-wfv_create( 'contact_form', $context['form']['validator'] );
-
+wfv_create( 'contact_form', $context['validator'] );
 
 Timber::render( array( 'contact.twig' ), $context );

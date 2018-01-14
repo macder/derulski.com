@@ -397,16 +397,16 @@
         },
         {
             "name": "wpackagist-plugin/timber-library",
-            "version": "1.5.2",
+            "version": "1.6.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/timber-library/",
-                "reference": "tags/1.5.2"
+                "reference": "tags/1.6.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/timber-library.1.5.2.zip",
-                "reference": "tags/1.5.2",
+                "url": "https://downloads.wordpress.org/plugin/timber-library.1.6.0.zip",
+                "reference": null,
                 "shasum": null
             },
             "require": {

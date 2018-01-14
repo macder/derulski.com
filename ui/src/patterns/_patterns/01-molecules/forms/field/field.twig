@@ -1,4 +1,5 @@
 <div class="c-field">
-  <label for="{{ id }}" class="c-field__label">{{ label }}</label>
-  <input id="{{ id }}" name="{{ name }}" class="c-field__input" type="{{ type }}" placeholder="{{ placeholder }}" value="{{ value }}" />
+  <label for="{{ field.id }}" class="c-field__label">{{ field.label }}</label>
+  <input id="{{ field.id }}" name="{{ field.name }}" class="c-field__input" type="{{ field.type }}" placeholder="{{ field.placeholder }}" value="{{ value }}" />
+  <small class="c-field__error u-text-error">{{ error_msg }}</small>
 </div>

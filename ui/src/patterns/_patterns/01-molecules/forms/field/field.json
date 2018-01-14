@@ -1,7 +1,11 @@
 {
-  "id": "firstname",
-  "name": "firstname",
-  "label": "Label:",
-  "type": "text",
-  "placeholder": ""
+  "field": {
+    "id": "firstname",
+    "name": "firstname",
+    "label": "Label:",
+    "type": "text",
+    "placeholder": ""
+  },
+  "value": "value",
+  "error_msg": "validation error"
 }

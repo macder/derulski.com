@@ -8,28 +8,36 @@
       "id": "firstname",
       "name": "firstname",
       "label": "Label:",
-      "placeholder": ""
+      "placeholder": "",
+      "value": "value",
+      "error_msg": "validation error"
     },
     {
       "type": "text",
       "id": "email",
       "name": "email",
       "label": "Label:",
-      "placeholder": ""
+      "placeholder": "",
+      "value": "value",
+      "error_msg": "validation error"
     },
     {
       "type": "text",
       "id": "title",
       "name": "title",
       "label": "Label:",
-      "placeholder": ""
+      "placeholder": "",
+      "value": "value",
+      "error_msg": "validation error"
     },
     {
       "type": "textarea",
       "id": "message",
       "name": "message",
       "label": "Label:",
-      "placeholder": ""
+      "placeholder": "",
+      "value": "value",
+      "error_msg": "validation error"
     }
   ]
 }

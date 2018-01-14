@@ -1,4 +1,5 @@
 <div class="c-textarea">
-  <label class="c-textarea__label" for="{{ id }}">{{ label }}</label>
-  <textarea id="{{ id }}" name="{{ name }}" class="c-textarea__text" rows="10"></textarea>
+  <label class="c-textarea__label" for="{{ field.id }}">{{ field.label }}</label>
+  <textarea id="{{ field.id }}" name="{{ field.name }}" class="c-textarea__text" rows="10">{{ value }}</textarea>
+  <small class="c-field__error u-text-error">{{ error_msg }}</small>
 </div>

@@ -1,5 +1,9 @@
 {
-  "id": "message",
-  "name": "message",
-  "label": "Label:"
+  "field": {
+    "id": "message",
+    "name": "message",
+    "label": "Label:",
+    "value": "value",
+    "error_msg": "validation error"
+  }
 }

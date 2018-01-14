@@ -2,12 +2,19 @@
   {% for field in fields %}
     <div class="o-box o-box--small">
 
-      {# WIP stuff #}
+      {# WIP - need to add select, radio, checkbox #}
       {% if field.type == 'text' %}
-        {% include '01-molecules/forms/field/field.twig' with field %}
+
+        {% include '01-molecules/forms/field/field.twig' with {
+          value: validator.input().escape(field.name),
+          error_msg: validator.errors().first(field.name)
+        } %}
 
       {% elseif field.type == 'textarea' %}
-        {% include '01-molecules/forms/textarea/textarea.twig' with field %}
+        {% include '01-molecules/forms/textarea/textarea.twig' with {
+          value: validator.input().escape(field.name),
+          error_msg: validator.errors().first(field.name)
+        }%}
       {% endif %}
 
     </div>

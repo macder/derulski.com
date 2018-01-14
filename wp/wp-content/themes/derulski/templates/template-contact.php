@@ -25,37 +25,36 @@ $context['form'] = array(
       'type' => 'text',
       'id' => 'fname',
       'name' => 'fname',
-      'label' => 'Name:',
+      'label' => 'Name',
+      'rules' => 'required',
     ],
     [
       'type' => 'text',
       'id' => 'email',
       'name' => 'email',
-      'label' => 'Email:',
+      'label' => 'Email',
+      'rules' => 'required|email',
     ],
     [
       'type' => 'textarea',
       'id' => 'message',
       'name' => 'message',
-      'label' => 'Message:',
-    ]
-  ),
-  'validator' => array(
-    'fname' => [
-      'label' => 'Name',
-      'rules' => 'required',
-    ],
-    'email' => [
-      'label' => 'Email',
-      'rules' => 'required|email',
-    ],
-    'message' => [
       'label' => 'Message',
       'rules' => 'required',
     ]
   )
 );
 
+foreach ( $context['form']['fields'] as $field ) {
+  $validator[ $field['name'] ] = array(
+    'label' => $field['label'],
+    'rules' => $field['rules'],
+  );
+}
+
+$context['form']['validator'] = $validator;
+
 wfv_create( 'contact_form', $context['form']['validator'] );
+
 
 Timber::render( array( 'contact.twig' ), $context );

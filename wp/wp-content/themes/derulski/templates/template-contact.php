@@ -16,44 +16,19 @@
 $context = Timber::get_context();
 $context['post'] = new TimberPost();
 
-$context['form'] = array(
-  'name' => 'contact_form',
-  'method' => 'post',
-  'submit' => 'Send',
-  'fields' => array(
-    [
-      'type' => 'text',
-      'id' => 'fname',
-      'name' => 'fname',
-      'label' => 'Name',
-      'rules' => 'required',
-    ],
-    [
-      'type' => 'text',
-      'id' => 'email',
-      'name' => 'email',
-      'label' => 'Email',
-      'rules' => 'required|email',
-    ],
-    [
-      'type' => 'textarea',
-      'id' => 'message',
-      'name' => 'message',
-      'label' => 'Message',
-      'rules' => 'required',
-    ]
-  )
-);
+// form is a acf repeater field
+$context['form'] = get_field('form');
 
+// create form config array for wfv-validation
 foreach ( $context['form']['fields'] as $field ) {
-  $validator[ $field['name'] ] = array(
-    'label' => $field['label'],
-    'rules' => $field['rules'],
-  );
+  $context['validator'][ $field['name'] ] =
+    array(
+      'label' => $field['label'],
+      'rules' => $field['rules'],
+    );
 }
 
-$context['validator'] = $validator;
-
+// creates and assigns validation instance to $context['validator']
 wfv_create( 'contact_form', $context['validator'] );
 
 Timber::render( array( 'contact.twig' ), $context );

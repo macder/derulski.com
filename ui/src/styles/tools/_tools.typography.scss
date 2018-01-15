@@ -83,6 +83,7 @@
   @include mq(md) {
     @include inuit-font-size($inuit-font-size-h4-desktop);
   }
+  @include text-weight($global-font-weight-bold);
 }
 
 @mixin text-h5 {
@@ -90,6 +91,7 @@
   @include mq(md) {
     @include inuit-font-size($inuit-font-size-h5-desktop);
   }
+  @include text-weight($global-font-weight-bold);
 }
 
 @mixin text-h6 {
@@ -97,6 +99,7 @@
   @include mq(md) {
     @include inuit-font-size($inuit-font-size-h6-desktop);
   }
+  @include text-weight($global-font-weight-bold);
 }
 
 @mixin text-weight($weight) {

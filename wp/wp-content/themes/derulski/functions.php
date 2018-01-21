@@ -199,7 +199,19 @@ add_action( 'pre_get_posts', function ( $query ) {
 
 // contact form validation pass
 add_action( 'contact_form', function( $form ) {
-  echo 'pass';
+  $name = $form->input()->escape('fname');
+  $email = $form->input()->escape('email');
+  $msg = $form->input()->escape('message');
+
+  $to = get_bloginfo('admin_email');
+  $subject = 'Message from derulski.com contact form';
+  $message =
+    "From: ". $name ." (". $email .") \n".
+    "Message: \n". $msg;
+
+  $headers[] = 'From:'. $email;
+
+  echo ( wp_mail( $to, $subject, $message ) ) ? 'success' : 'email fail';
 });
 
 // contact form validation fail

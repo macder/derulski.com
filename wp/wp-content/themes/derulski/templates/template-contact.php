@@ -16,6 +16,12 @@
 $context = Timber::get_context();
 $context['post'] = new TimberPost();
 
+$context['hero'] = array(
+  'image' => ( new TimberImage( get_field('hero_image') ) )->src(),
+  'text' => get_field('hero_heading'),
+  'sub_text' => get_field('hero_sub_text'),
+);
+
 // form is a acf repeater field
 $context['form'] = get_field('form');
 

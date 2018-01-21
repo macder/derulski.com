@@ -21,11 +21,13 @@ $context['form'] = get_field('form');
 
 // create form config array for wfv-validation
 foreach ( $context['form']['fields'] as $field ) {
-  $context['validator'][ $field['name'] ] =
-    array(
-      'label' => $field['label'],
-      'rules' => $field['rules'],
-    );
+  $context['validator'][ $field['name'] ] = array(
+    'label' => $field['label'],
+    'rules' => $field['rules'],
+    'messages' => ( $field['messages'] )
+      ? array_column( $field['messages'], 'message', 'rule' )
+      : null,
+  );
 }
 
 // creates and assigns validation instance to $context['validator']

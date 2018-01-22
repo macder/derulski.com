@@ -19,7 +19,9 @@ $context['hero'] = array(
   'sub_text' => $hero['hero']['sub_text'],
 );
 
-$context['posts'] = array_map(
+$query = new Timber\PostQuery();
+
+$context['projects'] = array_map(
   function( $item ) {
     return array(
       'summary' => array(
@@ -34,7 +36,7 @@ $context['posts'] = array_map(
         function( $item ) {
           $image = new TimberImage( $item['image'] );
           $thumb = new TimberImage( $item['image'] );
-          $thumb->src = ( new Timber\ImageHelper() )->resize( $thumb->src, 182, 104 );
+          $thumb->src = ( new Timber\ImageHelper() )->resize( $thumb->src, 218, 124 );
 
           return array(
             'image' => $image,
@@ -45,10 +47,9 @@ $context['posts'] = array_map(
       ),
     );
   },
-  ( new Timber\PostQuery() )->get_posts()
+  $query->get_posts()
 );
 
-// print_r( $context['posts'] );
+$context['pagination'] = get_object_vars( $query->pagination() );
 
 Timber::render('archive-project.twig', $context );
-

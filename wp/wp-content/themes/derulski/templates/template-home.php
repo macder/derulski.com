@@ -22,7 +22,7 @@ $context['hero'] = array(
   'sub_text' => get_field('hero_sub_text'),
 );
 
-$context['recent_posts'] = array_map(
+$context['recent_posts']['items'] = array_map(
   function( $item ) {
     return array(
       'title' => $item->title(),
@@ -40,6 +40,8 @@ $context['recent_posts'] = array_map(
     )
   )
 );
+
+$context['recent_posts']['title'] = get_field('recent_posts_heading');
 
 // print_r($context['recent_posts']);
 

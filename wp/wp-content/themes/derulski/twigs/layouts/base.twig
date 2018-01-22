@@ -4,9 +4,9 @@
   <meta charset="{{ site.charset }}">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500" rel="stylesheet">
   <link href="/build/style.css" rel="stylesheet">
-  <script src="https://use.fontawesome.com/d7313147f3.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
   <link rel="shortcut icon" href="/build/images/favicon.ico" />
   {{ function('wp_head') }}
 </head>
@@ -17,7 +17,7 @@
       <div class="u-pos-fixed">
         {% include "02-organisms/00-global/00-header/header.twig" with {
           items: primary_menu
-        }%}
+        } %}
       </div>
     {% endblock %}
 
@@ -30,7 +30,7 @@
       {% endblock %}
 
       {% block content %}
-        Welcome to the void, clever fellow.
+        Draw from the void, clever fellow.
       {% endblock %}
     </section>
 
@@ -39,7 +39,7 @@
         {% include "02-organisms/00-global/01-footer/footer.twig" with {
           menu: secondary_menu,
           social: social_menu
-        }%}
+        } %}
       </footer>
     {% endblock %}
 

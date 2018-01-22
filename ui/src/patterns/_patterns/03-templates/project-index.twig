@@ -1,13 +1,7 @@
-<div class="u-pos-fixed">
-  {% include '02-organisms/00-global/00-header/header.twig' with primary_nav %}
-</div>
+{% include '02-organisms/lists/project-list/project-list.twig' with {
+  items: projects
+} %}
 
-{% include '01-molecules/blocks/hero/hero.twig' with hero %}
-
-{% include '02-organisms/lists/project-list/project-list.twig' with projects %}
-
-<div class="u-mv-large u-text-center">
+<div class="u-text-center u-mv-large">
   {% include '01-molecules/00-navigation/pagination/pagination.twig' with pagination %}
 </div>
-
-{% include '02-organisms/00-global/01-footer/footer.twig' with footer %}

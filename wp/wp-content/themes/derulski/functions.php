@@ -34,6 +34,8 @@ class DerulskiSite extends TimberSite {
     // register all the dashboards custom option pages
     add_action( 'init', array( $this, 'register_options_pages' ) );
 
+    add_action( 'widgets_init', array( $this, 'register_widgets' ) );
+
     // use newer jQuery from CDN
     add_action( 'wp_enqueue_scripts', array( $this, 'include_jquery') );
     parent::__construct();
@@ -142,12 +144,16 @@ class DerulskiSite extends TimberSite {
           'page-attributes',
           'title',
         ),
+        'capability_type' => 'post',
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 5,
         'public' => true,
         'has_archive' => 'projects',
-        'rewrite' => array('slug' => 'project'),
+        'rewrite' => array(
+          'slug' => 'project',
+          'with_front' => false,
+        ),
       )
     );
   }
@@ -159,6 +165,56 @@ class DerulskiSite extends TimberSite {
   public function register_taxonomies() {
     //this is where you can register custom taxonomies
   }
+
+  /**
+   * Register sidebar widget areas
+   *
+   */
+  public function register_widgets () {
+    register_sidebar( array(
+      'name'          => 'Blog sidebar',
+      'id'            => 'blog_sidebar',
+      'before_widget' => '<div class="c-sidebar__item o-box">',
+      'after_widget'  => '</div>',
+      'before_title'  => '<h3 class="c-horizontal-text-menu__heading u-text-center">',
+      'after_title'   => '</h3>',
+    ) );
+  }
 }
 
 new DerulskiSite();
+
+add_filter( 'jpeg_quality', function( $quality, $context ) {
+  return 75;
+}, 10, 2 );
+
+
+add_action( 'pre_get_posts', function ( $query ) {
+  if ( is_admin() || !isset( $query->query_vars['post_type'] ) )
+    return;
+
+  ( $query->query_vars['post_type'] === 'project' ) &&
+    set_query_var('posts_per_page', 2);
+});
+
+// contact form validation pass
+add_action( 'contact_form', function( $form ) {
+  $name = $form->input()->escape('fname');
+  $email = $form->input()->escape('email');
+  $msg = $form->input()->escape('message');
+
+  $to = get_bloginfo('admin_email');
+  $subject = 'Message from derulski.com contact form';
+  $message =
+    "From: ". $name ." (". $email .") \n".
+    "Message: \n". $msg;
+
+  $headers[] = 'From:'. $email;
+
+  wp_mail( $to, $subject, $message, $headers );
+});
+
+// contact form validation fail
+add_action( 'contact_form_fail', function( $form ) {
+  echo 'fail';
+});

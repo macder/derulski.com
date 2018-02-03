@@ -10,7 +10,7 @@
 
   <div class="o-block__body">
     {% if heading %}<h3>{{ heading }}</h3>{% endif %}
-    <p>{{ body }}</p>
+    {% if body %}<p>{{ body }}</p>{% endif %}
   </div>
 
 </div>

@@ -6,7 +6,8 @@ $colors: (
   cod-grey: #1A1A1A,
   concrete: #F2F2F2,
   crimson: #ED1C24,
-  dusty-gray: #999999,
+  dove-grey: #666666,
+  dusty-grey: #999999,
   mercury: #E6E6E6,
   mine-shaft: #333333,
   silver: #CCCCCC,
@@ -16,6 +17,7 @@ $colors: (
 $functional-colors: (
   // text
   primary-text: color(mine-shaft),
+  light-text: color(dove-grey),
   secondary-text: color(white),
   error-text: color(crimson),
 
@@ -36,6 +38,6 @@ $functional-colors: (
   darkest-background: color(cod-grey),
 
   // borders
-  primary-border: color(dusty-gray),
+  primary-border: color(dusty-grey),
   light-border: color(silver),
 );

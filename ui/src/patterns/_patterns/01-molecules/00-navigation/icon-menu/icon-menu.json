@@ -1,17 +1,17 @@
 {
   "items": [
     {
-      "get_link": "#",
+      "link": "#",
       "icon": "fa-github-square fa-3x",
       "name": "GitHub Profile"
     },
     {
-      "get_link": "#",
+      "link": "#",
       "icon": "fa-linkedin-square fa-3x",
       "name": "LinkedIn Profile"
     },
     {
-      "get_link": "#",
+      "link": "#",
       "icon": "fa-twitter-square fa-3x",
       "name": "Twitter Profile"
     }

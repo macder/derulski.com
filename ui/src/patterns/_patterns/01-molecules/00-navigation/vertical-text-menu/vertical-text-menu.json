@@ -1,23 +1,23 @@
 {
   "items": [
     {
-      "get_link": "#",
+      "link": "#",
       "title": "Lorem"
     },
     {
-      "get_link": "#",
+      "link": "#",
       "title": "Ipsum"
     },
     {
-      "get_link": "#",
+      "link": "#",
       "title": "Dolor"
     },
     {
-      "get_link": "#",
+      "link": "#",
       "title": "Amet"
     },
     {
-      "get_link": "#",
+      "link": "#",
       "title": "Maecenas"
     }
   ]

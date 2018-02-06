@@ -3,6 +3,7 @@ body {
   height: 100%;
 }
 body {
+  background-color: color(primary-background);
   @include text-default;
   font-family: $global-font;
   @include text-weight($global-font-weight-regular);

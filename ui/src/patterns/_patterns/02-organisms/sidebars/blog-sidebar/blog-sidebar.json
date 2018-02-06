@@ -3,23 +3,23 @@
     "heading": "Categories",
     "items": [
       {
-        "get_link": "#",
+        "link": "#",
         "title": "User Interface"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Optimization"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Tutorial"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Opinion"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Uncategorized"
       }
     ]
@@ -28,15 +28,15 @@
     "heading": "Popular Posts",
     "items": [
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Lorem ipsum dolor sit amet"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Proin finibus sem nec enim euismod porta"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Duis tincidunt justo"
       }
     ]
@@ -45,17 +45,17 @@
     "heading": "Social",
     "items": [
       {
-        "get_link": "#",
+        "link": "#",
         "icon": "fa-github-square fa-3x",
         "label": "GitHub Profile"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "icon": "fa-linkedin-square fa-3x",
         "label": "LinkedIn Profile"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "icon": "fa-twitter-square fa-3x",
         "label": "Twitter Profile"
       }

@@ -35,7 +35,7 @@ $context['posts'] = array_map(
       'author' => $item->author()->display_name,
       'category' => $item->terms('category'),
       'image' => $item->thumbnail(),
-      'body' => $item->preview()->read_more(false),
+      'body' => $item->preview()->length(20)->read_more(false),
       'url' => $item->link(),
     );
   },

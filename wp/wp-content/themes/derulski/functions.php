@@ -211,7 +211,7 @@ add_action( 'contact_form', function( $form ) {
 
   $headers[] = 'From:'. $email;
 
-  echo ( wp_mail( $to, $subject, $message ) ) ? 'success' : 'email fail';
+  wp_mail( $to, $subject, $message, $headers );
 });
 
 // contact form validation fail

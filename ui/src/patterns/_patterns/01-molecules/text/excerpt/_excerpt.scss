@@ -1,18 +1,20 @@
 .c-excerpt {
-  @include mq($until: sm) {
-    .o-media__img {
-      float: none;
-      margin-bottom: $inuit-global-spacing-unit;
+
+  .o-block__body-heading {
+    margin-bottom: $inuit-global-spacing-unit-tiny;
+  }
+
+  .o-block__img {
+    img {
+      width: 100%;
     }
+  }
+
+  .c-inline-text-menu__item {
+    margin-right: $inuit-global-spacing-unit-tiny !important;
   }
 }
 
 .c-excerpt__date {
-  @include text-weight($global-font-weight-regular);
+  color: color(light-text);
 }
-
-.c-excerpt__link {
-  text-decoration: none !important;
-}
-
-

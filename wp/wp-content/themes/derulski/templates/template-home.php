@@ -25,11 +25,12 @@ $context['hero'] = array(
 $context['recent_posts']['items'] = array_map(
   function( $item ) {
     return array(
-      'title' => $item->title(),
+      'heading' => $item->title(),
       'date' => $item->date(),
       'author' => $item->author()->display_name,
+      'category' => $item->terms('category'),
       'image' => $item->thumbnail(),
-      'body' => $item->preview()->read_more(false),
+      'body' => $item->preview()->length(20)->read_more(false),
       'url' => $item->link(),
     );
   },
@@ -42,7 +43,5 @@ $context['recent_posts']['items'] = array_map(
 );
 
 $context['recent_posts']['title'] = get_field('recent_posts_heading');
-
-// print_r($context['recent_posts']);
 
 Timber::render( array( 'home.twig' ), $context );

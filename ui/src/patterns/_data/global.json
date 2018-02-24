@@ -2,23 +2,23 @@
   "primary_nav": {
     "items": [
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Home"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Blog"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Projects"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "About"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Contact"
       }
     ]
@@ -26,31 +26,31 @@
   "footer": {
     "menu": [
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Home"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Contact"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "title": "Privacy Policy"
       }
     ],
     "social": [
       {
-        "get_link": "#",
+        "link": "#",
         "icon": "fa-github-square fa-2x",
         "name": "GitHub Profile"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "icon": "fa-linkedin-square fa-2x",
         "name": "LinkedIn Profile"
       },
       {
-        "get_link": "#",
+        "link": "#",
         "icon": "fa-twitter-square fa-2x",
         "name": "Twitter Profile"
       }

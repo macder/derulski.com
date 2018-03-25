@@ -1,0 +1,19 @@
+{% macro comment_thread(comments) %}
+  {% import _self as macros %}
+  {% for comment in comments %}
+    <li class="c-comment-thread__branch">
+      {% include '01-molecules/blocks/comment/comment.twig' %}
+      {% if comment.children %}
+        <ol class="c-comment-thread c-comment-thread--child">
+          {{ macros.comment_thread(comment.children) }}
+        </ol>
+      {% endif %}
+    </li>
+  {% endfor %}
+{% endmacro %}
+
+{% import _self as macros %}
+
+<ol class="c-comment-thread">
+  {{ macros.comment_thread(comments) }}
+</ol>

@@ -17,7 +17,7 @@
     </div>
 
     <div class="c-comment__reply u-mb">
-      {{ comment.reply_link }}
+      {{ comment.reply_link|raw }}
     </div>
 
     {% if comment.children %}

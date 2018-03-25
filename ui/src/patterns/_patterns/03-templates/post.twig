@@ -3,9 +3,7 @@
     <div class="o-layout__item u-2/3@md">
       {% include '02-organisms/text/article/article.twig' %}
       {% if comments %}
-        {% include '02-organisms/sections/comments/comments.twig' with {
-          items: comments
-        } %}
+        {% include '02-organisms/sections/comments/comments.twig' %}
       {% endif %}
       {# {{ function('comment_form') }} #}
     </div>

@@ -1,5 +1,8 @@
 <div class="c-comments">
+  <h3 class="c-comments__heading">Comments</h3>
   {% for item in comments %}
     {% include '01-molecules/blocks/comment/comment.twig' with { comment: item } %}
   {% endfor %}
+
+  {% include '02-organisms/forms/comment-form/comment-form.twig' %}
 </div>

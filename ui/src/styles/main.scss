@@ -133,7 +133,7 @@
 @import "node_modules/inuitcss/objects/objects.wrapper";
 @import "node_modules/inuitcss/objects/objects.layout";
 @import "node_modules/inuitcss/objects/objects.media";
-// @import "node_modules/inuitcss/objects/objects.flag";
+@import "node_modules/inuitcss/objects/objects.flag";
 @import "node_modules/inuitcss/objects/objects.list-bare";
 @import "node_modules/inuitcss/objects/objects.list-inline";
 @import "node_modules/inuitcss/objects/objects.box";
@@ -153,6 +153,7 @@
 @import "../patterns/_patterns/00-atoms/buttons/buttons";
 @import "../patterns/_patterns/00-atoms/images/hero/hero-images";
 @import "../patterns/_patterns/01-molecules/00-navigation/pagination/pagination";
+@import "../patterns/_patterns/01-molecules/blocks/comment/comment";
 @import "../patterns/_patterns/01-molecules/blocks/hero/hero";
 @import "../patterns/_patterns/01-molecules/forms/search/search";
 @import "../patterns/_patterns/01-molecules/media/inline-gallery/inline-gallery";

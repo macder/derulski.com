@@ -8,31 +8,31 @@
  *
  */
 
-@mixin text-huge {
-  @include inuit-font-size($global-font-size-huge, $inuit-global-line-height + 20);
+@mixin text-huge($modifier: 0) {
+  @include inuit-font-size($global-font-size-huge);
   @include mq(md) {
-    @include inuit-font-size($global-font-size-huge-desktop, $inuit-global-line-height + 20);
+    @include inuit-font-size($global-font-size-huge-desktop);
   }
 }
 
-@mixin text-xlg {
+@mixin text-xlg($modifier: 0) {
   @include inuit-font-size($global-font-size-xlg);
   @include mq(md) {
     @include inuit-font-size($global-font-size-xlg-desktop);
   }
 }
 
-@mixin text-lg {
+@mixin text-lg($modifier: 0) {
   @include inuit-font-size($global-font-size-lg, $inuit-global-line-height + 10);
   @include mq(md) {
     @include inuit-font-size($global-font-size-lg-desktop, $inuit-global-line-height + 10);
   }
 }
 
-@mixin text-md {
-  @include inuit-font-size($global-font-size-md);
+@mixin text-md($modifier: 0) {
+  @include inuit-font-size($global-font-size-md, auto, $modifier);
   @include mq(md) {
-    @include inuit-font-size($global-font-size-md-desktop);
+    @include inuit-font-size($global-font-size-md-desktop, auto, $modifier);
   }
 }
 
@@ -40,14 +40,14 @@
   @include inuit-font-size($inuit-global-font-size);
 }
 
-@mixin text-sm {
+@mixin text-sm($modifier: 0) {
   @include inuit-font-size($global-font-size-sm);
   @include mq(md) {
     @include inuit-font-size($global-font-size-sm-desktop);
   }
 }
 
-@mixin text-xsm {
+@mixin text-xsm($modifier: 0) {
   @include inuit-font-size($global-font-size-xsm);
   @include mq(md) {
     @include inuit-font-size($global-font-size-xsm-desktop);

@@ -4,7 +4,7 @@
     <li class="c-comment-thread__branch">
       {% include '01-molecules/blocks/comment/comment.twig' %}
       {% if comment.children %}
-        <ol class="c-comment-thread c-comment-thread--child">
+        <ol class="c-comment-thread__list c-comment-thread__list--child">
           {{ macros.comment_thread(comment.children) }}
         </ol>
       {% endif %}
@@ -14,6 +14,9 @@
 
 {% import _self as macros %}
 
-<ol class="c-comment-thread">
-  {{ macros.comment_thread(comments) }}
-</ol>
+<div class="c-comment-thread">
+  <h3 class="c-comment-thread__heading">Comments</h3>
+  <ol class="c-comment-thread__list">
+    {{ macros.comment_thread(comments) }}
+  </ol>
+</div>

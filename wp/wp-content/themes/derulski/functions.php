@@ -197,6 +197,11 @@ add_action( 'pre_get_posts', function ( $query ) {
     set_query_var('posts_per_page', 2);
 });
 
+// disables html in post comments
+add_filter('comment_text', 'wp_filter_nohtml_kses');
+add_filter('comment_text_rss', 'wp_filter_nohtml_kses');
+add_filter('comment_excerpt', 'wp_filter_nohtml_kses');
+
 // contact form validation pass
 add_action( 'contact_form', function( $form ) {
   $name = $form->input()->escape('fname');

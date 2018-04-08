@@ -9,6 +9,9 @@
     </div>
   </div>
   <div class="c-comment__body u-mt">
+    {% if not comment.approved %}
+      <p><b>Your comment is awaiting moderation</b></p>
+    {% endif %}
     {{ comment.content|wpautop }}
   </div>
   <div class="c-comment__reply u-mb">

@@ -5,6 +5,7 @@
     "date": "June 27, 2017",
     "time": "6:21 am",
     "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi suscipit magna eget molestie sollicitudin.</p>",
-    "reply_link": "<a href=\"#\">Reply</a>"
+    "reply_link": "<a href=\"#\">Reply</a>",
+    "approved": "0"
   }
 }

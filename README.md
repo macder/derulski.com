@@ -15,6 +15,18 @@ Pattern Lab Twig Edition<br>
 InuitCSS<br>
 Webpack
 
+## UI Source Quick Links
+
+**Global**<br>
+[Styles](https://github.com/macder/derulski.com/tree/develop/ui/src/styles)<br>
+[Scripts](https://github.com/macder/derulski.com/tree/develop/ui/src/scripts)
+
+**Features**<br>
+[Patterns](https://github.com/macder/derulski.com/tree/develop/ui/src/patterns/_patterns)
+
+**WP**<br>
+[Theme](https://github.com/macder/derulski.com/tree/develop/wp/wp-content/themes/derulski)
+
 ## Install Local Dev
 
 **Backend**
@@ -75,19 +87,6 @@ In another terminal or tab start Browser Sync for Pattern Lab
 $ cd ui
 $ npm run dev:browsersync
 ```
-
-
-## UI Source Quick Links
-
-**Global**<br>
-[Styles](https://github.com/macder/derulski.com/tree/develop/ui/src/styles)<br>
-[Scripts](https://github.com/macder/derulski.com/tree/develop/ui/src/scripts)
-
-**Features**<br>
-[Patterns](https://github.com/macder/derulski.com/tree/develop/ui/src/patterns/_patterns)
-
-**WP**<br>
-[Theme](https://github.com/macder/derulski.com/tree/develop/wp/wp-content/themes/derulski)
 
 ## License
 

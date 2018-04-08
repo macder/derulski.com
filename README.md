@@ -11,7 +11,7 @@ Launching early 2018
 ## Stack
 
 WordPress<br>
-Pattern Lab<br>
+Pattern Lab Twig Edition<br>
 InuitCSS<br>
 Webpack
 

@@ -10,10 +10,72 @@ Launching early 2018
 
 ## Stack
 
-WordPress
-Pattern Lab
-InuitCSS
+WordPress<br>
+Pattern Lab<br>
+InuitCSS<br>
 Webpack
+
+## Install Local Dev
+
+**Backend**
+
+WordPress and dependencies(plugins) are installed using composer
+
+From project root:
+```sh
+$ composer install
+```
+
+Database:
+```sh
+$ vagrant up
+$ vagrant ssh
+
+# Vagrant box
+$ mysql -u root -proot scotchbox < derulski.sql
+```
+
+**Pattern Library**
+
+*PHP 7 is required to run Pattern Lab Twig Edition*
+
+```sh
+$ cd ui/pattern-lab
+$ composer install
+```
+
+**UI**
+
+```sh
+$ cd ui
+$ npm install
+```
+
+## Run Local Dev
+
+**WordPress**
+```sh
+$ vagrant up
+```
+
+Navigate to http://derulski.Local
+
+**UI**
+
+Start dev build and Pattern Lab
+```sh
+$ cd ui
+$ npm start
+```
+
+Navigate to http://localhost:8080
+
+In another terminal or tab start Browser Sync for Pattern Lab
+```sh
+$ cd ui
+$ npm run dev:browsersync
+```
+
 
 ## UI Source Quick Links
 

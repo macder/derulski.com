@@ -1,5 +1,5 @@
 <?php
 
 $function = new Twig_SimpleFunction('function', function () {
-  return null;
+  return true;
 });

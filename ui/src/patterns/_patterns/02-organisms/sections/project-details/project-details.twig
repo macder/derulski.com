@@ -4,9 +4,13 @@
       {% include '01-molecules/text/summary/summary.twig' with summary %}
     </div>
     <div class="o-layout__item u-1/2@md">
-      {% include '01-molecules/media/inline-gallery/inline-gallery.twig' with {
-        items: gallery
-      }%}
+      {% if gallery %}
+        {% include '01-molecules/media/inline-gallery/inline-gallery.twig' with {
+          items: gallery
+        }%}
+      {% else %}
+        <img class="c-project-details__image u-block u-center" src="{{ image.src }}" alt="{{ image.alt }}" title="{{ image.title }}">
+      {% endif %}
     </div>
   </div>
 </div>

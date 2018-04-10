@@ -1,44 +1,9 @@
 {
   "items": [
     {
-      "gallery": [
-        {
-          "image": {
-            "src": "https://satyr.io/664x376",
-            "alt": "Lorem Ipsum",
-            "title": "Lorem Ipsum"
-          },
-          "thumb": {
-            "src": "https://satyr.io/218x124",
-            "alt": "Lorem Ipsum",
-            "title": "Lorem Ipsum"
-          }
-        },
-        {
-          "image": {
-            "src": "https://satyr.io/664x376/antiquewhite",
-            "alt": "Lorem Ipsum",
-            "title": "Lorem Ipsum"
-          },
-          "thumb": {
-            "src": "https://satyr.io/218x124/antiquewhite",
-            "alt": "Lorem Ipsum",
-            "title": "Lorem Ipsum"
-          }
-        },
-        {
-          "image": {
-            "src": "https://satyr.io/664x376/lavender",
-            "alt": "Lorem Ipsum",
-            "title": "Lorem Ipsum"
-          },
-          "thumb": {
-            "src": "https://satyr.io/218x124/lavender",
-            "alt": "Lorem Ipsum",
-            "title": "Lorem Ipsum"
-          }
-        }
-      ],
+      "image": {
+        "src": "https://satyr.io/314x641"
+      },
       "summary": {
         "title": "Lorem Dolor Sit",
         "sub_heading": "Sed Euismod Malesuada",

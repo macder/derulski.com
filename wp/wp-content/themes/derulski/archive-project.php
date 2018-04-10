@@ -32,19 +32,23 @@ $context['projects'] = array_map(
           'items' => array_column( $item->get_field('summary_list'), 'name' ),
         ),
       ),
-      'gallery' => array_map(
-        function( $item ) {
-          $image = new TimberImage( $item['image'] );
-          $thumb = new TimberImage( $item['image'] );
-          $thumb->src = ( new Timber\ImageHelper() )->resize( $thumb->src, 218, 124 );
+      'gallery' => ( $item->get_field('media_type') == 'gallery' ) ?
+        array_map(
+          function( $item ) {
+            $image = new TimberImage( $item['image'] );
+            $thumb = new TimberImage( $item['image'] );
+            $thumb->src = ( new Timber\ImageHelper() )->resize( $thumb->src, 218, 124 );
 
-          return array(
-            'image' => $image,
-            'thumb' => $thumb,
-          );
-        },
-        $item->get_field('gallery')
-      ),
+            return array(
+              'image' => $image,
+              'thumb' => $thumb,
+            );
+          },
+          $item->get_field('gallery')
+        ) : null,
+      'image' => ( $item->get_field('media_type') === 'image' )
+        ? new TimberImage( $item->get_field('featured_image') )
+        : null,
     );
   },
   $query->get_posts()

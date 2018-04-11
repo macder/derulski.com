@@ -9,7 +9,8 @@
  * @since    Timber 0.1
  */
 
-$context = Timber::get_context();
+( !isset( $context ) ) &&
+  $context = Timber::get_context();
 
 $hero = get_field('hero_project_index', 'option')['content'];
 

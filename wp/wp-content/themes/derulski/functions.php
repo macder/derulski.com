@@ -163,7 +163,21 @@ class DerulskiSite extends TimberSite {
    *
    */
   public function register_taxonomies() {
-    //this is where you can register custom taxonomies
+    register_taxonomy(
+      'project_type',
+      'project',
+      array(
+        'label' => 'Project Types',
+        'meta_box_cb' => false,
+        'show_in_quick_edit' => false,
+        'rewrite' => array(
+          'slug' => 'projects',
+          'with_front' => false,
+        ),
+      )
+    );
+
+    register_taxonomy_for_object_type( 'project_type', 'project' );
   }
 
   /**
@@ -188,12 +202,9 @@ add_filter( 'jpeg_quality', function( $quality, $context ) {
   return 75;
 }, 10, 2 );
 
-
+// limit 2 projects per page on archive and taxonomy pages
 add_action( 'pre_get_posts', function ( $query ) {
-  if ( is_admin() || !isset( $query->query_vars['post_type'] ) )
-    return;
-
-  ( $query->query_vars['post_type'] === 'project' ) &&
+  ( !is_admin() && ( $query->query_vars['post_type'] === 'project' || $query->is_tax('project_type') ) ) &&
     set_query_var('posts_per_page', 2);
 });
 

@@ -25,3 +25,15 @@
   border-bottom-style: $style;
   border-bottom-width: $width;
 }
+
+@mixin border-right($color: primary-border, $style: solid, $width: 1px) {
+  border-right-color: color($color);
+  border-right-style: $style;
+  border-right-width: $width;
+}
+
+@mixin border-left($color: primary-border, $style: solid, $width: 1px) {
+  border-left-color: color($color);
+  border-left-style: $style;
+  border-left-width: $width;
+}

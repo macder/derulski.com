@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "link": "#",
+      "title": "Lorem",
+      "current": 1
+    },
+    {
+      "link": "#",
+      "title": "Maecenas",
+      "current": 0
+    },
+    {
+      "link": "#",
+      "title": "Sed",
+      "current": 0
+    }
+  ]
+}

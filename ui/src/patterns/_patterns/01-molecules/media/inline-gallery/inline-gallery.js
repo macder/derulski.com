@@ -31,8 +31,8 @@ export default class InlineGallery {
    */
   initSwiper() {
     this.swiper = new Swiper (this.$j(this.el).find('.swiper-container'), {
-      speed: 1200,
-      effect: 'flip',
+      speed: 800,
+      effect: 'fade',
     });
   }
 

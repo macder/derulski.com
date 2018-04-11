@@ -20,6 +20,8 @@ $context['hero'] = array(
   'sub_text' => $hero['hero']['sub_text'],
 );
 
+$context['tax_menu'] = ( new TimberMenu('project_type') )->get_items();
+
 $query = new Timber\PostQuery();
 
 $context['projects'] = array_map(

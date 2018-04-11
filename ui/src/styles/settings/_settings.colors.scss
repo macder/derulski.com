@@ -1,11 +1,13 @@
 /* Rule should only apply to applications like `color: black` */
 /* stylelint-disable color-named */
 $colors: (
+  alabaster: #FCFCFC,
   black: #000000,
   cod-grey: #1A1A1A,
   concrete: #F2F2F2,
   crimson: #ED1C24,
-  dusty-gray: #999999,
+  dove-grey: #666666,
+  dusty-grey: #999999,
   mercury: #E6E6E6,
   mine-shaft: #333333,
   silver: #CCCCCC,
@@ -14,27 +16,28 @@ $colors: (
 
 $functional-colors: (
   // text
-  primary-text: color(black),
+  primary-text: color(mine-shaft),
+  light-text: color(dove-grey),
   secondary-text: color(white),
   error-text: color(crimson),
 
   // links
   primary-link: color(crimson),
-  primary-link-hover: color(black),
+  primary-link-hover: color(mine-shaft),
   secondary-link: color(white),
   secondary-link-hover: color(crimson),
-  inverse-link: color(black),
+  inverse-link: color(mine-shaft),
   inverse-link-hover: color(crimson),
 
   // backgrounds
-  primary-background: color(white),
+  primary-background: color(alabaster),
   light-background: color(concrete),
   dim-background: color(mercury),
   dark-background: color(mine-shaft),
-  darker-background: color(cod-grey),
-  darkest-background: color(black),
+  // darker-background: color(cod-grey),
+  darkest-background: color(cod-grey),
 
   // borders
-  primary-border: color(dusty-gray),
+  primary-border: color(dusty-grey),
   light-border: color(silver),
 );

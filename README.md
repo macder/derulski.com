@@ -8,6 +8,13 @@ Launching early 2018
 
 [Pattern library](https://pattern-lab.derulski.com/)
 
+## Stack
+
+WordPress<br>
+Pattern Lab Twig Edition<br>
+InuitCSS<br>
+Webpack
+
 ## UI Source Quick Links
 
 **Global**<br>
@@ -19,6 +26,67 @@ Launching early 2018
 
 **WP**<br>
 [Theme](https://github.com/macder/derulski.com/tree/develop/wp/wp-content/themes/derulski)
+
+## Install Local Dev
+
+**Backend**
+
+WordPress and dependencies(plugins) are installed using composer
+
+From project root:
+```sh
+$ composer install
+```
+
+Database:
+```sh
+$ vagrant up
+$ vagrant ssh
+
+# Vagrant box
+$ mysql -u root -proot scotchbox < derulski.sql
+```
+
+**Pattern Library**
+
+*PHP 7 is required to run Pattern Lab Twig Edition*
+
+```sh
+$ cd ui/pattern-lab
+$ composer install
+```
+
+**UI**
+
+```sh
+$ cd ui
+$ npm install
+```
+
+## Run Local Dev
+
+**WordPress**
+```sh
+$ vagrant up
+```
+
+Navigate to http://derulski.Local
+
+**UI**
+
+Start dev build and Pattern Lab
+```sh
+$ cd ui
+$ npm start
+```
+
+Navigate to http://localhost:8080
+
+In another terminal or tab start Browser Sync for Pattern Lab
+```sh
+$ cd ui
+$ npm run dev:browsersync
+```
 
 ## License
 

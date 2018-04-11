@@ -2,75 +2,75 @@
   "index_name": "Tutorial",
   "posts": [
     {
-      "title": "Lorem ipsum dolor sit amet",
+      "heading": "Lorem ipsum dolor sit amet",
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/180x135",
+        "src": "https://satyr.io/412x168",
         "alt": "alt text",
         "title": "title text"
       },
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nisi in euismod volutpat, nisl ipsum dignissim nisl, nec interdum mauris est vitae lacus.",
       "url": "#"
     },
     {
-      "title": "Lorem ipsum dolor sit amet",
+      "heading": "Lorem ipsum dolor sit amet",
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/180x135",
+        "src": "https://satyr.io/412x168",
         "alt": "alt text",
         "title": "title text"
       },
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+      "body": "Curabitur in tristique neque, sit amet malesuada ligula. Pellentesque ornare dictum lorem sit amet dictum. Nam id felis ac neque dapibus condimentum ut et tortor. Vivamus nec ligula hendrerit.",
       "url": "#"
     },
     {
-      "title": "Lorem ipsum dolor sit amet",
+      "heading": "Lorem ipsum dolor sit amet",
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/180x135",
+        "src": "https://satyr.io/412x168",
         "alt": "alt text",
         "title": "title text"
       },
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+      "body": "Quisque consectetur elit non tellus rhoncus molestie. Cras id velit arcu. Phasellus et erat ultrices, tincidunt quam sit amet, sagittis mauris.",
       "url": "#"
     },
     {
-      "title": "Lorem ipsum dolor sit amet",
+      "heading": "Lorem ipsum dolor sit amet",
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/180x135",
+        "src": "https://satyr.io/412x168",
         "alt": "alt text",
         "title": "title text"
       },
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+      "body": "Curabitur faucibus in mi scelerisque rhoncus. Praesent congue ligula ante, eu mollis erat fermentum a. Ut porttitor, mauris non pharetra aliquet, nulla metus ultrices enim, vel fermentum eros nulla sit amet mi.",
       "url": "#"
     },
     {
-      "title": "Lorem ipsum dolor sit amet",
+      "heading": "Lorem ipsum dolor sit amet",
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/180x135",
+        "src": "https://satyr.io/412x168",
         "alt": "alt text",
         "title": "title text"
       },
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+      "body": "Vivamus sagittis sapien fermentum, fermentum diam non, aliquam lectus. Morbi laoreet viverra odio a volutpat. Nullam iaculis arcu eu dui iaculis, sit amet tristique odio tempor.",
       "url": "#"
     },
     {
-      "title": "Lorem ipsum dolor sit amet",
+      "heading": "Lorem ipsum dolor sit amet",
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/180x135",
+        "src": "https://satyr.io/412x168",
         "alt": "alt text",
         "title": "title text"
       },
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse consequat mollis sem eu dapibus. Donec blandit, nisi a rutrum efficitur, ex nisl pulvinar lectus, non semper tortor ex ut odio. Nulla lacinia nec dui vel malesuada. Quisque non tortor tincidunt, congue diam gravida, aliquam massa. Etiam risus metus, laoreet eget neque.",
+      "body": "Etiam sed lacinia ex. In ultricies posuere dui sit amet convallis. Maecenas euismod libero eu tortor euismod, id efficitur augue elementum.",
       "url": "#"
     }
   ],
@@ -110,23 +110,23 @@
       "heading": "Categories",
       "items": [
         {
-          "get_link": "#",
+          "link": "#",
           "title": "User Interface"
         },
         {
-          "get_link": "#",
+          "link": "#",
           "title": "Optimization"
         },
         {
-          "get_link": "#",
+          "link": "#",
           "title": "Tutorial"
         },
         {
-          "get_link": "#",
+          "link": "#",
           "title": "Opinion"
         },
         {
-          "get_link": "#",
+          "link": "#",
           "title": "Uncategorized"
         }
       ]
@@ -135,15 +135,15 @@
       "heading": "Popular Posts",
       "items": [
         {
-          "get_link": "#",
+          "link": "#",
           "title": "Lorem ipsum dolor sit amet"
         },
         {
-          "get_link": "#",
+          "link": "#",
           "title": "Proin finibus sem nec enim euismod porta"
         },
         {
-          "get_link": "#",
+          "link": "#",
           "title": "Duis tincidunt justo"
         }
       ]
@@ -152,17 +152,17 @@
       "heading": "Social",
       "items": [
         {
-          "get_link": "#",
+          "link": "#",
           "icon": "fa-github-square fa-3x",
           "label": "GitHub Profile"
         },
         {
-          "get_link": "#",
+          "link": "#",
           "icon": "fa-linkedin-square fa-3x",
           "label": "LinkedIn Profile"
         },
         {
-          "get_link": "#",
+          "link": "#",
           "icon": "fa-twitter-square fa-3x",
           "label": "Twitter Profile"
         }

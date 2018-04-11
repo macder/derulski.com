@@ -1,0 +1,34 @@
+/* ==========================================================================
+   #BUTTONS
+   ========================================================================== */
+
+/**
+ *
+ *
+ *
+ */
+
+%btn {
+  display: block;
+  margin: 0;
+  width: 100%;
+  vertical-align: middle;
+  text-align: center;
+  cursor: pointer;
+  border-radius: $global-radius;
+}
+
+@mixin button($padding, $bg-color: light-background, $bg-hover-color: dim-background, $border: primary-border, $color: primary-link ) {
+  @extend %btn;
+  @include border($border);
+
+  padding: $padding;
+  background-color: color($bg-color);
+  color: color($color);
+
+  &:hover {
+    background-color: color($bg-hover-color);
+    text-decoration: none;
+    transition: $global-transition;
+  }
+}

@@ -1,0 +1,41 @@
+<div class="c-comment-form">
+
+  <h3 class="c-comment-form__heading">Leave a Reply</h3>
+
+  <form id="form" class="comment-form" method="post" action="{{ site.site_url~'/wp-comments-post.php' }}">
+    <div class="o-layout">
+
+      {% if user %}
+        <input type="hidden" name="email" value="{{ user.email }}">
+        <input type="hidden" name="author" value="{{ user.name }}">
+        <input type="hidden" name="url" value="{{ user.link }}">
+
+      {% else %}
+        <div class="o-layout__item u-1/2@md">
+          <label class="c-comment-form__label" for="author">Name</label>
+          <input required name="author" type="text" id="author"/>
+        </div>
+
+        <div class="o-layout__item u-1/2@md">
+          <label class="c-comment-form__label" for="email">Email</label>
+          <input required name="email" type="email" id="email"/>
+        </div>
+      {% endif %}
+
+      <div class="o-layout__item u-mv-small">
+        <label for="comment">Comment</label>
+        <textarea required name="comment" cols="60" rows="8" id="comment"></textarea>
+      </div>
+
+      {{ function('comment_id_fields') }}
+
+      <div class="o-layout__item u-1/2@md">
+        <button class="c-btn--primary" type="submit" name="Submit">Post Comment</button>
+      </div>
+
+      <div class="o-layout__item u-1/2@md">
+        {{ function('cancel_comment_reply_link', 'Cancel Reply') }}
+      </div>
+    </div>
+  </form>
+</div>

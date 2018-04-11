@@ -1,7 +1,16 @@
 <div class="c-excerpt">
   <a class="c-excerpt__link u-text-primary" href="{{ url }}">
-    <h3 class="c-excerpt__title u-mb-none">{{ title }}</h3>
-    <p class="c-excerpt__date">{{ date }} by: {{ author }}</p>
-    {% include '01-molecules/objects/media.twig' %}
+    {% include '01-molecules/objects/block.twig' with {
+      image: image,
+      heading: heading
+    } only %}
   </a>
+  <p class="c-excerpt__date u-text-center u-mb-none">{{ date }} by: {{ author }}</p>
+  <div class="c-excerpt__terms u-mb-small u-text-center u-text-sm">
+    {% include '01-molecules/00-navigation/inline-text-menu/inline-text-menu.twig' with {
+      items: category
+    } %}
+  </div>
+  <p class="c-excerpt__body">{{ body }}</p>
+  {# <a class="c-btn c-btn--primary c-btn--small" href="{{ url }}">Continue Reading</a> #}
 </div>

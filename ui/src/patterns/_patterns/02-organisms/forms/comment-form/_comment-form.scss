@@ -1,0 +1,6 @@
+.c-comment-form {
+
+  #cancel-comment-reply-link {
+    @include button($inuit-global-spacing-unit-small);
+  }
+}

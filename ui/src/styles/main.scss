@@ -91,6 +91,7 @@
 // @import "node_modules/inuitcss/tools/tools.hidden";
 @import "node_modules/sass-mq/mq";
 @import "tools/tools.borders";
+@import "tools/tools.buttons";
 @import "tools/tools.links";
 @import "tools/tools.hidden";
 @import "tools/tools.spacing";
@@ -133,7 +134,7 @@
 @import "node_modules/inuitcss/objects/objects.wrapper";
 @import "node_modules/inuitcss/objects/objects.layout";
 @import "node_modules/inuitcss/objects/objects.media";
-// @import "node_modules/inuitcss/objects/objects.flag";
+@import "node_modules/inuitcss/objects/objects.flag";
 @import "node_modules/inuitcss/objects/objects.list-bare";
 @import "node_modules/inuitcss/objects/objects.list-inline";
 @import "node_modules/inuitcss/objects/objects.box";
@@ -150,23 +151,33 @@
 // COMPONENTS
 //
 // Build and include your project’s UI Compoments here.
+@import "components/components.sidebar";
+
+// Atoms
 @import "../patterns/_patterns/00-atoms/buttons/buttons";
 @import "../patterns/_patterns/00-atoms/images/hero/hero-images";
+
+// Molecules
 @import "../patterns/_patterns/01-molecules/00-navigation/pagination/pagination";
+@import "../patterns/_patterns/01-molecules/blocks/comment/comment";
 @import "../patterns/_patterns/01-molecules/blocks/hero/hero";
 @import "../patterns/_patterns/01-molecules/forms/search/search";
 @import "../patterns/_patterns/01-molecules/media/inline-gallery/inline-gallery";
 @import "../patterns/_patterns/01-molecules/media/thumb-overlay-link/thumb-overlay-link";
 @import "../patterns/_patterns/01-molecules/text/excerpt/excerpt";
 @import "../patterns/_patterns/01-molecules/toggles/hamburger/hamburger";
+
+// Organisms
 @import "../patterns/_patterns/02-organisms/00-global/00-header/header";
 @import "../patterns/_patterns/02-organisms/00-global/01-footer/footer";
+@import "../patterns/_patterns/02-organisms/forms/comment-form/comment-form";
+@import "../patterns/_patterns/02-organisms/lists/comment-thread/comment-thread";
 @import "../patterns/_patterns/02-organisms/lists/excerpt-list/excerpt-list";
 @import "../patterns/_patterns/02-organisms/sections/cost/cost";
 @import "../patterns/_patterns/02-organisms/sections/featured-projects/featured-projects";
 @import "../patterns/_patterns/02-organisms/sections/features/features";
 @import "../patterns/_patterns/02-organisms/sections/quote-bar/quote-bar";
-@import "components/components.sidebar";
+@import "../patterns/_patterns/02-organisms/text/article/article";
 
 
 
@@ -183,6 +194,7 @@ $inuit-offsets: true;
 // @import "node_modules/inuitcss/utilities/utilities.print";
 // @import "node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.backgrounds";
+@import "utilities/utilities.display";
 @import "utilities/utilities.hide";
 @import "utilities/utilities.links";
 @import "utilities/utilities.overlay";

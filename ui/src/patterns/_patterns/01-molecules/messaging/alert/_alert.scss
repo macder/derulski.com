@@ -1,0 +1,23 @@
+.c-alert {
+  @include border();
+  border-radius: $global-radius;
+  background-color: color(light-background);
+}
+
+.c-alert--success {
+  background-color: color(success-background);
+  border-color: color(success-border);
+
+  .c-alert__body {
+    color: color(success-text);
+  }
+}
+
+.c-alert--error {
+  background-color: color(error-background);
+  border-color: color(error-border);
+
+  .c-alert__body {
+    color: color(error-text);
+  }
+}

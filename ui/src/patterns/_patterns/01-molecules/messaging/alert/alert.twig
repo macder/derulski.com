@@ -1,0 +1,9 @@
+{% set classes = [
+  'c-alert',
+  success ? 'c-alert--success',
+  error ? 'c-alert--error',
+] %}
+
+<div class="{{ classes|join(' ') }} u-pv-small u-ph">
+  <p class="c-alert__body u-mb-none">{{ body }}</p>
+</div>

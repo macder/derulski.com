@@ -22,5 +22,18 @@ $context['hero'] = array(
   'sub_text' => get_field('hero_sub_text'),
 );
 
+$context['body'] = get_field('body');
+
+$context['profiles'] = array_map(
+  function($item) {
+    return array(
+      'link' => $item['link']['url'],
+      'icon' => $item['icon'],
+      'name' => $item['link']['title'],
+    );
+  }, get_field('profiles')
+);
+
+$context['image'] = $context['post']->thumbnail();
 
 Timber::render( array( 'about.twig' ), $context );

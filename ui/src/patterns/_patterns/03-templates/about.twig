@@ -1,0 +1,15 @@
+<div class="o-wrapper u-mv-huge">
+  <div class="o-layout o-layout--reverse">
+    <div class="o-layout__item u-2/3@md">
+      {{ body }}
+    </div>
+    <div class="o-layout__item u-1/3@md">
+      <div class="o-block">
+        <img class="o-block__img" src="{{ image.src }}" alt="{{ image.alt }}" title="{{ image.title }}">
+        <div class="o-block__body">
+          {% include '01-molecules/00-navigation/icon-menu/icon-menu.twig' with { items: profiles } %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

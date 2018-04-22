@@ -1,3 +1,8 @@
 <div class="c-contact-form">
+  {% if validator.is_valid or validator.has_errors %}
+    <div class="o-box o-box--small">
+      {% include '01-molecules/messaging/alert/alert.twig' with alert %}
+    </div>
+  {% endif %}
   {% include '02-organisms/forms/stacked-form/stacked-form.twig' with form %}
 </div>

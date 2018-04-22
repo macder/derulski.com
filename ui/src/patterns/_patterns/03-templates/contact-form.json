@@ -26,6 +26,10 @@
         "placeholder": ""
       }
     ]
+  },
+  "alert": {
+    "body": "Your message has been sent",
+    "success": true,
+    "error": false
   }
-
 }

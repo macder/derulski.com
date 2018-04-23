@@ -39,4 +39,12 @@ foreach ( $context['form']['fields'] as $field ) {
 // creates and assigns validation instance to $context['validator']
 wfv_create( 'contact_form', $context['validator'] );
 
+$context['alert'] = array(
+  'body' => ($context['validator']->is_valid() )
+    ? get_field('messages_success')
+    : get_field('messages_error'),
+  'success' => $context['validator']->is_valid(),
+  'error' => $context['validator']->has_errors(),
+);
+
 Timber::render( array( 'contact.twig' ), $context );

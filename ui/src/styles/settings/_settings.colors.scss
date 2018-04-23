@@ -3,14 +3,19 @@
 $colors: (
   alabaster: #FCFCFC,
   black: #000000,
+  ceramic: #fcfff5,
+  chablis: #FFF6F6,
   cod-grey: #1A1A1A,
   concrete: #F2F2F2,
   crimson: #ED1C24,
   dove-grey: #666666,
   dusty-grey: #999999,
+  killarney: #2C662D,
   mercury: #E6E6E6,
   mine-shaft: #333333,
+  norway: #A3C293,
   silver: #CCCCCC,
+  stiletto: #9F3A38,
   white: #FFFFFF,
 );
 
@@ -19,7 +24,8 @@ $functional-colors: (
   primary-text: color(mine-shaft),
   light-text: color(dove-grey),
   secondary-text: color(white),
-  error-text: color(crimson),
+  error-text: color(stiletto),
+  success-text: color(killarney),
 
   // links
   primary-link: color(crimson),
@@ -36,8 +42,12 @@ $functional-colors: (
   dark-background: color(mine-shaft),
   // darker-background: color(cod-grey),
   darkest-background: color(cod-grey),
+  success-background: color(ceramic),
+  error-background: color(chablis),
 
   // borders
   primary-border: color(dusty-grey),
   light-border: color(silver),
+  success-border: color(norway),
+  error-border: color(stiletto),
 );

@@ -230,8 +230,3 @@ add_action( 'contact_form', function( $form ) {
 
   wp_mail( $to, $subject, $message, $headers );
 });
-
-// contact form validation fail
-add_action( 'contact_form_fail', function( $form ) {
-  echo 'fail';
-});

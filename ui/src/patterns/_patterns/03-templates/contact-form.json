@@ -26,6 +26,14 @@
         "placeholder": ""
       }
     ]
+  },
+  "validator": {
+    "is_valid": true,
+    "has_errors": false
+  },
+  "alert": {
+    "body": "Your message has been sent",
+    "success": true,
+    "error": false
   }
-
 }

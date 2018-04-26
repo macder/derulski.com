@@ -57,6 +57,7 @@ $context['projects'] = array_map(
       'image' => ( $item->get_field('media_type') === 'image' )
         ? new TimberImage( $item->get_field('featured_image') )
         : null,
+      'slug' => $item->slug,
     );
   },
   $query->get_posts()

@@ -9,8 +9,13 @@
  * @since    Timber 0.1
  */
 
-( !isset( $context ) ) &&
+if ( !isset( $context ) ) {
   $context = Timber::get_context();
+  add_filter( 'the_seo_framework_enable_auto_description', '__return_false' );
+  add_filter( 'the_seo_framework_generated_description', function() {
+    return get_field('meta_desc_project_index', 'option');
+  } );
+}
 
 $hero = get_field('hero_project_index', 'option')['content'];
 

@@ -7,7 +7,7 @@
     author: post.author,
     body: post.content,
     comments: post.comments,
-    comment_count: post.get_comment_count,
+    comment_count: function('get_comments_number_text'),
   } %}
 
     {% block sidebar %}

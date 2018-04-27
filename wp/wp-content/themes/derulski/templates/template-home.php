@@ -22,26 +22,4 @@ $context['hero'] = array(
   'sub_text' => get_field('hero_sub_text'),
 );
 
-$context['recent_posts']['items'] = array_map(
-  function( $item ) {
-    return array(
-      'heading' => $item->title(),
-      'date' => $item->date(),
-      'author' => $item->author()->display_name,
-      'category' => $item->terms('category'),
-      'image' => $item->thumbnail(),
-      'body' => $item->preview()->length(20)->read_more(false),
-      'url' => $item->link(),
-    );
-  },
-  Timber::get_posts(
-    array(
-      'post_type' => 'post',
-      'posts_per_page' => '2',
-    )
-  )
-);
-
-$context['recent_posts']['title'] = get_field('recent_posts_heading');
-
 Timber::render( array( 'home.twig' ), $context );

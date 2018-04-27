@@ -1,0 +1,10 @@
+$project-anchor-offset: $inuit-global-spacing-unit-large * -3;
+
+.c-project-details {
+  position: relative;
+}
+
+.c-project-details__anchor {
+  position: absolute;
+  top: $project-anchor-offset;
+}

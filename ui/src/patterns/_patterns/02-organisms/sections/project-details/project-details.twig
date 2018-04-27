@@ -1,10 +1,8 @@
 <div class="c-project-details">
   <a id="{{ slug }}" class="c-project-details__anchor" aria-hidden="true"></a>
   <div class="o-layout {{ reverse_layout ? 'o-layout--reverse' }}">
-    <div class="o-layout__item u-1/2@md">
-      {% include '01-molecules/text/summary/summary.twig' with summary %}
-    </div>
-    <div class="o-layout__item u-1/2@md">
+
+    <div class="o-layout__item u-1/2@md u-mb-large">
       {% if gallery %}
         {% include '01-molecules/media/inline-gallery/inline-gallery.twig' with {
           items: gallery
@@ -12,6 +10,10 @@
       {% else %}
         <img class="c-project-details__image u-block u-center" src="{{ image.src }}" alt="{{ image.alt }}" title="{{ image.title }}">
       {% endif %}
+    </div>
+
+    <div class="o-layout__item u-1/2@md">
+      {% include '01-molecules/text/summary/summary.twig' with summary %}
     </div>
   </div>
 </div>

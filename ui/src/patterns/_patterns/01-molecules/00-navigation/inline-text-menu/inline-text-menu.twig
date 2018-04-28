@@ -1,7 +1,7 @@
 <ul class="c-inline-text-menu o-list-inline u-mb-none">
   {% for item in items %}
     <li class="c-inline-text-menu__item o-list-inline__item u-mr">
-      <a class="c-inline-text-menu__item-link" href="{{ item.link }}">
+      <a class="c-inline-text-menu__item-link" href="{{ item.link }}" {{ item.is_external ? 'target="_blank" rel="noopener"' }}>
         {{ item.title }}
       </a>
     </li>

@@ -1,5 +1,5 @@
 <div class="c-contact-form">
-  {% if validator.is_valid or validator.has_errors %}
+  {% if validator.is_valid %}
     <div class="o-box o-box--small u-mv">
       {% include '01-molecules/messaging/alert/alert.twig' with alert %}
     </div>

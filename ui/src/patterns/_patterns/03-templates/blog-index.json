@@ -1,4 +1,21 @@
 {
+  "categories": [
+    {
+      "link": "#",
+      "title": "Lorem",
+      "current": 1
+    },
+    {
+      "link": "#",
+      "title": "Maecenas",
+      "current": 0
+    },
+    {
+      "link": "#",
+      "title": "Sed",
+      "current": 0
+    }
+  ],
   "index_name": "Tutorial",
   "posts": [
     {
@@ -6,7 +23,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/412x168",
+        "src": "https://satyr.io/652x266",
         "alt": "alt text",
         "title": "title text"
       },
@@ -18,7 +35,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/412x168",
+        "src": "https://satyr.io/652x266",
         "alt": "alt text",
         "title": "title text"
       },
@@ -30,7 +47,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/412x168",
+        "src": "https://satyr.io/652x266",
         "alt": "alt text",
         "title": "title text"
       },
@@ -42,7 +59,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/412x168",
+        "src": "https://satyr.io/652x266",
         "alt": "alt text",
         "title": "title text"
       },
@@ -54,7 +71,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/412x168",
+        "src": "https://satyr.io/652x266",
         "alt": "alt text",
         "title": "title text"
       },
@@ -66,7 +83,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "image": {
-        "src": "https://satyr.io/412x168",
+        "src": "https://satyr.io/652x266",
         "alt": "alt text",
         "title": "title text"
       },

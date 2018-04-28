@@ -90,6 +90,7 @@ class DerulskiSite extends TimberSite {
     register_nav_menu('secondary', 'Footer Navigation');
     register_nav_menu('social', 'Footer Social');
     register_nav_menu('project_type', 'Project Navigation');
+    register_nav_menu('blog_categories', 'Blog Navigation');
   }
 
   /**
@@ -191,7 +192,7 @@ class DerulskiSite extends TimberSite {
       'id'            => 'blog_sidebar',
       'before_widget' => '<div class="c-sidebar__item o-box">',
       'after_widget'  => '</div>',
-      'before_title'  => '<h3 class="c-horizontal-text-menu__heading u-text-center">',
+      'before_title'  => '<h3 class="c-vertical-text-menu__heading u-text-center">',
       'after_title'   => '</h3>',
     ) );
   }

@@ -45,4 +45,6 @@ $context['posts'] = array_map(
 $context['pagination'] = get_object_vars( $query->pagination() );
 $context['sidebar'] = Timber::get_widgets('blog_sidebar');
 
+$context['categories'] = ( new TimberMenu('blog_categories') )->get_items();
+
 Timber::render( 'index.twig', $context );

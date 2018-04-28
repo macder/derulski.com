@@ -1,4 +1,21 @@
 {
+  "categories": [
+    {
+      "link": "#",
+      "title": "Lorem",
+      "current": 1
+    },
+    {
+      "link": "#",
+      "title": "Maecenas",
+      "current": 0
+    },
+    {
+      "link": "#",
+      "title": "Sed",
+      "current": 0
+    }
+  ],
   "index_name": "Tutorial",
   "posts": [
     {

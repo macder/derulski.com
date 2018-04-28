@@ -90,6 +90,7 @@ class DerulskiSite extends TimberSite {
     register_nav_menu('secondary', 'Footer Navigation');
     register_nav_menu('social', 'Footer Social');
     register_nav_menu('project_type', 'Project Navigation');
+    register_nav_menu('blog_categories', 'Blog Navigation');
   }
 
   /**

@@ -1,7 +1,7 @@
 <ul class="c-tabs o-pack">
   {% for item in items %}
     <li class="c-tabs__item o-pack__item u-text-center">
-      <a class="c-tabs__item-link {{ item.current ? 'is-active' }}" href="{{ item.link }}">{{ item.title }}</a>
+      <a class="c-tabs__item-link {{ item.current ? 'is-active' }}" href="{{ item.link }}" {{ item.is_external ? 'target="_blank" rel="noopener"' }}>{{ item.title }}</a>
     </li>
   {% endfor %}
 </ul>

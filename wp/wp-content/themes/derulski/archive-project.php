@@ -29,6 +29,7 @@ $context['tax_menu'] = ( new TimberMenu('project_type') )->get_items();
 
 $query = new Timber\PostQuery();
 
+// TODO - simplify this
 $context['projects'] = array_map(
   function( $item ) {
     return array(

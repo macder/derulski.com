@@ -1,4 +1,6 @@
-<div class="o-wrapper u-pt-huge">
-  <h1>{{ post.title }}</h1>
+<div class="o-wrapper u-pv-large">
+  {% if post.title %}
+    <h1>{{ post.title }}</h1>
+  {% endif %}
   {{ post.content|raw }}
 </div>

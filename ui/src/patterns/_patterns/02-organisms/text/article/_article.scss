@@ -1,5 +1,5 @@
 .c-article {
-  p {
+  p, li {
     @include text-md($modifier: 1);
   }
 }

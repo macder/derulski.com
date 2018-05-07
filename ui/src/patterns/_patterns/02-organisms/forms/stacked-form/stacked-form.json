@@ -2,7 +2,11 @@
   "method": "get",
   "action": "/",
   "name": "form_name",
-  "submit": "Submit",
+  "submit_btn": {
+    "label": "Submit",
+    "type": "submit",
+    "name": "submit"
+  },
   "fields": [
     {
       "type": "text",

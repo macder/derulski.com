@@ -30,7 +30,11 @@
       {{ function('comment_id_fields') }}
 
       <div class="o-layout__item u-1/2@md">
-        <button class="c-btn--primary" type="submit" name="Submit">Post Comment</button>
+        {% include '00-atoms/buttons/button/button.twig' with {
+          label: 'Post Comment',
+          type: 'submit',
+          name: 'Submit'
+        } %}
       </div>
 
       <div class="o-layout__item u-1/2@md">

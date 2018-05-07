@@ -13,7 +13,7 @@
   {{ validator.token_fields }}
 
   <div class="o-box o-box--small">
-    <input class="c-btn c-btn--primary" type="submit" value="{{ submit }}">
+    {% include '00-atoms/buttons/button/button.twig' with submit_btn only %}
   </div>
 
 </form>

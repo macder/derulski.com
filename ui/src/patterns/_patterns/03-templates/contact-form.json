@@ -3,6 +3,11 @@
     "method": "get",
     "action": "/",
     "name": "contact_form",
+    "submit_btn": {
+      "label": "Send",
+      "type": "submit",
+      "name": "send"
+    },
     "fields": [
       {
         "type": "text",

@@ -90,6 +90,10 @@
   color: color(secondary-text);
 }
 
+.u-text-light {
+  color: color(light-text);
+}
+
 .u-text-error {
   color: color(error-text);
 }
@@ -98,6 +102,6 @@
   @include text-weight($global-font-weight-regular);
 }
 
-.u-text-light {
+.u-text-thin {
   @include text-weight($global-font-weight-light);
 }

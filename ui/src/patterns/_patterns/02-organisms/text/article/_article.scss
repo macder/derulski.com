@@ -1,5 +1,7 @@
 .c-article {
-  p, li {
-    @include text-md($modifier: 1);
+  .s-cms-content {
+    p, li {
+      @include text-md($modifier: 1);
+    }
   }
 }

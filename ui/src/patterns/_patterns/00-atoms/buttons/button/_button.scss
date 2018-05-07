@@ -14,7 +14,12 @@
 }
 
 .c-btn--icon {
+  padding: 0;
   border: none;
   background: none;
   cursor: pointer;
+
+  &:hover {
+    background: none;
+  }
 }

@@ -1,4 +1,5 @@
 {
   "label": "Link button",
-  "link": "#"
+  "link": "#",
+  "is_external": 0
 }

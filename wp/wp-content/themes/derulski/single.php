@@ -15,6 +15,23 @@ $context['post'] = $post;
 
 $context['sidebar'] = Timber::get_widgets('blog_sidebar');
 
+// WIP - temp until moved into wp dashboard
+$context['social_share'] = array(
+	[
+    "link" => "https://www.facebook.com/sharer/sharer.php?u=". urlencode( $post->link ),
+    "icon" => "fa-facebook-square fa-3x",
+    "name" => "Share on Facebook",
+    "is_external" => 1,
+	],
+	[
+    "link" =>
+      "https://twitter.com/intent/tweet/?text=". urlencode( html_entity_decode( $post->title ) ) ."&url=". urlencode( $post->link ),
+    "icon" => "fa-twitter-square fa-3x",
+    "name" => "Share on Twitter",
+    "is_external" => 1,
+	]
+);
+
 $template = ( post_password_required( $post->ID ) )
   ? 'single-password.twig'
   : array(

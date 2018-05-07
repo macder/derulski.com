@@ -2,6 +2,11 @@
   <div class="o-layout u-mv-large">
     <div class="o-layout__item u-2/3@md">
       {% include '02-organisms/text/article/article.twig' %}
+      <div class="u-mt-large">
+        {% include '01-molecules/controls/social-share/social-share.twig' with {
+          items: social_share
+        } %}
+      </div>
       {% if comments %}
         <div class="u-mt-huge">
           {% include '02-organisms/sections/comments/comments.twig' %}

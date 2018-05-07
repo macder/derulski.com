@@ -1,1 +1,7 @@
-<a class="c-btn {{ style_mod }}" href="{{ link }}">{{ label }}</a>
+<a class="c-btn {{ icon ? 'c-btn--icon u-inline-block' }} {{ style_mod }}" href="{{ link }}" {{ is_external ? 'target="_blank" rel="noopener"' }}>
+  {% if icon %}
+    <i class="fa {{ icon }}" aria-hidden="true"></i>
+  {% else %}
+    {{ label }}
+  {% endif %}
+</a>

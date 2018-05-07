@@ -1,0 +1,5 @@
+.c-social-share {
+  .c-btn--icon {
+    @include link-inverse();
+  }
+}

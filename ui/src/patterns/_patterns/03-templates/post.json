@@ -29,6 +29,18 @@
       "reply_link": "<a href=\"#\">Reply</a>"
     }
   ],
+  "social_share": [
+    {
+      "link": "#",
+      "icon": "fa-facebook-square fa-3x",
+      "name": "Share on Facebook"
+    },
+    {
+      "link": "#",
+      "icon": "fa-twitter-square fa-3x",
+      "name": "Share on Twitter"
+    }
+  ],
   "sidebar": {
     "categories": {
       "heading": "Categories",

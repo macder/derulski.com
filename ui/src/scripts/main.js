@@ -1,5 +1,6 @@
 import Header from '../patterns/_patterns/02-organisms/00-global/00-header/header';
 import InlineGallery from '../patterns/_patterns/01-molecules/media/inline-gallery/inline-gallery';
+import SocialShare from '../patterns/_patterns/01-molecules/controls/social-share/social-share';
 
 const components = [
   {
@@ -9,6 +10,10 @@ const components = [
   {
     name: 'inline-gallery',
     Component: InlineGallery,
+  },
+  {
+    name: 'social-share',
+    Component: SocialShare,
   },
 ];
 

@@ -1,8 +1,4 @@
 .c-btn {
-
-}
-
-.c-btn--primary {
   @include button($inuit-global-spacing-unit-small);
   @include text-default();
 }

@@ -6,7 +6,7 @@ Personal site using Atomic Design workflow in WP
 
 https://derulski.com
 
-[Pattern library](https://pattern-lab.derulski.com/)
+https://pattern-lab.derulski.com
 
 ## Stack
 

@@ -3,7 +3,7 @@
     margin-right: $inuit-global-spacing-unit-tiny !important;
   }
   .c-inline-text-menu__item-link {
-    color: color(light-text);
+    @include link-light();
   }
 }
 

@@ -15,3 +15,7 @@
 .u-link-inverse {
   @include link-inverse();
 }
+
+.u-link-light {
+  @include link-light();
+}

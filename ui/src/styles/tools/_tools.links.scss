@@ -28,3 +28,7 @@
 @mixin link-inverse() {
   @include link(inverse-link, inverse-link-hover);
 }
+
+@mixin link-light() {
+  @include link(light-link, light-link-hover);
+}

@@ -41,8 +41,6 @@ class DerulskiSite extends TimberSite {
     // register all the dashboards custom option pages
     add_action( 'init', array( $this, 'register_options_pages' ) );
 
-    // add_action( 'widgets_init', array( $this, 'register_widgets' ) );
-
     // use newer jQuery from CDN
     add_action( 'wp_enqueue_scripts', array( $this, 'include_jquery') );
     parent::__construct();
@@ -194,21 +192,6 @@ class DerulskiSite extends TimberSite {
     );
 
     register_taxonomy_for_object_type( 'project_type', 'project' );
-  }
-
-  /**
-   * Register sidebar widget areas
-   *
-   */
-  public function register_widgets () {
-    register_sidebar( array(
-      'name'          => 'Blog sidebar',
-      'id'            => 'blog_sidebar',
-      'before_widget' => '<div class="c-sidebar__item o-box">',
-      'after_widget'  => '</div>',
-      'before_title'  => '<h3 class="c-vertical-text-menu__heading u-text-center">',
-      'after_title'   => '</h3>',
-    ) );
   }
 }
 

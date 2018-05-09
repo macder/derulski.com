@@ -10,6 +10,7 @@ const uiBuildPath = path.resolve(process.cwd(), 'build');
 
 // pattern lab patterns source root
 const patternsPath = path.resolve(CONTEXT, 'patterns/_patterns');
+const layoutsPath = path.resolve(CONTEXT, 'patterns/_layouts');
 
 
 
@@ -43,6 +44,7 @@ module.exports = [{
     new CopyWebpackPlugin([
       { from: path.resolve(process.cwd(), 'src/images'), to: 'images' },
       { from: path.resolve(patternsPath, '**/*.twig'), to: uiBuildPath },
+      { from: path.resolve(layoutsPath, '**/*.twig'), to: uiBuildPath },
     ]),
   ],
 }, {

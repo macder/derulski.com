@@ -1,0 +1,14 @@
+{% embed "@layouts/objects/media.twig" %}
+  {% block media_img %}
+    {% if icon %}
+      <i class="c-media-block__icon fa {{ icon }}" aria-hidden="true"></i>
+    {% else %}
+      <img class="c-media-block__image" src="{{ image.src }}" alt="{{ image.alt }}" title="{{ image.title }}">
+    {% endif %}
+  {% endblock %}
+
+  {% block media_body %}
+    {% if heading %}<h3 class="c-media-block__heading u-mb-none">{{ heading }}</h3>{% endif %}
+    <p class="c-media-block__text">{{ body }}</p>
+  {% endblock %}
+{% endembed %}

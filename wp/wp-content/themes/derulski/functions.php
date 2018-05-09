@@ -5,6 +5,13 @@ Timber::$locations = array(
  '../ui/build/patterns/_patterns',
 );
 
+add_filter('timber/loader/loader', function($loader){
+  $loader->addPath(realpath('../ui/build/patterns/_layouts'),
+    'layouts'
+  );
+  return $loader;
+});
+
 Timber::$dirname = array('templates', 'twigs');
 
 class DerulskiSite extends TimberSite {

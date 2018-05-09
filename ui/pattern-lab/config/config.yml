@@ -46,4 +46,4 @@ plugins:
         namespaces:
             layouts:
                 paths:
-                - src/patterns/_layouts
+                    - src/patterns/_layouts

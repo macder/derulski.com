@@ -182,6 +182,7 @@
 @import "../patterns/_patterns/02-organisms/sections/project-details/project-details";
 @import "../patterns/_patterns/02-organisms/sections/quote-bar/quote-bar";
 @import "../patterns/_patterns/02-organisms/text/article/article";
+@import "../patterns/_patterns/02-organisms/widgets/recent-posts-widget/recent-posts-widget";
 
 
 
@@ -198,6 +199,7 @@ $inuit-offsets: true;
 // @import "node_modules/inuitcss/utilities/utilities.print";
 // @import "node_modules/inuitcss/utilities/utilities.hide";
 @import "utilities/utilities.backgrounds";
+@import "utilities/utilities.borders";
 @import "utilities/utilities.display";
 @import "utilities/utilities.hide";
 @import "utilities/utilities.links";

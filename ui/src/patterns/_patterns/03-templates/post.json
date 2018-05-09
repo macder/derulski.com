@@ -42,67 +42,40 @@
     }
   ],
   "sidebar": {
-    "categories": {
-      "heading": "Categories",
-      "items": [
-        {
-          "link": "#",
-          "title": "User Interface"
+    "recent_posts": [
+      {
+        "image": {
+          "src": "https://satyr.io/120x80?text=+",
+          "alt": "alt text",
+          "title": "title text"
         },
-        {
-          "link": "#",
-          "title": "Optimization"
+        "heading": "The Warm Up – I Have a Blog Again",
+        "body": "May 5, 2018",
+        "link": "#",
+        "style_mod": "small"
+      },
+      {
+        "image": {
+          "src": "https://satyr.io/120x80?text=+",
+          "alt": "alt text",
+          "title": "title text"
         },
-        {
-          "link": "#",
-          "title": "Tutorial"
+        "heading": "Lorem Ipsum Maecenas",
+        "body": "April 23, 2018",
+        "link": "#",
+        "style_mod": "small"
+      },
+      {
+        "image": {
+          "src": "https://satyr.io/120x80?text=+",
+          "alt": "alt text",
+          "title": "title text"
         },
-        {
-          "link": "#",
-          "title": "Opinion"
-        },
-        {
-          "link": "#",
-          "title": "Uncategorized"
-        }
-      ]
-    },
-    "popular": {
-      "heading": "Popular Posts",
-      "items": [
-        {
-          "link": "#",
-          "title": "Lorem ipsum dolor sit amet"
-        },
-        {
-          "link": "#",
-          "title": "Proin finibus sem nec enim euismod porta"
-        },
-        {
-          "link": "#",
-          "title": "Duis tincidunt justo"
-        }
-      ]
-    },
-    "social": {
-      "heading": "Social",
-      "items": [
-        {
-          "link": "#",
-          "icon": "fa-github-square fa-3x",
-          "label": "GitHub Profile"
-        },
-        {
-          "link": "#",
-          "icon": "fa-linkedin-square fa-3x",
-          "label": "LinkedIn Profile"
-        },
-        {
-          "link": "#",
-          "icon": "fa-twitter-square fa-3x",
-          "label": "Twitter Profile"
-        }
-      ]
-    }
+        "heading": "The Open Source Philosophy",
+        "body": "November 9, 2010",
+        "link": "#",
+        "style_mod": "small"
+      }
+    ]
   }
 }

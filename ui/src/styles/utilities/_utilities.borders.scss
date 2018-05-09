@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #BORDERS
+   ========================================================================== */
+
+/**
+ * utility classes for borders
+ */
+
+.u-border-b {
+  @include border-bottom();
+}
+
+.u-border-b-light {
+  @include border-bottom(light-border);
+}

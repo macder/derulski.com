@@ -1,11 +1,5 @@
 <div class="c-sidebar">
   <div class="c-sidebar__item o-box">
-    {% include '01-molecules/00-navigation/vertical-text-menu/vertical-text-menu.twig' with categories %}
-  </div>
-  <div class="c-sidebar__item o-box">
-    {% include '01-molecules/00-navigation/vertical-text-menu/vertical-text-menu.twig' with popular %}
-  </div>
-  <div class="c-sidebar__item o-box u-text-center">
-    {% include '01-molecules/00-navigation/icon-menu/icon-menu.twig' with social %}
+    {% include '02-organisms/widgets/recent-posts-widget/recent-posts-widget.twig' with { items: recent_posts } %}
   </div>
 </div>

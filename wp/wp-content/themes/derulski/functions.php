@@ -41,7 +41,7 @@ class DerulskiSite extends TimberSite {
     // register all the dashboards custom option pages
     add_action( 'init', array( $this, 'register_options_pages' ) );
 
-    add_action( 'widgets_init', array( $this, 'register_widgets' ) );
+    // add_action( 'widgets_init', array( $this, 'register_widgets' ) );
 
     // use newer jQuery from CDN
     add_action( 'wp_enqueue_scripts', array( $this, 'include_jquery') );

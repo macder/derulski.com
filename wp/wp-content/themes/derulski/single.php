@@ -13,7 +13,25 @@ $context = Timber::get_context();
 $post = Timber::query_post();
 $context['post'] = $post;
 
-$context['sidebar'] = Timber::get_widgets('blog_sidebar');
+$context['sidebar']['recent_posts'] = array_map(
+  function( $item ) {
+    $image = $item->thumbnail();
+    $image->src = TimberImageHelper::resize($image->src, 120, 80);
+    return array(
+      'heading' => $item->title(),
+      'body' => $item->date(),
+      'link' => $item->link(),
+      'image' => $image,
+      'style_mod' => 'small',
+    );
+  },
+  Timber::get_posts(
+    array(
+      'post_type' => 'post',
+      'posts_per_page' => '3',
+    )
+  )
+);
 
 // WIP - temp until moved into wp dashboard
 $context['social_share'] = array(

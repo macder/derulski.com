@@ -1,7 +1,7 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-  {% embed '03-templates/post.twig' with {
+  {% include '03-templates/post.twig' with {
     title: post.title,
     date: post.date,
     author: post.author,
@@ -9,10 +9,4 @@
     comments: post.comments,
     comment_count: function('get_comments_number_text'),
   } %}
-
-    {% block sidebar %}
-      {{ sidebar }}
-    {% endblock %}
-
-  {% endembed %}
 {% endblock %}

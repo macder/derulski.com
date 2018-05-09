@@ -1,0 +1,37 @@
+{
+  "items": [
+    {
+      "image": {
+        "src": "https://satyr.io/120x80?text=+",
+        "alt": "alt text",
+        "title": "title text"
+      },
+      "heading": "The Warm Up – I Have a Blog Again",
+      "body": "May 5, 2018",
+      "link": "#",
+      "style_mod": "small"
+    },
+    {
+      "image": {
+        "src": "https://satyr.io/120x80?text=+",
+        "alt": "alt text",
+        "title": "title text"
+      },
+      "heading": "Lorem Ipsum Maecenas",
+      "body": "April 23, 2018",
+      "link": "#",
+      "style_mod": "small"
+    },
+    {
+      "image": {
+        "src": "https://satyr.io/120x80?text=+",
+        "alt": "alt text",
+        "title": "title text"
+      },
+      "heading": "The Open Source Philosophy",
+      "body": "November 9, 2010",
+      "link": "#",
+      "style_mod": "small"
+    }
+  ]
+}

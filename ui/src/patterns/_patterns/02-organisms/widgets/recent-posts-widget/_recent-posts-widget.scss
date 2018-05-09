@@ -1,0 +1,17 @@
+.c-recent-posts-widget {
+  .c-media-block__heading {
+    @include text-h4;
+  }
+
+  .c-media-block__text {
+    @include text-sm;
+    color: color(light-text);
+  }
+}
+
+.c-recent-posts-widget__link {
+  @include border-bottom(light-border);
+  &:last-child {
+    border-bottom: none;
+  }
+}

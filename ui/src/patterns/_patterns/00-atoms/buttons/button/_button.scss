@@ -10,7 +10,6 @@
 
 .c-btn--small {
   @include button($inuit-global-spacing-unit-tiny);
-  @include text-sm();
 }
 
 .c-btn--icon {

@@ -1,0 +1,8 @@
+.c-tag {
+  color: color(secondary-link);
+  background-color: color(dark-background);
+  border-radius: $global-radius * 4;
+  &:hover {
+    color: color(secondary-link);
+  }
+}

@@ -15,13 +15,15 @@ $context['post'] = $post;
 
 $context['sidebar']['recent_posts'] = array_map(
   function( $item ) {
-    $image = $item->thumbnail();
-    $image->src = TimberImageHelper::resize($image->src, 120, 80);
     return array(
       'heading' => $item->title(),
       'body' => $item->date(),
       'link' => $item->link(),
-      'image' => $image,
+      'image' => array(
+        'src' => TimberImageHelper::resize( $item->thumbnail()->src, 120, 80),
+        'alt' => $item->title(),
+        'title' => $item->title(),
+      ),
     );
   },
   Timber::get_posts(

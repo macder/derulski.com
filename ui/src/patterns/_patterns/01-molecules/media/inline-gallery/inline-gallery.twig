@@ -11,7 +11,7 @@
   <ul class="c-inline-gallery__nav o-pack o-pack--tiny u-hidden-until-sm">
     {% for item in items %}
       <li class="c-inline-gallery__nav-item o-pack__item" data-index="{{ loop.index0 }}">
-        <img class="c-inline-gallery__nav-thumb" src="{{ item.thumb.src }}" alt="{{ item.thumb.alt }}" title="{{ item.thumb.title }}">
+        <img class="c-inline-gallery__nav-thumb" src="{{ item.thumb.src }}" alt="{{ "Thumbnail for #{item.thumb.alt}" }}" title="{{ "Thumbnail for #{item.thumb.title}" }}">
       </li>
     {% endfor %}
   </ul>

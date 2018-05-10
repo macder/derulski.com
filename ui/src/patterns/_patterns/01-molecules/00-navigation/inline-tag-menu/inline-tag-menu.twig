@@ -1,0 +1,8 @@
+<ul class="c-inline-tag-menu o-list-inline u-m-none">
+  {% for item in items %}
+    {% set item = item|merge({'style_mod': 'small'}) %}
+    <li class="c-inline-tag-menu__item o-list-inline__item u-mr-tiny">
+      {% include '00-atoms/buttons/link-btn/link-btn.twig' with item %}
+    </li>
+  {% endfor %}
+</ul>

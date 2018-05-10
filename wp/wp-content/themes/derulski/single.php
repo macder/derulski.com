@@ -22,7 +22,6 @@ $context['sidebar']['recent_posts'] = array_map(
       'body' => $item->date(),
       'link' => $item->link(),
       'image' => $image,
-      'style_mod' => 'small',
     );
   },
   Timber::get_posts(

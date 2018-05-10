@@ -15,14 +15,14 @@
   vertical-align: middle;
   text-align: center;
   cursor: pointer;
+  border: none;
   border-radius: $global-radius;
 }
 
-@mixin button($padding, $bg-color: light-background, $bg-hover-color: dim-background, $border: primary-border, $color: primary-link ) {
+@mixin button($padding, $bg-color: dim-background, $bg-hover-color: dimmed-background, $border: primary-border, $color: primary-text ) {
   @extend %btn;
-  @include border($border);
-
-  padding: $padding;
+  @include padding-v($padding);
+  @include padding-h($inuit-global-spacing-unit);
   background-color: color($bg-color);
   color: color($color);
 
@@ -30,5 +30,6 @@
     background-color: color($bg-hover-color);
     text-decoration: none;
     transition: $global-transition;
+    color: color(secondary-link-hover);
   }
 }

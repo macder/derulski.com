@@ -1,0 +1,7 @@
+.c-post-footer {
+  .c-inline-tag-menu {
+    @include mq($from: md) {
+      float: right;
+    }
+  }
+}

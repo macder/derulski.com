@@ -1,4 +1,4 @@
-<a class="c-btn {{ icon ? 'c-btn--icon u-inline-block' }} {{ style_mod }}" href="{{ link }}" {{ is_external ? 'target="_blank" rel="noopener"' }} {{ icon ? 'aria-label="' ~ label ~ '" title="' ~ label ~ '"' }}>
+<a class="c-btn {{ icon ? 'c-btn--icon u-inline-block' }} {{ style_mod ? "c-btn--#{style_mod}" }} {{ class }}" href="{{ link }}" {{ is_external ? 'target="_blank" rel="noopener"' }} {{ icon ? 'aria-label="' ~ label ~ '" title="' ~ label ~ '"' }}>
   {% if icon %}
     <i class="fa {{ icon }}" aria-hidden="true"></i>
   {% else %}

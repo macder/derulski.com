@@ -29,6 +29,16 @@
       "reply_link": "<a href=\"#\">Reply</a>"
     }
   ],
+  "categories": [
+    {
+      "link": "#",
+      "label": "User Interface"
+    },
+    {
+      "link": "#",
+      "label": "Opinion"
+    }
+  ],
   "social_share": [
     {
       "link": "#",
@@ -49,7 +59,7 @@
           "alt": "alt text",
           "title": "title text"
         },
-        "heading": "The Warm Up – I Have a Blog Again",
+        "heading": "Sed Molestie Fermentum Erat a Elementum",
         "body": "May 5, 2018",
         "link": "#",
         "style_mod": "small"
@@ -71,8 +81,8 @@
           "alt": "alt text",
           "title": "title text"
         },
-        "heading": "The Open Source Philosophy",
-        "body": "November 9, 2010",
+        "heading": "Suspendisse at Turpis",
+        "body": "April 9, 2018",
         "link": "#",
         "style_mod": "small"
       }

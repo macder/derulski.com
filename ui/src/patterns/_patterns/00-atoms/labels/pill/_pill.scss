@@ -1,0 +1,20 @@
+.c-pill {
+  color: color(primary-text);
+  background-color: color(dim-background);
+  border-radius: $global-radius * 4;
+}
+
+.c-pill--dark {
+  color: color(secondary-text);
+  background-color: color(dark-background);
+}
+
+.c-pill--light {
+  // color: color(secondary-text);
+  background-color: color(primary-background);
+}
+
+.c-pill--secondary {
+  @include border();
+  background-color: color(light-background);
+}

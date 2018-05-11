@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "title": "Lorem ipsum dolor sit amet",
+      "date": "December 20, 2017",
+      "author": "Maciej Derulski",
+      "category": {
+        "label": "User Interface",
+        "link": "#"
+      },
+      "image": {
+        "src": "https://satyr.io/420x172",
+        "alt": "alt text",
+        "title": "title text"
+      },
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nisi in euismod volutpat, nisl ipsum dignissim nisl, nec interdum mauris est vitae lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+      "link": "#"
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet",
+      "date": "December 20, 2017",
+      "author": "Maciej Derulski",
+      "category": {
+        "label": "User Interface",
+        "link": "#"
+      },
+      "image": {
+        "src": "https://satyr.io/420x172",
+        "alt": "alt text",
+        "title": "title text"
+      },
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nisi in euismod volutpat, nisl ipsum dignissim nisl, nec interdum mauris est vitae lacus.",
+      "link": "#"
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet",
+      "date": "December 20, 2017",
+      "author": "Maciej Derulski",
+      "category": {
+        "label": "User Interface",
+        "link": "#"
+      },
+      "image": {
+        "src": "https://satyr.io/420x172",
+        "alt": "alt text",
+        "title": "title text"
+      },
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nisi in euismod volutpat, nisl ipsum dignissim nisl, nec interdum mauris est vitae lacus.",
+      "link": "#"
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet",
+      "date": "December 20, 2017",
+      "author": "Maciej Derulski",
+      "category": {
+        "label": "User Interface",
+        "link": "#"
+      },
+      "image": {
+        "src": "https://satyr.io/420x172",
+        "alt": "alt text",
+        "title": "title text"
+      },
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nisi in euismod volutpat, nisl ipsum dignissim nisl, nec interdum mauris est vitae lacus.",
+      "link": "#"
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet",
+      "date": "December 20, 2017",
+      "author": "Maciej Derulski",
+      "category": {
+        "label": "User Interface",
+        "link": "#"
+      },
+      "image": {
+        "src": "https://satyr.io/420x172",
+        "alt": "alt text",
+        "title": "title text"
+      },
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nisi in euismod volutpat, nisl ipsum dignissim nisl, nec interdum mauris est vitae lacus.",
+      "link": "#"
+    },
+    {
+      "title": "Lorem ipsum dolor sit amet",
+      "date": "December 20, 2017",
+      "author": "Maciej Derulski",
+      "category": {
+        "label": "User Interface",
+        "link": "#"
+      },
+      "image": {
+        "src": "https://satyr.io/420x172",
+        "alt": "alt text",
+        "title": "title text"
+      },
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nisi in euismod volutpat, nisl ipsum dignissim nisl, nec interdum mauris est vitae lacus.",
+      "link": "#"
+    }
+  ]
+}

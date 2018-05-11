@@ -17,6 +17,7 @@ $colors: (
   silver: #CCCCCC,
   stiletto: #9F3A38,
   white: #FFFFFF,
+  shadow: rgba(0, 1, 1, 0.08),
 );
 
 $functional-colors: (
@@ -40,6 +41,7 @@ $functional-colors: (
   // backgrounds
   primary-background: color(alabaster),
   light-background: color(concrete),
+  lightest-background: color(white),
   dim-background: color(mercury),
   dimmed-background: color(silver),
   dark-background: color(mine-shaft),
@@ -53,4 +55,7 @@ $functional-colors: (
   light-border: color(silver),
   success-border: color(norway),
   error-border: color(stiletto),
+
+  // effects
+  primary-shadow: color(shadow),
 );

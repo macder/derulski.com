@@ -1,0 +1,27 @@
+.c-card {
+  @include border(light-border);
+  position: relative;
+  border-radius: $global-radius;
+  background-color: color(lightest-background);
+  box-shadow: 0px 2px 6px 0px color(primary-shadow);
+
+  &:hover {
+    background-color: color(light-background);
+    box-shadow: 0px 2px 6px 2px color(primary-shadow);
+    transition: $global-transition;
+  }
+}
+
+.c-card__image {
+  width: 100%;
+}
+
+.c-card__link {
+  color: color(primary-text);
+}
+
+.c-card__label-link {
+  position: absolute;
+  top: $inuit-global-spacing-unit-small;
+  left: $inuit-global-spacing-unit-small;
+}

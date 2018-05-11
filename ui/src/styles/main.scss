@@ -156,6 +156,7 @@
 // Atoms
 @import "../patterns/_patterns/00-atoms/buttons/button/button";
 @import "../patterns/_patterns/00-atoms/images/hero/hero-images";
+@import "../patterns/_patterns/00-atoms/labels/pill/pill";
 
 // Molecules
 @import "../patterns/_patterns/01-molecules/00-navigation/pagination/pagination";
@@ -167,7 +168,6 @@
 @import "../patterns/_patterns/01-molecules/media/inline-gallery/inline-gallery";
 @import "../patterns/_patterns/01-molecules/media/thumb-overlay-link/thumb-overlay-link";
 @import "../patterns/_patterns/01-molecules/messaging/alert/alert";
-@import "../patterns/_patterns/01-molecules/text/excerpt/excerpt";
 @import "../patterns/_patterns/01-molecules/toggles/hamburger/hamburger";
 
 // Organisms
@@ -175,7 +175,6 @@
 @import "../patterns/_patterns/02-organisms/00-global/01-footer/footer";
 @import "../patterns/_patterns/02-organisms/forms/comment-form/comment-form";
 @import "../patterns/_patterns/02-organisms/lists/comment-thread/comment-thread";
-@import "../patterns/_patterns/02-organisms/lists/excerpt-list/excerpt-list";
 @import "../patterns/_patterns/02-organisms/sections/cost/cost";
 @import "../patterns/_patterns/02-organisms/sections/featured-projects/featured-projects";
 @import "../patterns/_patterns/02-organisms/sections/features/features";
@@ -183,6 +182,7 @@
 @import "../patterns/_patterns/02-organisms/sections/project-details/project-details";
 @import "../patterns/_patterns/02-organisms/sections/quote-bar/quote-bar";
 @import "../patterns/_patterns/02-organisms/text/article/article";
+@import "../patterns/_patterns/02-organisms/01-views/card/card";
 @import "../patterns/_patterns/02-organisms/widgets/recent-posts-widget/recent-posts-widget";
 
 

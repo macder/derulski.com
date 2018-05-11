@@ -1,23 +1,5 @@
 {
-  "categories": [
-    {
-      "link": "#",
-      "title": "Lorem",
-      "current": 1
-    },
-    {
-      "link": "#",
-      "title": "Maecenas",
-      "current": 0
-    },
-    {
-      "link": "#",
-      "title": "Sed",
-      "current": 0
-    }
-  ],
-  "index_name": "Tutorial",
-  "posts": [
+  "items": [
     {
       "title": "Lorem ipsum dolor sit amet",
       "date": "December 20, 2017",
@@ -31,7 +13,7 @@
         "alt": "alt text",
         "title": "title text"
       },
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nisi in euismod volutpat, nisl ipsum dignissim nisl, nec interdum mauris est vitae lacus.",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nisi in euismod volutpat, nisl ipsum dignissim nisl, nec interdum mauris est vitae lacus.Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
       "link": "#"
     },
     {
@@ -114,100 +96,5 @@
       "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan, nisi in euismod volutpat, nisl ipsum dignissim nisl, nec interdum mauris est vitae lacus.",
       "link": "#"
     }
-  ],
-  "pagination": {
-    "prev": {
-      "link": "#"
-    },
-    "next": {
-      "link": "#"
-    },
-    "pages": [
-      {
-        "link": "#",
-        "title": "1"
-      },
-      {
-        "link": "#",
-        "title": "2"
-      },
-      {
-        "link": "#",
-        "title": "3",
-        "current": true
-      },
-      {
-        "link": "#",
-        "title": "4"
-      },
-      {
-        "link": "#",
-        "title": "5"
-      }
-    ]
-  },
-  "sidebar": {
-    "categories": {
-      "heading": "Categories",
-      "items": [
-        {
-          "link": "#",
-          "title": "User Interface"
-        },
-        {
-          "link": "#",
-          "title": "Optimization"
-        },
-        {
-          "link": "#",
-          "title": "Tutorial"
-        },
-        {
-          "link": "#",
-          "title": "Opinion"
-        },
-        {
-          "link": "#",
-          "title": "Uncategorized"
-        }
-      ]
-    },
-    "popular": {
-      "heading": "Popular Posts",
-      "items": [
-        {
-          "link": "#",
-          "title": "Lorem ipsum dolor sit amet"
-        },
-        {
-          "link": "#",
-          "title": "Proin finibus sem nec enim euismod porta"
-        },
-        {
-          "link": "#",
-          "title": "Duis tincidunt justo"
-        }
-      ]
-    },
-    "social": {
-      "heading": "Social",
-      "items": [
-        {
-          "link": "#",
-          "icon": "fa-github-square fa-3x",
-          "label": "GitHub Profile"
-        },
-        {
-          "link": "#",
-          "icon": "fa-linkedin-square fa-3x",
-          "label": "LinkedIn Profile"
-        },
-        {
-          "link": "#",
-          "icon": "fa-twitter-square fa-3x",
-          "label": "Twitter Profile"
-        }
-      ]
-    }
-  }
+  ]
 }

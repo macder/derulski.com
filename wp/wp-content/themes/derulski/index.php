@@ -30,13 +30,20 @@ $query = new Timber\PostQuery();
 $context['posts'] = array_map(
   function( $item ) {
     return array(
-      'heading' => $item->title(),
+      'title' => $item->title(),
       'date' => $item->date(),
       'author' => $item->author()->display_name,
-      'category' => $item->terms('category'),
-      'image' => $item->thumbnail(),
+      'category' => array(
+        'label' => $item->category()->title(),
+        'link' => $item->category()->link(),
+      ),
+      'image' => array(
+        'src' => $item->thumbnail()->src,
+        'width' => 420,
+        'height' => 172,
+      ),
       'body' => $item->preview()->length(20)->read_more(false),
-      'url' => $item->link(),
+      'link' => $item->link(),
     );
   },
   $query->get_posts()

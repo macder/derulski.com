@@ -1,0 +1,23 @@
+<div class="c-card">
+  <a class="c-card__link" href="{{ link }}">
+    {% embed "@layouts/objects/block.twig" with { style_mod: 'left o-block--small' } %}
+
+      {% block block_img %}
+        <img class="c-card__image" src="{{ image.src|resize(image.width, image.height) }}" alt="{{ title }}" title="{{ title }}">
+      {% endblock %}
+
+      {% block block_body %}
+        <div class="u-ph-small">
+          {% include '01-molecules/text/entry-header/entry-header.twig' %}
+          <p>{{ body }}</p>
+        </div>
+      {% endblock %}
+
+    {% endembed %}
+  </a>
+
+  {% set category = category|merge({'style_mod': 'dark'}) %}
+  <a class="c-card__label-link" href="{{ category.link }}">
+    {% include '00-atoms/labels/pill/pill.twig' with category %}
+  </a>
+</div>

@@ -1,0 +1,16 @@
+{
+  "title": "The Open Source Philosophy",
+  "date": "December 20, 2017",
+  "author": "Maciej Derulski",
+  "body": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et",
+  "link": "#",
+  "image": {
+    "src": "https://satyr.io/420x172",
+    "alt": "alt text",
+    "title": "title text"
+  },
+  "category": {
+    "label": "Lorem",
+    "link": "#"
+  }
+}

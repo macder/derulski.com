@@ -1,0 +1,42 @@
+.c-tag {
+  @include padding-h(
+    $inuit-global-spacing-unit-small +
+    $inuit-global-spacing-unit-tiny
+  );
+  position: relative;
+  margin-left: 1em;
+  color: color(primary-text);
+  background-color: color(dim-background);
+  border-top-right-radius: $global-radius;
+  border-bottom-right-radius: $global-radius;
+
+  // triangle
+  &:before {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%) translateX(50%) rotate(-45deg);
+    content: '';
+    width: 1.47em;
+    height: 1.47em;
+    background-color: inherit;
+
+    @include mq(md) {
+      width: 1.4em;
+      height: 1.4em;
+    }
+  }
+
+  // circle
+  &:after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: -.25em;
+    transform: translateY(-50%);
+    width: .5em;
+    height: .5em;
+    background-color: color(primary-background);
+    border-radius: 50%;
+  }
+}

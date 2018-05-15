@@ -1,0 +1,8 @@
+.c-tag-button {
+  .c-tag {
+    &:hover {
+      background-color: color(dimmed-background);
+      transition: $global-transition;
+    }
+  }
+}

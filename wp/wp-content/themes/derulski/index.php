@@ -34,7 +34,7 @@ $context['posts'] = array_map(
       'date' => $item->date(),
       'author' => $item->author()->display_name,
       'category' => array(
-        'label' => $item->category()->title(),
+        'name' => $item->category()->title(),
         'link' => $item->category()->link(),
       ),
       'image' => array(

@@ -35,6 +35,14 @@
     @include mq(md) {
       @include text-md;
     }
+    padding-bottom: $inuit-global-spacing-unit-tiny;
+    &.current_page_item,
+    &.current-menu-item,
+    &.current_page_parent,
+    &:hover {
+      @include border-bottom(lightest-border, solid, 2px);
+      color: color(secondary-link);
+    }
   }
 }
 

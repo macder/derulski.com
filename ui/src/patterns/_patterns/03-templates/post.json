@@ -29,14 +29,25 @@
       "reply_link": "<a href=\"#\">Reply</a>"
     }
   ],
-  "categories": [
+  "category": {
+    "name": "Lorem",
+    "link": "#"
+  },
+  "tags": [
     {
+      "name": "Atomic Design",
       "link": "#",
-      "label": "User Interface"
+      "is_external": 0
     },
     {
+      "name": "Design",
       "link": "#",
-      "label": "Opinion"
+      "is_external": 0
+    },
+    {
+      "name": "Design Systems",
+      "link": "#",
+      "is_external": 0
     }
   ],
   "social_share": [

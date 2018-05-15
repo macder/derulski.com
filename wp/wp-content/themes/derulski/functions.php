@@ -158,7 +158,6 @@ class DerulskiSite extends TimberSite {
           'page-attributes',
           'title',
         ),
-        'capability_type' => 'post',
         'show_ui' => true,
         'show_in_menu' => true,
         'menu_position' => 5,
@@ -199,6 +198,19 @@ new DerulskiSite();
 
 add_filter( 'jpeg_quality', function( $quality, $context ) {
   return 75;
+}, 10, 2 );
+
+// fixes current menu item classes nuisance
+add_filter( 'nav_menu_css_class', function( $classes, $item ) {
+  if( is_post_type_archive('project') || is_tax('project_type') ) {
+    ( $item->title == 'Blog' ) &&
+      $classes = array_diff( $classes, array( 'current_page_parent' ) );
+  }
+
+  ( is_tax('project_type') && $item->title == 'Projects' ) &&
+    $classes[] = 'current_page_parent';
+
+  return $classes;
 }, 10, 2 );
 
 // limit 2 projects per page on archive and taxonomy pages

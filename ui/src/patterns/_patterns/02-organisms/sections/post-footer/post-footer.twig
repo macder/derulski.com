@@ -1,10 +1,21 @@
-<div class="c-post-footer u-border-b-light u-pb-small">
-  <div class="o-layout o-layout--middle o-layout--reverse">
-    <div class="o-layout__item u-1/2@md u-mb u-mb-none@md">
-      {% include '01-molecules/00-navigation/inline-tag-menu/inline-tag-menu.twig' with { items: categories } %}
-    </div>
-    <div class="o-layout__item u-1/2@md">
-      {% include '01-molecules/controls/social-share/social-share.twig' with { items: social_share } %}
+<div class="c-post-footer">
+  <div class=" u-border-b-light u-pb-small u-mb">
+    <div class="o-layout o-layout--middle">
+      <div class="o-layout__item u-1/2@md u-mb u-mb-none@md">
+        {% include '01-molecules/01-buttons/pill-button/pill-button.twig' with {
+          name: category.name,
+          link: category.link,
+          style_mod: 'dark',
+        } %}
+      </div>
+
+      <div class="o-layout__item u-1/2@md">
+        {% include '01-molecules/controls/social-share/social-share.twig' with { items: social_share } %}
+      </div>
     </div>
   </div>
+
+  {% if tags %}
+    {% include '01-molecules/00-navigation/tag-menu/tag-menu.twig' with { items: tags } %}
+  {% endif %}
 </div>

@@ -11,14 +11,25 @@
       "name": "Share on Twitter"
     }
   ],
-  "categories": [
+  "category": {
+    "name": "Lorem",
+    "link": "#"
+  },
+  "tags": [
     {
+      "name": "Ipsum",
       "link": "#",
-      "label": "User Interface"
+      "is_external": 0
     },
     {
+      "name": "Phasellus",
       "link": "#",
-      "label": "Opinion"
+      "is_external": 0
+    },
+    {
+      "name": "Sed",
+      "link": "#",
+      "is_external": 0
     }
   ]
 }

@@ -23,7 +23,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "category": {
-        "label": "User Interface",
+        "name": "User Interface",
         "link": "#"
       },
       "image": {
@@ -39,7 +39,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "category": {
-        "label": "User Interface",
+        "name": "User Interface",
         "link": "#"
       },
       "image": {
@@ -55,7 +55,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "category": {
-        "label": "User Interface",
+        "name": "User Interface",
         "link": "#"
       },
       "image": {
@@ -71,7 +71,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "category": {
-        "label": "User Interface",
+        "name": "User Interface",
         "link": "#"
       },
       "image": {
@@ -87,7 +87,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "category": {
-        "label": "User Interface",
+        "name": "User Interface",
         "link": "#"
       },
       "image": {
@@ -103,7 +103,7 @@
       "date": "December 20, 2017",
       "author": "Maciej Derulski",
       "category": {
-        "label": "User Interface",
+        "name": "User Interface",
         "link": "#"
       },
       "image": {

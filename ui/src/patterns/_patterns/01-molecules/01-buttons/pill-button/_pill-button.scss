@@ -1,0 +1,16 @@
+.c-pill-button {
+  .c-pill {
+    &:hover {
+      background-color: color(dimmed-background);
+      transition: $global-transition;
+    }
+  }
+
+  .c-pill--dark {
+    &:hover {
+      background-color: color(darkest-background);
+      color: color(secondary-link-hover);
+      transition: $global-transition;
+    }
+  }
+}

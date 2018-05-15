@@ -1,10 +1,10 @@
 <div class="c-comments">
-  <div class="u-mb-huge">
-    {% if comments.count %}
+  {% if comments.count or comments.count is not defined %}
+    <div class="u-mb-huge">
       <h3 class="c-comments__heading">{{ comment_count }}</h3>
       {% include '02-organisms/lists/comment-thread/comment-thread.twig' %}
-    {% endif %}
-  </div>
+    </div>
+  {% endif %}
   <div class="u-3/4@md u-mb" id="respond">
     {% if function('comments_open') %}
       {% include '02-organisms/forms/comment-form/comment-form.twig' %}

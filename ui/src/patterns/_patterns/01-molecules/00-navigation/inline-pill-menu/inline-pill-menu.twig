@@ -1,0 +1,10 @@
+<ul class="c-inline-pill-menu o-list-inline u-m-none">
+  {% for item in items %}
+    <li class="c-inline-pill-menu__item o-list-inline__item u-mr-tiny">
+      {% include '01-molecules/01-buttons/pill-button/pill-button.twig' with {
+        name: item.name,
+        link: item.link,
+      } %}
+    </li>
+  {% endfor %}
+</ul>

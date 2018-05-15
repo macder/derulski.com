@@ -34,15 +34,6 @@ $context['sidebar']['recent_posts'] = array_map(
   )
 );
 
-$context['categories'] = array_map(
-  function( $item ) {
-    return array(
-      'link' => $item->link(),
-      'label' => $item->name,
-    );
-  }, $context['post']->categories()
-);
-
 // WIP - temp until moved into wp dashboard
 $context['social_share'] = array(
   [

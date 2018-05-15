@@ -1,17 +1,17 @@
 {
   "items": [
     {
-      "label": "Lorem",
+      "name": "Lorem",
       "link": "#",
       "is_external": 0
     },
     {
-      "label": "Phasellus",
+      "name": "Phasellus",
       "link": "#",
       "is_external": 0
     },
     {
-      "label": "Sed",
+      "name": "Sed",
       "link": "#",
       "is_external": 0
     }

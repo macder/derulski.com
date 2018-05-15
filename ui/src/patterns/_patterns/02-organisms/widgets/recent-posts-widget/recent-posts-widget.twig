@@ -3,7 +3,7 @@
   {% for item in items %}
     {% set item = item|merge({'style_mod': 'small'}) %}
     <a class="c-recent-posts-widget__link u-block u-link-inverse u-pv" href="{{ item.link }}">
-      {% include "01-molecules/blocks/media-blocks/media-block.twig" with item %}
+      {% include "01-molecules/blocks/media-block/media-block.twig" with item %}
     </a>
   {% endfor %}
 </div>

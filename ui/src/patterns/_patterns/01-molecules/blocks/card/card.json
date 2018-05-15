@@ -10,7 +10,7 @@
     "title": "title text"
   },
   "category": {
-    "label": "Lorem",
+    "name": "Lorem",
     "link": "#"
   }
 }

@@ -17,7 +17,5 @@
   </a>
 
   {% set category = category|merge({'style_mod': 'dark'}) %}
-  <a class="c-card__label-link" href="{{ category.link }}">
-    {% include '00-atoms/labels/pill/pill.twig' with category %}
-  </a>
+  {% include '01-molecules/01-buttons/pill-button/pill-button.twig' with category %}
 </div>

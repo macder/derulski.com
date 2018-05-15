@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "name": "Lorem",
+      "link": "#",
+      "is_external": 0
+    },
+    {
+      "name": "Phasellus",
+      "link": "#",
+      "is_external": 0
+    },
+    {
+      "name": "Sed",
+      "link": "#",
+      "is_external": 0
+    }
+  ]
+}

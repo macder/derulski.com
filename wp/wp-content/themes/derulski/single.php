@@ -34,21 +34,18 @@ $context['sidebar']['recent_posts'] = array_map(
   )
 );
 
-// WIP - temp until moved into wp dashboard
-$context['social_share'] = array(
-  [
-    "link" => "https://www.facebook.com/sharer/sharer.php?u=". urlencode( $post->link ),
-    "icon" => "fa-facebook-square fa-3x",
-    "name" => "Share on Facebook",
-    "is_external" => 1,
-  ],
-  [
-    "link" =>
-      "https://twitter.com/intent/tweet/?text=". urlencode( html_entity_decode( $post->title ) ) ."&url=". urlencode( $post->link ),
-    "icon" => "fa-twitter-square fa-3x",
-    "name" => "Share on Twitter",
-    "is_external" => 1,
-  ]
+$context['social_share'] = get_field('social_share', 'option');
+
+array_walk( $context['social_share'],
+  function ( &$value, $key ) use ( $post ) {
+    ( $key === 'facebook' ) &&
+      $value['link'] .= urlencode( $post->link );
+
+    ( $key === 'twitter' ) &&
+      $value['link'] .= urlencode( html_entity_decode( $post->title ) ) ."&url=". urlencode( $post->link );
+
+    $value['icon'] .= ' fa-3x';
+  }
 );
 
 $template = ( post_password_required( $post->ID ) )

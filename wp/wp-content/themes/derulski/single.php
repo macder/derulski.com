@@ -30,6 +30,7 @@ $context['sidebar']['recent_posts'] = array_map(
     array(
       'post_type' => 'post',
       'posts_per_page' => '3',
+      'post__not_in' => array( $post->ID ),
     )
   )
 );

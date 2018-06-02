@@ -3,4 +3,8 @@
     @include text-huge();
     line-height: 1; // $inuit-global-line-height !important;
   }
+
+  .c-media-block__text {
+    margin-top: $inuit-global-spacing-unit;
+  }
 }

@@ -36,6 +36,7 @@ $context['sidebar']['recent_posts'] = array_map(
 
 $context['social_share'] = get_field('social_share', 'option');
 
+// setup social share
 array_walk( $context['social_share'],
   function ( &$value, $key ) use ( $post ) {
     ( $key === 'facebook' ) &&

@@ -40,11 +40,10 @@ $context['social_share'] = get_field('social_share', 'option');
 // setup social share
 array_walk( $context['social_share'],
   function ( &$value, $key ) use ( $post ) {
-    ( $key === 'facebook' ) &&
-      $value['link'] .= urlencode( $post->link );
 
-    ( $key === 'twitter' ) &&
-      $value['link'] .= urlencode( html_entity_decode( $post->title ) ) ."&url=". urlencode( $post->link );
+    $value['link'] .= ( $key === 'facebook' )
+      ? urlencode( $post->link )
+      : urlencode( html_entity_decode( $post->title ) ) ."&url=". urlencode( $post->link );
 
     $value['icon'] .= ' fa-3x';
   }

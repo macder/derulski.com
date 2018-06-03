@@ -13,6 +13,14 @@ $context = Timber::get_context();
 $post = Timber::query_post();
 $context['post'] = $post;
 
+$context['hero'] = array(
+  'image' => TimberImageHelper::resize(
+    $post->thumbnail()->src,
+    1920, 436,
+    'center'
+  ),
+);
+
 $context['sidebar']['recent_posts'] = array_map(
   function( $item ) {
     return array(

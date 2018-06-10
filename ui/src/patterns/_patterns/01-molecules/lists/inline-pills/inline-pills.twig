@@ -1,0 +1,7 @@
+<ul class="c-inline-pills o-list-inline u-mb-none">
+  {% for item in items %}
+    <li class="c-inline-pills__item o-list-inline__item u-mr-tiny u-mb-small">
+      {% include '00-atoms/labels/pill/pill.twig' with item %}
+    </li>
+  {% endfor %}
+</ul>

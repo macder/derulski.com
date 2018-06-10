@@ -25,11 +25,11 @@
     "php": ">=5.4",
     "johnpbloch/wordpress": ">=4.9.2",
     "advanced-custom-fields/advanced-custom-fields-pro": "*",
+    "wpackagist-plugin/advanced-custom-fields-font-awesome": ">=2.1.2",
     "wpackagist-plugin/autodescription": "*",
     "wpackagist-plugin/intuitive-custom-post-order": "*",
     "wpackagist-plugin/timber-library": "*",
     "wpackagist-plugin/the-seo-framework-extension-manager": "*",
-    "wpackagist-plugin/wp-featherlight": "*",
     "wpackagist-plugin/wp-super-cache": "*"
   },
   "extra": {

@@ -21,5 +21,16 @@
       "icon": "fa-twitter-square fa-3x",
       "name": "Twitter Profile"
     }
+  ],
+  "skills": [
+    {
+      "name": "Lorem"
+    },
+    {
+      "name": "Phasellus"
+    },
+    {
+      "name": "Sed"
+    }
   ]
 }

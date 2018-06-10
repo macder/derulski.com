@@ -1,5 +1,7 @@
 {% extends "layouts/base.twig" %}
 
 {% block content %}
-  {% include '03-templates/about.twig' %}
+  {% include '03-templates/about.twig' with {
+    skills: post.get_field('skills')
+  } %}
 {% endblock %}

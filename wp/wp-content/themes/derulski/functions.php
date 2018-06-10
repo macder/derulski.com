@@ -196,20 +196,29 @@ class DerulskiSite extends TimberSite {
 
 new DerulskiSite();
 
+
+function hide_blog( $params ) {
+  Routes::load('404.php', null, false, 200);
+}
+
+Routes::map('/blog/category/:name', 'hide_blog' );
+Routes::map('/blog/:term', 'hide_blog' );
+Routes::map('/blog/page/:pg', 'hide_blog' );
+Routes::map('/blog/tag/:name', 'hide_blog' );
+Routes::map('/blog/category/:name/page/:pg', 'hide_blog' );
+Routes::map('/blog/tag/:name/page/:pg', 'hide_blog' );
+Routes::map('/blog/:category/:title', function($params){
+  Routes::load('single.php', null, false);
+});
+
 add_filter( 'jpeg_quality', function( $quality, $context ) {
   return 75;
 }, 10, 2 );
 
 // fixes current menu item classes nuisance
 add_filter( 'nav_menu_css_class', function( $classes, $item ) {
-  if( is_post_type_archive('project') || is_tax('project_type') ) {
-    ( $item->title == 'Blog' ) &&
-      $classes = array_diff( $classes, array( 'current_page_parent' ) );
-  }
-
   ( is_tax('project_type') && $item->title == 'Projects' ) &&
     $classes[] = 'current_page_parent';
-
   return $classes;
 }, 10, 2 );
 

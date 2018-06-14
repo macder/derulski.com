@@ -27,6 +27,11 @@
         <textarea required name="comment" cols="60" rows="8" id="comment"></textarea>
       </div>
 
+      <div class="o-layout__item u-mb-small">
+        <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes" checked>
+        <label for="wp-comment-cookies-consent">Save my name and email in this browser for the next time I comment.</label>
+      </div>
+
       {{ function('comment_id_fields') }}
 
       <div class="o-layout__item u-1/2@md">

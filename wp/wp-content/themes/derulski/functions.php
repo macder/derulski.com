@@ -207,9 +207,6 @@ Routes::map('/blog/page/:pg', 'hide_blog' );
 Routes::map('/blog/tag/:name', 'hide_blog' );
 Routes::map('/blog/category/:name/page/:pg', 'hide_blog' );
 Routes::map('/blog/tag/:name/page/:pg', 'hide_blog' );
-Routes::map('/blog/:category/:title', function($params){
-  Routes::load('single.php', null, false);
-});
 
 add_filter( 'jpeg_quality', function( $quality, $context ) {
   return 75;

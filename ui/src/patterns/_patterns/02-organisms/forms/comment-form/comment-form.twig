@@ -13,12 +13,12 @@
       {% else %}
         <div class="o-layout__item u-1/2@md">
           <label class="c-comment-form__label" for="author">Name</label>
-          <input required name="author" type="text" id="author"/>
+          <input required name="author" type="text" id="author" value="{{ comment_author|escape('html_attr') }}">
         </div>
 
         <div class="o-layout__item u-1/2@md">
-          <label class="c-comment-form__label" for="email">Email</label>
-          <input required name="email" type="email" id="email"/>
+          <label class="c-comment-form__label" for="email">Email <em>(will not be published)</em></label>
+          <input required name="email" type="email" id="email" value="{{ comment_author_email|escape('html_attr') }}">
         </div>
       {% endif %}
 

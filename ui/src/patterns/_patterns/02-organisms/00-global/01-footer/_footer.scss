@@ -3,12 +3,32 @@
 }
 
 .c-footer__nav {
+  @include mq($until: sm) {
+    text-align: center;
+    .c-inline-text-menu__item {
+      display: block;
+      margin-right: 0 !important;
+      margin-bottom: $inuit-global-spacing-unit-tiny;
+    }
+  }
+
   .c-inline-text-menu__item-link {
     @include link-secondary();
   }
 }
 
 .c-footer__icon-nav {
+
+  @include mq($until: sm) {
+    text-align: center;
+    .c-icon-menu__item {
+      &:last-child {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+
   @include mq(md) {
     float: right;
     .c-icon-menu {

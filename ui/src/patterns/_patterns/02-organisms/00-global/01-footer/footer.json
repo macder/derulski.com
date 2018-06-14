@@ -2,15 +2,15 @@
   "menu": [
     {
       "link": "#",
-      "title": "Home"
-    },
-    {
-      "link": "#",
-      "title": "Contact"
-    },
-    {
-      "link": "#",
       "title": "Privacy Policy"
+    },
+    {
+      "link": "#",
+      "title": "Pattern Library"
+    },
+    {
+      "link": "#",
+      "title": "Source Code"
     }
   ],
   "social": [

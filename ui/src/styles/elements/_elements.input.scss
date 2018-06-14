@@ -7,3 +7,7 @@ textarea {
   border-radius: $global-radius;
   background-color: color(primary-background);
 }
+
+input[type="checkbox"] {
+  width: auto;
+}

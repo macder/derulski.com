@@ -65,4 +65,6 @@ $template = ( post_password_required( $post->ID ) )
       'single.twig'
     );
 
+$context = array_merge($context, wp_get_current_commenter() );
+
 Timber::render( $template, $context );

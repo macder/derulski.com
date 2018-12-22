@@ -10,3 +10,5 @@ wp/*
 !wp/wp-content/themes/derulski/*
 
 npm-debug\.log
+
+\.ssh/

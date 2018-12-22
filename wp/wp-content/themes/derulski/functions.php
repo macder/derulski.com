@@ -244,5 +244,5 @@ add_action( 'contact_form', function( $form ) {
 
   $headers[] = 'From:'. $email;
 
-  wp_mail( $to, $subject, $message, $headers );
+  wp_mail( $to, $subject, $message );
 });
